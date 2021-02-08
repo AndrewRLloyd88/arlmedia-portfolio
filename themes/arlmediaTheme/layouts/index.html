@@ -1,13 +1,11 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">Andrew Lloyd</h1>
-  <h2>Full Stack Developer & Videographer</h2>
-  {{- partial "about.html" . -}}
+{{- partial "header.html" . -}}
+{{- partial "about.html" . -}}
 
 
-  {{ $js := resources.Get "js/app.js" | minify | fingerprint }}
-  <div id="app"></div>
-  <script src="{{ $js.RelPermalink }}"></script>
-  <div id="app"></div>
+{{ $js := resources.Get "js/app.js" | minify | fingerprint }}
+<div id="app"></div>
+<script src="{{ $js.RelPermalink }}"></script>
+<div id="app"></div>
 </div>
 {{ end }}

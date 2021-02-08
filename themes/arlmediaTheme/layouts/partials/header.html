@@ -1,14 +1,9 @@
-<div id="nav-border">
-  <nav id="nav" class="nav justify-content-center">
-    {{ range .Site.Menus.main }}
-    <a class="nav-link" href="{{ .URL }}">
-      {{ if .Pre }}
-      {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-      {{ $icon }}
-      {{ end }}
-      {{ $text := print .Name | safeHTML }}
-      {{ $text }}
-    </a>
-    {{ end }}
-  </nav>
-</div>
+<section class="header">
+  <div id="home-jumbotron" class="jumbotron container wrapper flex-col">
+    <img class="header-img" src="./images/header/64162562.jpeg" alt="">
+    <div>
+      <h1 class="title">Andrew Lloyd</h1>
+      <h2>// Full Stack Web Developer</h2>
+    </div>
+  </div>
+</section>
