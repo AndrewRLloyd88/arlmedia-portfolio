@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "ArlMedia"
 theme = "arlmediaTheme"
+pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
