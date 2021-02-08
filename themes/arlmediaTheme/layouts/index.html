@@ -8,5 +8,6 @@
   {{ $js := resources.Get "js/app.js" | minify | fingerprint }}
   <div id="app"></div>
   <script src="{{ $js.RelPermalink }}"></script>
+  <div id="app"></div>
 </div>
 {{ end }}
