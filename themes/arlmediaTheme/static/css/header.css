@@ -9,8 +9,40 @@
   align-items: center;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right h1,
+h2 {
+  align-items: flex-end;
+  text-align: right;
+}
+
 .header-img {
   width: 15%;
   border-radius: 50%;
   padding: 0 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin: 0.25rem;
+}
+
+.socials a svg:hover {
+  fill: #ef8354;
 }
