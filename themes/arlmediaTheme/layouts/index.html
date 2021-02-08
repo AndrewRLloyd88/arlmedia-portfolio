@@ -3,5 +3,7 @@
   <h1 class="title">Andrew Lloyd</h1>
   <h2>Full Stack Developer & Videographer</h2>
   {{- partial "about.html" . -}}
+  {{ $js := resources.Get "js/app.js" | minify | fingerprint}}
+  <script src="{{ $js.RelPermalink }}"></script>
 </div>
 {{ end }}
