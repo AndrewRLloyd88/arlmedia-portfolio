@@ -1,0 +1,20 @@
+{
+  "name": "arlmedia-portfolio",
+  "version": "1.0.0",
+  "description": "Andrew Lloyd's portfolio website built with Hugo",
+  "private": true,
+  "scripts": {
+    "build": "hugo --cleanDestinationDir",
+    "hugo-server": "hugo server --disableFastRender"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewRLloyd88/arlmedia-portfolio.git"
+  },
+  "author": "Andrew Lloyd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewRLloyd88/arlmedia-portfolio/issues"
+  },
+  "homepage": "https://github.com/AndrewRLloyd88/arlmedia-portfolio#readme"
+}
