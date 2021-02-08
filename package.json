@@ -27,7 +27,11 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
     "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
     "lunr": "^2.3.9"
   }
 }
