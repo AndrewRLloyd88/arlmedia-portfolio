@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SVG from 'react-inlinesvg';
-import airtable from '../../../../../static/images/icons/stack/airtable.svg';
+import Airtable from './Airtable';
 
 const ToolBeltItem = ({ name, category, icon }) => (
   <div className="stack-item">
     <div className="stack-item-icon" title={name}>
-      <SVG src={airtable} />
+      <img src={icon} />
     </div>
     <p>{name}</p>
   </div>

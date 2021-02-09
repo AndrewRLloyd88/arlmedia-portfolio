@@ -42,10 +42,6 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
         include: /flexboxgrid/,
       },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader'],
-      },
     ],
   },
   resolve: {

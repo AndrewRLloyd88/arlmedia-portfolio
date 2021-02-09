@@ -4,14 +4,6 @@ import { technicalToolbeltData } from './technicalToolbeltData';
 import ToolBeltItem from './ToolBeltItem';
 
 export default function main() {
-  const [quote, setQuote] = useState('');
-
-  useEffect(() => {
-    axios.get('https://api.kanye.rest').then((res) => {
-      setQuote(res.data.quote);
-    });
-  }, []);
-
   return (
     <div>
       <div className="stack-list">
