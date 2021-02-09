@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { technicalToolbeltData } from './technicalToolbeltData';
 
 export default function main() {
   const [quote, setQuote] = useState('');
@@ -12,9 +13,13 @@ export default function main() {
 
   return (
     <div>
-      <h1>Hello</h1>
-      <p>{quote}</p>
-      <h4>TODAY</h4>
+      <div className="stack-list">
+        {technicalToolbeltData.map((category, i) => (
+          <div className="stack-list-category">
+            <h5>{category.name}</h5>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
