@@ -14,8 +14,7 @@
   flex-direction: column;
 }
 
-.right h1,
-h2 {
+.right h1 h2 {
   align-items: flex-end;
   text-align: right;
 }

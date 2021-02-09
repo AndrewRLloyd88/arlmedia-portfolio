@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://arlmedia.ca/"
 languageCode = "en-us"
 title = "ArlMedia"
 theme = "arlmediaTheme"
@@ -20,7 +20,7 @@ pygmentsUseClasses = true
     url = "/posts/"
     weight = 2
   [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
+    name = "About"
+    pre = "info"
+    url = "/about/"
     weight = 3
