@@ -89,3 +89,5 @@ The first step is to run `npm init -y` to generate a package.json
 
 Starting point:
 [how to add a react script to hugo](https://www.wictorwilen.se/blog/how-to-add-a-react-script-to-hugo/)
+
+[how to add more than one path to webpack](https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.)

@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './themes/arlmediaTheme/assets/js/index.js',
+  entry: {
+    index: './themes/arlmediaTheme/assets/js/modulea/index.js',
+    projects: './themes/arlmediaTheme/assets/js/moduleb/projects.js',
+  },
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'themes', 'arlmediaTheme', 'assets', 'js'),
   },
   module: {

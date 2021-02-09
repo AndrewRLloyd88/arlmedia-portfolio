@@ -3,37 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://arlmedia.ca/about/</loc>
+    <lastmod>2021-02-08T13:46:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/combining-hugo-and-react/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/hugo/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/react/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/bar/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/bar/</loc>
+    <loc>https://arlmedia.ca/tags/foo/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/foo/</loc>
+    <loc>https://arlmedia.ca/posts/my-first-post/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://arlmedia.ca/categories/</loc>
   </url>
   
 </urlset>

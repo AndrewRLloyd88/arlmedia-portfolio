@@ -1,0 +1,41 @@
+/* Nav and Top Menu Styling*/
+
+nav {
+  background-color: #ef8354;
+  height: 64px;
+}
+
+nav .menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+nav .links {
+  display: flex;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: #4f5d75;
+}
+
+nav span {
+  font-family: 'Mansalva', cursive;
+  font-size: 20px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}

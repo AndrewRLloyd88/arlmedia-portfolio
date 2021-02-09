@@ -2,17 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ArlMedia</title>
-    <link>http://example.org/posts/</link>
+    <link>https://arlmedia.ca/posts/</link>
     <description>Recent content in Posts on ArlMedia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 23:11:13 +0000</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 09:30:07 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combining Hugo and React</title>
+      <link>https://arlmedia.ca/posts/combining-hugo-and-react/</link>
+      <pubDate>Mon, 08 Feb 2021 09:30:07 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/combining-hugo-and-react/</guid>
+      <description>&lt;p&gt;I am currently in the process of re-designing my portfolio website and wanted to use the Hugo framework as it is lightning fast to build, comes with a neat blogging feature and is low maintenance.&lt;/p&gt;
+&lt;p&gt;The reason for the re-design and moving framework is that the original site was just coded using html, css and js. I want to move the website over to a modern framework which is easier to maintain and apply some component based logic where appropriate.&lt;/p&gt;
+&lt;h2 id=&#34;why-hugo&#34;&gt;Why Hugo?&lt;/h2&gt;
+&lt;p&gt;As I document my development journey Hugo offers a wonderful opportunity for a fully fledged blog feature. Generating a new post is as easy as running &lt;code&gt;hugo new blog posts/title&lt;/code&gt; which then creates all the correct routing and with the layouts markdown can even handle things like tags, author, date created, pagination and order.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://arlmedia.ca/posts/my-first-post/</link>
       <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://arlmedia.ca/posts/my-first-post/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.

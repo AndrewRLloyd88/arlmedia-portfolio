@@ -1,0 +1,33 @@
+footer {
+  background-color: #4f5d75;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer svg {
+  width: 128px;
+  height: 33px;
+  margin: 0.25rem;
+  margin-bottom: 16px;
+}
+
+.built-with {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.built-with p {
+  margin-bottom: 16px;
+}
+
+.copyright {
+  fill: white;
+  width: 15px;
+  height: 15px;
+  margin: 0.25rem;
+}
