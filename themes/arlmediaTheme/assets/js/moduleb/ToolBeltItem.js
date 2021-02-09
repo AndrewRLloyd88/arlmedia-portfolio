@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SVG from 'react-inlinesvg';
-import Airtable from './Airtable';
 
 const ToolBeltItem = ({ name, category, icon }) => (
   <div className="stack-item">
