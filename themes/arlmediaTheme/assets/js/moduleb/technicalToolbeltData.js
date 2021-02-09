@@ -30,7 +30,7 @@ import pug from '../../../../../static/images/icons/stack/pug.svg';
 import rails from '../../../../../static/images/icons/stack/rails.svg';
 import react from '../../../../../static/images/icons/stack/react.svg';
 import redux from '../../../../../static/images/icons/stack/redux.svg';
-import ruby from '../../../../../static/images/icons/stack/ruby.svg';
+import ruby from '../../../../../static/images/icons/stack/Ruby_logo.svg';
 import sass from '../../../../../static/images/icons/stack/sass.svg';
 import stripe from '../../../../../static/images/icons/stack/stripe.svg';
 import tailwind from '../../../../../static/images/icons/stack/tailwind.svg';

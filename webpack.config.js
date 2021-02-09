@@ -24,16 +24,8 @@ module.exports = {
           {
             loader: 'svg-url-loader',
             options: {
-              limit: 10000,
+              limit: 1000000,
             },
-          },
-        ],
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
           },
         ],
       },
