@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ToolBeltItem = ({ name, category, icon }) => (
   <div className="stack-item">
     <div className="stack-item-icon" title={name}>
-      <img src={icon} />
+      <img className="stack-image" src={icon} />
     </div>
     <p>{name}</p>
   </div>

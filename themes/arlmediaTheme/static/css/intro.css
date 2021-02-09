@@ -12,6 +12,12 @@
 .intro p {
   text-align: left;
   margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.link a {
+  display: flex;
+  justify-content: center;
 }
 
 .intro a {

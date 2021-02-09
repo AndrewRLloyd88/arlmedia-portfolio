@@ -18,6 +18,7 @@ export default function main() {
           </div>
         ))}
       </div>
+      <p className="motto">And adding more to the toolbelt every day...</p>
     </div>
   );
 }

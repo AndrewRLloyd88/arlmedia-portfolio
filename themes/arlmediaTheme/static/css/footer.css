@@ -31,3 +31,17 @@ footer svg {
   height: 15px;
   margin: 0.25rem;
 }
+
+.logo-info {
+  text-align: center;
+  font-size: 12px;
+  padding: 1em;
+}
+
+.logo-info a {
+  color: white;
+}
+
+.logo-info a:hover {
+  color: #ef8354;
+}
