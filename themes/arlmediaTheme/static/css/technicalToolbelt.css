@@ -30,7 +30,7 @@
   height: 40px;
 }
 
-p {
+.stack-name {
   text-align: center;
   font-size: 12px;
 }
@@ -41,8 +41,4 @@ p {
 
 .motto {
   font-size: 1.2em;
-}
-
-.author {
-  padding: 10px 0;
 }

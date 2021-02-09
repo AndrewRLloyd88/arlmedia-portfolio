@@ -23,6 +23,12 @@ footer svg {
 
 .built-with p {
   margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.author {
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 .copyright {

@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "ArlMedia"
 theme = "arlmediaTheme"
 pygmentsUseClasses = true
+pygmentsCodefences = true 
 
 [params]
   header = "/images/header/64162562.jpeg"
