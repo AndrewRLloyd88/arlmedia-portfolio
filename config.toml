@@ -4,6 +4,10 @@ title = "ArlMedia"
 theme = "arlmediaTheme"
 pygmentsUseClasses = true
 
+[params]
+  header = "/images/header/64162562.jpeg"
+
+
 [menu]
   [[menu.main]]
     name = "Home"
