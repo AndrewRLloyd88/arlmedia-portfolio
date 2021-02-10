@@ -7,7 +7,11 @@ export default function main() {
       {projectData.map((project, i) => (
         <div className="project-inner">
           <div className="project-container">
-            <div className="project-description"> </div>
+            <div className="project-description">
+              <div className="project-desc-text">
+                <p>{project.description}</p>
+              </div>
+            </div>
             <img className="project-image" src={project.image}></img>
           </div>
           <div className="project-control-panel">

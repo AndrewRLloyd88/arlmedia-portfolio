@@ -85,11 +85,27 @@
   margin-top: -5px;
 }
 
+.project-desc-text {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s ease-in-out;
+}
+
 .project-description:hover {
   background-color: #222831;
 }
 
+.project-description:hover .project-desc-text {
+  color: white;
+}
+
 .project-description:hover + .project-image {
   transition: 0.8s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
