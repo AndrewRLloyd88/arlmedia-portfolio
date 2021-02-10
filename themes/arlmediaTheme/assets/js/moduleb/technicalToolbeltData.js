@@ -45,6 +45,7 @@ import stripe from '../../../../../static/images/icons/stack/stripe.svg';
 import storybook from '../../../../../static/images/icons/stack/storybook-icon.svg';
 import tailwind from '../../../../../static/images/icons/stack/tailwind.svg';
 import typescript from '../../../../../static/images/icons/stack/typescript.svg';
+import unity3d from '../../../../../static/images/icons/stack/unity.svg';
 import vue from '../../../../../static/images/icons/stack/vue.svg';
 import webpack from '../../../../../static/images/icons/stack/webpack.svg';
 import yarn from '../../../../../static/images/icons/stack/yarn.svg';
@@ -220,6 +221,10 @@ export const technicalToolbeltData = [
       {
         name: 'Amazon S3',
         icon: awss3,
+      },
+      {
+        name: 'Unity3D',
+        icon: unity3d,
       },
     ],
   },

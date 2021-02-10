@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { projectData } from './projectData';
 
 export default function main() {
-  const [quote, setQuote] = useState('');
-
-  useEffect(() => {
-    axios.get('https://api.kanye.rest').then((res) => {
-      setQuote(res.data.quote);
-    });
-  }, []);
-
   return (
-    <div>
-      <h1>Hello</h1>
-      <p>{quote}</p>
+    <div className="project">
+      {projectData.map((project, i) => (
+        <div className="project-inner">
+          <div className="project-container">
+            <div className="project-description"> </div>
+            <img className="project-image" src={project.image}></img>
+          </div>
+          <div className="project-control-panel">
+            <p className="project-name">{project.name}</p>
+            <div className="project-buttons">
+              <button>Code</button>
+              <button>Demo</button>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
