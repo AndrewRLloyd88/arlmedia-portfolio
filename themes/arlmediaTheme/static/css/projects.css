@@ -86,14 +86,21 @@
 }
 
 .project-desc-text {
-  width: 75%;
+  width: 85%;
   height: 100%;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 0);
+  transition: 0.5s ease-in-out;
+  padding-top: 10px;
+}
+
+.project-description img {
+  opacity: 0;
   transition: 0.5s ease-in-out;
 }
 
@@ -105,7 +112,38 @@
   color: white;
 }
 
+.project-description:hover img {
+  opacity: 1;
+}
+
 .project-description:hover + .project-image {
   transition: 0.8s ease-in-out;
   transform: scale(1.1);
+}
+
+.stack-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.stack-row {
+  width: 100%;
+  display: flex;
+}
+
+.stack-icon .stack-image {
+  width: 20px;
+  margin: 0 5px;
+  justify-content: center;
+}
+
+.stack-type-title {
+  padding-right: 5px;
+}
+
+.desc {
+  margin-top: 0;
+  margin-bottom: 0;
 }

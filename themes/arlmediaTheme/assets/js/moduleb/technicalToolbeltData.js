@@ -10,6 +10,7 @@ import circleci from '../../../../../static/images/icons/stack/circleci.svg';
 import cypress from '../../../../../static/images/icons/stack/cypress.svg';
 import express from '../../../../../static/images/icons/stack/express.svg';
 import featherjs from '../../../../../static/images/icons/stack/feathersjs.svg';
+import featurepeek from '../../../../../static/images/icons/stack/featurepeek.svg';
 import figma from '../../../../../static/images/icons/stack/figma.svg';
 import gatsby from '../../../../../static/images/icons/stack/gatsby.svg';
 import gimp from '../../../../../static/images/icons/stack/gimp.svg';
@@ -22,6 +23,7 @@ import inkscape from '../../../../../static/images/icons/stack/inkscape.svg';
 import intercom from '../../../../../static/images/icons/stack/intercom.svg';
 import invision from '../../../../../static/images/icons/stack/invision.svg';
 import jest from '../../../../../static/images/icons/stack/jest.svg';
+import jquery from '../../../../../static/images/icons/stack/jquery.svg';
 import js from '../../../../../static/images/icons/stack/js.svg';
 import mailchimp from '../../../../../static/images/icons/stack/mailchimp.svg';
 import mapbox from '../../../../../static/images/icons/stack/mapbox.svg';
@@ -85,16 +87,16 @@ export const technicalToolbeltData = [
         icon: sass,
       },
       {
+        name: 'jQuery',
+        icon: jquery,
+      },
+      {
         name: 'Bootstrap',
         icon: bootstrap,
       },
       {
         name: 'FeatherJS',
         icon: featherjs,
-      },
-      {
-        name: 'Vue',
-        icon: vue,
       },
       {
         name: 'Material-UI',
@@ -209,6 +211,10 @@ export const technicalToolbeltData = [
       {
         name: 'Netlify',
         icon: netlify,
+      },
+      {
+        name: 'FeaturePeek',
+        icon: featurepeek,
       },
       {
         name: 'Vercel',
