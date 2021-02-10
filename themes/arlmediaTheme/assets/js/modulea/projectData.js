@@ -93,14 +93,14 @@ export const projectData = [
     description:
       'Feeling bored? Find an activity to do using the Random Activity Generator.',
     image: '/images/projects/random.jpeg',
-    github: '',
+    github: 'https://github.com/AndrewRLloyd88/random-activity-generator',
     demo: 'https://andrewrlloyd88.github.io/',
   },
   {
     name: 'Interactive Drum Kit',
     description: 'An interactive drum kit.',
     image: '/images/projects/drumkit.jpeg',
-    github: '',
+    github: 'https://github.com/AndrewRLloyd88/drum-kit',
     demo: 'https://eager-keller-24b512.netlify.app/',
   },
   {
@@ -108,7 +108,7 @@ export const projectData = [
     description:
       'A 2 player dice game that allows two people to settle disputes via dice roll.',
     image: '/images/projects/dicee.jpeg',
-    github: '',
+    github: 'https://github.com/AndrewRLloyd88/dicee-challenge',
     demo: 'https://zealous-blackwell-43276e.netlify.app/',
   },
   {
@@ -117,14 +117,14 @@ export const projectData = [
       'A mock startup website for your dog to find their perfect match.',
     image: '/images/projects/tindog.png',
     github: '',
-    demo: '',
+    demo: 'https://thirsty-heyrovsky-82e5a2.netlify.app/',
   },
   {
     name: 'Tipple',
     description: 'An app to search for your favourite cocktail drinks.',
     image: '/images/projects/tipple.jpeg',
     github: '',
-    demo: '',
+    demo: 'https://sharp-heisenberg-a59d5f.netlify.app/',
   },
   {
     name: 'Web Chat App',
