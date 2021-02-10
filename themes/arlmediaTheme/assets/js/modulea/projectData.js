@@ -116,7 +116,7 @@ export const projectData = [
     description:
       'A mock startup website for your dog to find their perfect match.',
     image: '/images/projects/tindog.png',
-    github: '',
+    github: 'https://github.com/AndrewRLloyd88/Tindog-Starter-Site',
     demo: 'https://thirsty-heyrovsky-82e5a2.netlify.app/',
   },
   {
