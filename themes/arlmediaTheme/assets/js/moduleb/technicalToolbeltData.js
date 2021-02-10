@@ -1,10 +1,12 @@
 import airtable from '../../../../../static/images/icons/stack/airtable.svg';
 import apollostack from '../../../../../static/images/icons/stack/apollostack.svg';
+import awss3 from '../../../../../static/images/icons/stack/aws-s3.svg';
 import babel from '../../../../../static/images/icons/stack/babel.svg';
 import bootstrap from '../../../../../static/images/icons/stack/bootstrap.svg';
 import chrome from '../../../../../static/images/icons/stack/chrome.svg';
 import contentful from '../../../../../static/images/icons/stack/contentful.svg';
 import css3 from '../../../../../static/images/icons/stack/css3.svg';
+import circleci from '../../../../../static/images/icons/stack/circleci.svg';
 import cypress from '../../../../../static/images/icons/stack/cypress.svg';
 import express from '../../../../../static/images/icons/stack/express.svg';
 import featherjs from '../../../../../static/images/icons/stack/feathersjs.svg';
@@ -172,6 +174,10 @@ export const technicalToolbeltData = [
         icon: npm,
       },
       {
+        name: 'circleCI',
+        icon: circleci,
+      },
+      {
         name: 'Yarn',
         icon: yarn,
       },
@@ -210,6 +216,10 @@ export const technicalToolbeltData = [
       {
         name: 'Namecheap',
         icon: namecheap,
+      },
+      {
+        name: 'Amazon S3',
+        icon: awss3,
       },
     ],
   },

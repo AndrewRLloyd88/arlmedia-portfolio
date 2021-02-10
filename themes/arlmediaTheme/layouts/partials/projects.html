@@ -1,0 +1,4 @@
+<section class="technical-toolbelt">
+  {{ $js := resources.Get "js/index.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}"></script>
+</section>
