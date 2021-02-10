@@ -120,6 +120,13 @@ export const projectData = [
     demo: 'https://thirsty-heyrovsky-82e5a2.netlify.app/',
   },
   {
+    name: 'Simon',
+    description: 'A clone of Simon the memory skill game.',
+    image: '/images/projects/simon.jpg',
+    github: 'https://github.com/AndrewRLloyd88/Simon',
+    demo: 'https://affectionate-archimedes-893cb2.netlify.app/',
+  },
+  {
     name: 'Tipple',
     description: 'An app to search for your favourite cocktail drinks.',
     image: '/images/projects/tipple.jpeg',
