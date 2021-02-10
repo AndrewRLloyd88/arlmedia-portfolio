@@ -17,8 +17,20 @@ export default function main() {
           <div className="project-control-panel">
             <p className="project-name">{project.name}</p>
             <div className="project-buttons">
-              <button>Code</button>
-              <button>Demo</button>
+              <button
+                onClick={() => {
+                  window.location.href = `${project.github}`;
+                }}
+              >
+                Code
+              </button>
+              <button
+                onClick={() => {
+                  window.location.href = `${project.demo}`;
+                }}
+              >
+                Demo
+              </button>
             </div>
           </div>
         </div>
