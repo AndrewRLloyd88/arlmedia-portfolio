@@ -2,7 +2,7 @@ import bootstrap from '../../../../../static/images/icons/stack/bootstrap.svg';
 import css3 from '../../../../../static/images/icons/stack/css3.svg';
 import circleci from '../../../../../static/images/icons/stack/circleci.svg';
 import cypress from '../../../../../static/images/icons/stack/cypress.svg';
-import express from '../../../../../static/images/icons/stack/express.svg';
+import express from '../../../../../static/images/icons/stack/expresswhite.svg';
 import featurepeek from '../../../../../static/images/icons/stack/featurepeek.svg';
 import heroku from '../../../../../static/images/icons/stack/heroku.svg';
 import html5 from '../../../../../static/images/icons/stack/html5.svg';
@@ -162,29 +162,28 @@ export const projectData = [
     github: 'https://github.com/AndrewRLloyd88/jungle-rails',
     demo: '',
     frontend: [ruby, bootstrap],
-    backend: [rails],
+    backend: [rails, stripe],
     test: null,
     deployment: null,
     frontendNames: ['Ruby', 'Bootstrap'],
-    backendNames: ['Rails'],
+    backendNames: ['Rails', 'Stripe'],
     testNames: null,
     deploymentNames: null,
   },
   {
     name: 'Interview Scheduler',
-    description:
-      'A single page interview scheduling app built using React, Storybook, NodeJS, Express. Tested using Cypress and Jest.',
+    description: 'A single page interview scheduling app',
     image: '/images/projects/interview-scheduler.png',
     github: 'https://github.com/AndrewRLloyd88/scheduler',
     demo: 'https://andrew-lloyd-scheduler.netlify.app',
-    frontend: [react, js, css3, materialui],
-    backend: null,
-    test: null,
-    deployment: [netlify],
+    frontend: [react, js, storybook, sass],
+    backend: [nodejs, express],
+    test: [jest, cypress],
+    deployment: [netlify, heroku, circleci],
     frontendNames: ['React', 'JavaScript', 'CSS3', 'materialui'],
-    backendNames: ['ruby', 'rails'],
+    backendNames: ['NodeJS', 'ExpressJS'],
     testNames: [],
-    deploymentNames: ['Netlify', 'Heroku'],
+    deploymentNames: ['Netlify', 'Heroku', 'CircleCI'],
   },
   {
     name: 'Quiz App',
