@@ -130,7 +130,7 @@ export const projectData = [
     name: 'Tipple',
     description: 'An app to search for your favourite cocktail drinks.',
     image: '/images/projects/tipple.jpeg',
-    github: '',
+    github: 'https://github.com/AndrewRLloyd88/tipple',
     demo: 'https://sharp-heisenberg-a59d5f.netlify.app/',
   },
   {
@@ -139,6 +139,6 @@ export const projectData = [
       'Ask !Chatbot what the weather will be like or chat with others in realtime via the chat client.',
     image: '/images/projects/chatbot.png',
     github: 'https://github.com/AndrewRLloyd88/Arlmediachatbotjs2',
-    demo: '',
+    demo: 'https://arlmediachatbotll2.herokuapp.com/',
   },
 ];
