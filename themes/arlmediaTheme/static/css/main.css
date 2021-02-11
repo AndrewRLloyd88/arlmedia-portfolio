@@ -12,3 +12,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.technical-toolbelt {
+  padding-top: 0;
+}

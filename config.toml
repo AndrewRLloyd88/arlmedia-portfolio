@@ -30,3 +30,16 @@ pygmentsCodefences = true
     pre = "info"
     url = "/about/"
     weight = 4
+  [[menu.main]]
+    name = "Contact"
+    pre = "mail"
+    url = "/contact/"
+    weight = 5
+  [[menu.main]]
+    name = "Resume"
+    pre = "file-text"
+    url = "https://github.com/AndrewRLloyd88/andrew_lloyd_resume/raw/master/andrew-lloyd-resume.pdf"
+    weight = 6
+
+
+
