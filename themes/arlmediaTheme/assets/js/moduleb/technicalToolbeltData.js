@@ -9,7 +9,6 @@ import css3 from '../../../../../static/images/icons/stack/css3.svg';
 import circleci from '../../../../../static/images/icons/stack/circleci.svg';
 import cypress from '../../../../../static/images/icons/stack/cypress.svg';
 import express from '../../../../../static/images/icons/stack/express.svg';
-import featherjs from '../../../../../static/images/icons/stack/feathersjs.svg';
 import featurepeek from '../../../../../static/images/icons/stack/featurepeek.svg';
 import figma from '../../../../../static/images/icons/stack/figma.svg';
 import gatsby from '../../../../../static/images/icons/stack/gatsby.svg';
@@ -95,10 +94,6 @@ export const technicalToolbeltData = [
       {
         name: 'Bootstrap',
         icon: bootstrap,
-      },
-      {
-        name: 'FeatherJS',
-        icon: featherjs,
       },
       {
         name: 'Material-UI',
