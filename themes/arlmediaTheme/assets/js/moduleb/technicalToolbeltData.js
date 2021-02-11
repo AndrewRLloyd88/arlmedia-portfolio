@@ -43,6 +43,7 @@ import react from '../../../../../static/images/icons/stack/react.svg';
 import redux from '../../../../../static/images/icons/stack/redux.svg';
 import ruby from '../../../../../static/images/icons/stack/Ruby_logo.svg';
 import sass from '../../../../../static/images/icons/stack/sass.svg';
+import socketio from '../../../../../static/images/icons/stack/socketio.svg';
 import stripe from '../../../../../static/images/icons/stack/stripe.svg';
 import storybook from '../../../../../static/images/icons/stack/storybook-icon.svg';
 import tailwind from '../../../../../static/images/icons/stack/tailwind.svg';
@@ -52,6 +53,7 @@ import vue from '../../../../../static/images/icons/stack/vue.svg';
 import webpack from '../../../../../static/images/icons/stack/webpack.svg';
 import yarn from '../../../../../static/images/icons/stack/yarn.svg';
 import vercel from '../../../../../static/images/icons/stack/vercel-icon.svg';
+import websocket from '../../../../../static/images/icons/stack/websocket.svg';
 import zapier from '../../../../../static/images/icons/stack/zapier-icon.svg';
 
 export const technicalToolbeltData = [
@@ -150,6 +152,14 @@ export const technicalToolbeltData = [
       {
         name: 'Next',
         icon: next,
+      },
+      {
+        name: 'SocketIO',
+        icon: socketio,
+      },
+      {
+        name: 'Websocket',
+        icon: websocket,
       },
     ],
   },

@@ -21,10 +21,12 @@ import react from '../../../../../static/images/icons/stack/react.svg';
 import redux from '../../../../../static/images/icons/stack/redux.svg';
 import ruby from '../../../../../static/images/icons/stack/Ruby_logo.svg';
 import sass from '../../../../../static/images/icons/stack/sass.svg';
+import socketio from '../../../../../static/images/icons/stack/socketio.svg';
 import stripe from '../../../../../static/images/icons/stack/stripe.svg';
 import storybook from '../../../../../static/images/icons/stack/storybook-icon.svg';
 import typescript from '../../../../../static/images/icons/stack/typescript.svg';
 import vercel from '../../../../../static/images/icons/stack/vercel-icon.svg';
+import websocket from '../../../../../static/images/icons/stack/websocket.svg';
 
 export const projectData = [
   {
@@ -303,13 +305,13 @@ export const projectData = [
     image: '/images/projects/chatbot.png',
     github: 'https://github.com/AndrewRLloyd88/Arlmediachatbotjs2',
     demo: 'https://arlmediachatbotll2.herokuapp.com/',
-    frontend: [react, js, css3, materialui],
-    backend: null,
+    frontend: [html5, css3, js],
+    backend: [socketio],
     test: null,
     deployment: [netlify],
-    frontendNames: ['React', 'JavaScript', 'CSS3', 'materialui'],
-    backendNames: ['ruby', 'rails'],
+    frontendNames: ['HTML5', 'CSS3', 'JavaScript'],
+    backendNames: ['socketIO'],
     testNames: [],
-    deploymentNames: ['Netlify', 'Heroku'],
+    deploymentNames: ['Netlify'],
   },
 ];
