@@ -26,7 +26,7 @@ import stripe from '../../../../../static/images/icons/stack/stripe.svg';
 import storybook from '../../../../../static/images/icons/stack/storybook-icon.svg';
 import typescript from '../../../../../static/images/icons/stack/typescript.svg';
 import vercel from '../../../../../static/images/icons/stack/vercel-icon.svg';
-import websocket from '../../../../../static/images/icons/stack/websocket.svg';
+import websocket from '../../../../../static/images/icons/stack/websocketwhite.svg';
 
 export const projectData = [
   {
