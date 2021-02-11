@@ -1,15 +1,14 @@
 <!-- modify this form HTML and place wherever you want your form -->
 
-<form action="https://formspree.io/f/xknpawgn" method="POST" onsubmit="this.reset();">
+<form id="contact-form" action="https://formspree.io/f/xknpawgn" method="POST">
   <label>
     <div class="formlabel">Your name:</div>
-    <input class="contact-field" type="text" name="_name" placeholder="Your name" required="true">
+    <input class="contact-field" type="text" name="_name" placeholder="Your name" required="true" autocomplete="on">
   </label>
   <label>
     <div class="formlabel">Your email:</div>
-    <input class="contact-field" type=" text" name="_replyto" placeholder="Your email"
-      pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b"
-      onblur="this.checkValidity();" oninvalid="this.setCustomValidity('Must input a valid email address')"
+    <input class="contact-field" type=" text" name="_replyto" placeholder="Your email" pattern="/[^@]+@[^.]+\..+/)"
+      oninvalid="this.setCustomValidity('Must input a valid email address')" autocomplete="on"
       oninput="this.setCustomValidity('')" required=" true">
   </label>
 
@@ -17,8 +16,59 @@
     <div class="formlabel">Your message:</div>
     <textarea class="contact-field" name="message" placeholder="Your message" rows="6" required="true"></textarea>
   </label>
+  <p id="my-form-status"></p>
 
   <!-- your other form fields go here -->
 
-  <button class="contact-submit-btn" type="submit">Send Message</button>
+  <button id="contact-button" class="contact-submit-btn" type="submit">Send Message</button>
 </form>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+
+    // get the form elements defined in your form HTML above
+
+    let form = document.getElementById("contact-form");
+    let button = document.getElementById("contact-button");
+    let status = document.getElementById("my-form-status");
+
+    // Success and Error functions for after the form is submitted
+
+    function success() {
+      form.reset();
+      status.innerHTML = "Thanks for sending your message!";
+      setTimeout(() => {
+        status.innerHTML = ""
+      }, 7000)
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      let data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    let xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
