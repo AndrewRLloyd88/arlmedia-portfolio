@@ -1,0 +1,24 @@
+<!-- modify this form HTML and place wherever you want your form -->
+
+<form action="https://formspree.io/f/xknpawgn" method="POST" onsubmit="this.reset();">
+  <label>
+    <div class="formlabel">Your name:</div>
+    <input class="contact-field" type="text" name="_name" placeholder="Your name" required="true">
+  </label>
+  <label>
+    <div class="formlabel">Your email:</div>
+    <input class="contact-field" type=" text" name="_replyto" placeholder="Your email"
+      pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b"
+      onblur="this.checkValidity();" oninvalid="this.setCustomValidity('Must input a valid email address')"
+      oninput="this.setCustomValidity('')" required=" true">
+  </label>
+
+  <label>
+    <div class="formlabel">Your message:</div>
+    <textarea class="contact-field" name="message" placeholder="Your message" rows="6" required="true"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button class="contact-submit-btn" type="submit">Send Message</button>
+</form>
