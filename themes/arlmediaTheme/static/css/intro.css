@@ -32,11 +32,13 @@
 
 @media only screen and (max-width: 500px) {
   .intro {
-    align-items: center;
-    display: inline;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   .motto {
     width: 50%;
+    margin: 0 auto;
   }
 }
