@@ -87,8 +87,28 @@
   font-size: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .panel p {
-    font-size: 1em;
+    font-size: 0.7em;
+    flex-wrap: wrap;
+  }
+
+  .panel p {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  }
+
+  .panel p:nth-child(2) {
+    font-size: 4em;
+  }
+
+  .panel.open {
+    flex: 5;
+    font-size: 24px;
+  }
+
+  .about.container {
+    width: 90%;
   }
 }
