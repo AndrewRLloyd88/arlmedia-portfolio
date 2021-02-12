@@ -88,29 +88,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .panel {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .panel p {
-    font-size: 0.2em;
+    font-size: 0.7em;
+    flex-wrap: wrap;
   }
 
   .panel p {
     text-transform: uppercase;
     font-family: 'Lato';
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 1em;
   }
 
   .panel p:nth-child(2) {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .panel.open {
     flex: 5;
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  .about.container {
+    width: 90%;
   }
 }
