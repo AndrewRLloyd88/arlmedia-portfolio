@@ -1,7 +1,9 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-<i data-feather="calendar"></i>
-<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+<div class="time-date">
+  <i data-feather="calendar"></i>
+  <time class="post-time" datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+</div>
 {{ with .Params.tags }}
 <i data-feather="tag"></i>
 {{ range . }}

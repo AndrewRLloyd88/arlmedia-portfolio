@@ -4,9 +4,17 @@
 </section>
 {{ range .Pages.ByPublishDate.Reverse }}
 <article class="container post">
-  <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  {{ partial "metadata.html" . }}
-  <p class="summary">{{ .Summary }}</p>
+  <div class="post-title-meta">
+    <h3><a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <div class="post-date-time">
+      {{ partial "metadata.html" . }}
+    </div>
+  </div>
+  <div class="summary">
+    <a class="article-image" href="{{ .RelPermalink }}">
+      <div class="summary">{{ .Summary }}</div>
+  </div>
+  </a>
 </article>
 
 {{ end }}

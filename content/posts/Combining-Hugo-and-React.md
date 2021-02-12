@@ -5,6 +5,10 @@ draft: false
 tags: ['Hugo', 'React']
 ---
 
+![Hugo](/images/blog-images/Hugo.png)
+
+<!--more-->
+
 I am currently in the process of re-designing my portfolio website and wanted to use the Hugo framework as it is lightning fast to build, comes with a neat blogging feature and is low maintenance.
 
 The reason for the re-design and moving framework is that the original site was just coded using html, css and js. I want to move the website over to a modern framework which is easier to maintain and apply some component based logic where appropriate.
@@ -12,8 +16,6 @@ The reason for the re-design and moving framework is that the original site was 
 ## Why Hugo?
 
 As I document my development journey Hugo offers a wonderful opportunity for a fully fledged blog feature. Generating a new post is as easy as running `hugo new blog posts/title` which then creates all the correct routing and with the layouts markdown can even handle things like tags, author, date created, pagination and order.
-
-<!--more-->
 
 The pain point with the old code:
 
