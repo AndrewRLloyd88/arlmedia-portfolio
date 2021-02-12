@@ -161,3 +161,15 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 577px) {
+  .projects h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .project {
+    width: 95%;
+  }
+}
