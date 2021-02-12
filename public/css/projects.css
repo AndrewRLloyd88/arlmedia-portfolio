@@ -1,0 +1,157 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.project-inner {
+  width: 33%;
+  padding: 5px;
+}
+
+.project-container {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #4f5d75;
+  border-radius: 10px;
+  z-index: 300;
+  position: relative;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  object-fit: scale-down;
+}
+
+.project-control-panel {
+  background-color: #222831;
+  margin-top: -30px;
+  padding-top: 60px;
+  z-index: -1000;
+  padding: 5px;
+  height: 120px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+}
+
+.project-name {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.project-buttons button {
+  margin-right: 10px;
+  background-color: #4f5d75;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+
+.project-buttons button:hover {
+  background-color: #ef8354;
+}
+
+.project-buttons button:active {
+  border: 1px solid #4f5d75;
+  background-color: white;
+  color: #4f5d75;
+}
+
+.project-description {
+  width: 100%;
+  height: 100%;
+  background-color: #22283100;
+  position: absolute;
+  z-index: 2000;
+  transition: 0.5s ease-in-out;
+  margin-top: -5px;
+}
+
+.project-desc-text {
+  width: 85%;
+  height: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s ease-in-out;
+  padding-top: 10px;
+}
+
+.project-description img {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.project-description:hover {
+  background-color: #222831;
+}
+
+.project-description:hover .project-desc-text {
+  color: white;
+}
+
+.project-description:hover img {
+  opacity: 1;
+}
+
+.project-description:hover + .project-image {
+  transition: 0.8s ease-in-out;
+  transform: scale(1.1);
+}
+
+.stack-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.stack-row {
+  width: 100%;
+  display: flex;
+}
+
+.stack-icon .stack-image {
+  width: 20px;
+  margin: 0 5px;
+  justify-content: center;
+}
+
+.stack-type-title {
+  padding-right: 5px;
+}
+
+.desc {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  .project-inner {
+    width: 50%;
+  }
+}

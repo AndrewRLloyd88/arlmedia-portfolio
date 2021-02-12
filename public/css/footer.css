@@ -23,6 +23,12 @@ footer svg {
 
 .built-with p {
   margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.author {
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 .copyright {
@@ -30,4 +36,32 @@ footer svg {
   width: 15px;
   height: 15px;
   margin: 0.25rem;
+}
+
+.logo-info {
+  text-align: center;
+  font-size: 12px;
+  padding: 1em;
+}
+
+.logo-info a {
+  color: white;
+}
+
+.logo-info a:hover {
+  color: #ef8354;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 0.7em;
+}
+
+.footer-links a:hover {
+  color: #ef8354;
 }

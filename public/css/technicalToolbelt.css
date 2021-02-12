@@ -1,0 +1,50 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stack-list-category-items {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+
+.stack-list {
+  width: 54%;
+  margin: 0 auto;
+}
+
+.stack-item-icon {
+  margin: 4px;
+
+  border: 2px solid black;
+  color: black;
+  padding: 16px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack-image {
+  width: 40px;
+  height: 40px;
+}
+
+.stack-name {
+  text-align: center;
+  font-size: 12px;
+}
+
+.technical-toolbelt {
+  text-align: center;
+}
+
+.motto {
+  font-size: 1.2em;
+}

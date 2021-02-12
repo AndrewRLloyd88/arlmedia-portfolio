@@ -1,7 +1,7 @@
 /* Nav and Top Menu Styling*/
 
 nav {
-  background-color: #ef8354;
+  background-color: #222831;
   height: 64px;
 }
 
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #4f5d75;
+  color: #ef8354;
 }
 
 nav span {
