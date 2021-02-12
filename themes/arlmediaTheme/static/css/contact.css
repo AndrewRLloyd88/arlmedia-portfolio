@@ -60,3 +60,45 @@ form {
   text-align: center;
   font-size: 1.1em;
 }
+
+@media only screen and (max-width: 1129px) {
+  .contact-submit-btn {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 903px) {
+  .contact-submit-btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .contact-submit-btn {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .formlabel {
+    width: 90%;
+  }
+}
