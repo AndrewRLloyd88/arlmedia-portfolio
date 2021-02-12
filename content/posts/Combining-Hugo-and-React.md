@@ -5,7 +5,7 @@ draft: false
 tags: ['Hugo', 'React']
 ---
 
-![Hugo](/images/blog-images/Hugo.png)
+![Hugo](/images/blog-images/Hugo.png#header)
 
 <!--more-->
 
