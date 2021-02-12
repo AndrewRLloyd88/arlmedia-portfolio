@@ -20,5 +20,13 @@ img[src*='#header'] {
 
   .single-post {
     text-align: center;
+    padding-right: 0;
+  }
+
+  .single-post h2 {
+    padding-right: 0;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: left;
   }
 }
