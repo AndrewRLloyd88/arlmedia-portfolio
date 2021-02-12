@@ -150,8 +150,14 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1150px) {
   .project-inner {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .project-inner {
+    width: 100%;
   }
 }

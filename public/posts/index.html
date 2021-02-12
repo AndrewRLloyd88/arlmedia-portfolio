@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="/css/footer.css">
   <link rel="stylesheet" type="text/css" href="/css/projects.css">
   <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="/css/list.css">
+  <link rel="stylesheet" type="text/css" href="/css/single.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -124,7 +126,6 @@
             </g>
           </svg>
         </a>
-        </a>
         <a href="https://codepen.io/AndrewRLloyd88/" target="_blank" title="Codepen">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -145,11 +146,15 @@
 </section>
 
 <article class="container post">
-  <h3><a class="title" href="/posts/combining-hugo-and-react/">Combining Hugo and React</a></h3>
-  
+  <div class="post-title-meta">
+    <h3><a class="post-title" href="/posts/combining-hugo-and-react/">Combining Hugo and React</a></h3>
+    <div class="post-date-time">
+      
 
-<i data-feather="calendar"></i>
-<time datetime="2021-02-08">Feb 8, 2021</time>
+<div class="time-date">
+  <i data-feather="calendar"></i>
+  <time class="post-time" datetime="2021-02-08">Feb 8, 2021</time>
+</div>
 
 <i data-feather="tag"></i>
 
@@ -160,37 +165,13 @@
 <a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
 
 
-  <p class="summary"><p>I am currently in the process of re-designing my portfolio website and wanted to use the Hugo framework as it is lightning fast to build, comes with a neat blogging feature and is low maintenance.</p>
-<p>The reason for the re-design and moving framework is that the original site was just coded using html, css and js. I want to move the website over to a modern framework which is easier to maintain and apply some component based logic where appropriate.</p>
-<h2 id="why-hugo">Why Hugo?</h2>
-<p>As I document my development journey Hugo offers a wonderful opportunity for a fully fledged blog feature. Generating a new post is as easy as running <code>hugo new blog posts/title</code> which then creates all the correct routing and with the layouts markdown can even handle things like tags, author, date created, pagination and order.</p></p>
-</article>
-
-
-<article class="container post">
-  <h3><a class="title" href="/posts/my-first-post/">My First Post</a></h3>
-  
-
-<i data-feather="calendar"></i>
-<time datetime="2020-01-26">Jan 26, 2020</time>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/foo">foo</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/bar">bar</a>
-
-
-  <p class="summary"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
-aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
-Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis
-tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
-velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
-ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id
-semper risus in hendrerit gravida rutrum.</p></p>
+    </div>
+  </div>
+  <div class="summary">
+    <a class="article-image" href="/posts/combining-hugo-and-react/">
+      <div class="summary"><p><img src="/images/blog-images/Hugo.png#header" alt="Hugo"></p></div>
+  </div>
+  </a>
 </article>
 
 

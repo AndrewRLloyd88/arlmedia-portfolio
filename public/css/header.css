@@ -21,7 +21,7 @@
 }
 
 .header-img {
-  width: 15%;
+  width: 200px;
   border-radius: 50%;
   padding: 0 20px;
 }
@@ -45,4 +45,50 @@
 
 .socials a svg:hover {
   fill: #ef8354;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .header-img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .header-img {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+    padding-right: 50px;
+  }
+
+  .right .title {
+    text-align: left;
+    font-size: 1.4em;
+  }
+
+  .right h2 {
+    text-align: left;
+    font-size: 1.4em;
+  }
+
+  .socials {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .socials {
+    width: 10vw;
+  }
+
+  .socials a {
+    width: 24px;
+  }
+
+  .socials svg {
+    transform: scale(0.7);
+  }
 }
