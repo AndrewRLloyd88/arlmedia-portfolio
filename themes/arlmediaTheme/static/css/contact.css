@@ -73,9 +73,21 @@ form {
   }
 }
 
+@media only screen and (max-width: 753px) {
+  .contact-submit-btn {
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 717px) {
   form {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .contact h2 {
+    text-align: center;
   }
 }
 
