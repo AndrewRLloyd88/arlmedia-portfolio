@@ -416,6 +416,14 @@ I took the answer from that article and increased the limit in the options param
       },
 ```
 
-And hey presto:
+And hey presto!
 
 ![Icons](/images/blog-images/icons.png)
+
+The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I'd love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.
+
+It's been massively helpful to learn a different framework in Hugo, the site is performant and builds lightning fast and with the content pipeline has a lot of flexibility.
+
+There are definitely improvements I am seeking to add to the website as time goes on but I really feel I have improved the website from the prior version. The maintainability definitely feels like a huge weight off when it comes to updating content.
+
+I would like to find a way to automatically push the Public changes to my SiteGround hosting, and have looked into CircleCI, Jenkins and other methods to deploy but am yet to settle on a way right now to deploy smoothly and automatically via SiteGround so that is something I would like to do a bit more research on and if anyone has some suggestions feel free to reach out!

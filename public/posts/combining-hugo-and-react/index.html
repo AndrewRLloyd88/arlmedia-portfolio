@@ -422,11 +422,82 @@
     <span class="o">&lt;</span><span class="err">/div&gt;</span>
   <span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div><p><img src="/images/blog-images/portfolio_section.png" alt="Portfolio Section"></p>
+</code></pre></div><p>This code is ultimately easier to maintain it draws from a projectData object which I have defined in the following schema:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">projectData</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;MB-WYSIWYG Text Editor&#39;</span><span class="p">,</span>
+    <span class="nx">description</span><span class="o">:</span>
+      <span class="s1">&#39;A Rich Text Editor built for Mintbean’s Build Your Own Text Editor hackathon.&#39;</span><span class="p">,</span>
+    <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;/images/projects/wysiwyg.png&#39;</span><span class="p">,</span>
+    <span class="nx">github</span><span class="o">:</span> <span class="s1">&#39;https://github.com/AndrewRLloyd88/mb-text-editor&#39;</span><span class="p">,</span>
+    <span class="nx">demo</span><span class="o">:</span> <span class="s1">&#39;https://mb-wysiwyg-text-editor.netlify.app/&#39;</span><span class="p">,</span>
+    <span class="nx">frontend</span><span class="o">:</span> <span class="p">[</span><span class="nx">react</span><span class="p">,</span> <span class="nx">typescript</span><span class="p">,</span> <span class="nx">css3</span><span class="p">,</span> <span class="nx">materialui</span><span class="p">],</span>
+    <span class="nx">backend</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">test</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">deployment</span><span class="o">:</span> <span class="p">[</span><span class="nx">netlify</span><span class="p">],</span>
+    <span class="nx">frontendNames</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;React&#39;</span><span class="p">,</span> <span class="s1">&#39;TypeScript&#39;</span><span class="p">,</span> <span class="s1">&#39;CSS3&#39;</span><span class="p">,</span> <span class="s1">&#39;MaterialUI&#39;</span><span class="p">],</span>
+    <span class="nx">backendNames</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">testNames</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">deploymentNames</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Netlify&#39;</span><span class="p">],</span>
+  <span class="p">},</span>
+  <span class="c1">//more projects are below in the array
+</span></code></pre></div><p>The variables from the icons are imported at the top of this data file. This data object and all of the project properties are then mapped out in index.js. Further refactoring could be done to split all of the elements into seperate components in the future. This overall is much more maintainable as I would only have to change my project data in one place as opposed to copying and pasting HTML content. Map takes care of the rest in the index.js file.</p>
+<p><!-- raw HTML omitted -->The finished result:<!-- raw HTML omitted --></p>
+<p><img src="/images/blog-images/portfolio_section.png" alt="Portfolio Section"></p>
 <h2 id="how-to-add-more-than-one-react-style-entry-file">How to add more than one React Style Entry File</h2>
-<p>I needed to run two
-<a href="https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&amp;text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.">how to add more than one path to webpack</a></p>
+<p>I needed to run two React scripts one for my projects and one for my skills to map out in a similar way as the above. With the setup I currently had no way to define two entry and output files. After doing a bit of researching I came across this useful post:</p>
+<p><a href="https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&amp;text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.">how to add more than one path to webpack</a></p>
+<p>I set up the two modules as follows:</p>
+<p><img src="/images/blog-images/modules.png" alt="Modules"></p>
+<p>And set up my webpack config to use the two entry points and generate two output files:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;./themes/arlmediaTheme/assets/js/modulea/index.js&#39;</span><span class="p">,</span>
+    <span class="nx">projects</span><span class="o">:</span> <span class="s1">&#39;./themes/arlmediaTheme/assets/js/moduleb/projects.js&#39;</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;[name].js&#39;</span><span class="p">,</span>
+    <span class="nx">path</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;themes&#39;</span><span class="p">,</span> <span class="s1">&#39;arlmediaTheme&#39;</span><span class="p">,</span> <span class="s1">&#39;assets&#39;</span><span class="p">,</span> <span class="s1">&#39;js&#39;</span><span class="p">),</span>
+  <span class="p">},</span>
+  <span class="c1">//...
+</span></code></pre></div><p>The idea is that this setup can take in index.js and projects.js from the <code>'./themes/arlmediaTheme/assets/js/[your module]</code> path and output the files elsewhere the main.js and projects.js that get output in the /js directory are the minified and transpiled versions of the JSX files. The above method is slated as a bit of a workaround but generated the correct results for my needs.</p>
+<h2 id="svg-limit-errors">SVG Limit errors</h2>
+<p>I also encountered some issues whilst using SVGs at first due to the custom setup with webpack. Initially all of my SVG resources were coming back 404 despite having the correct path. At one point a lot of .SVG files were being generated with a minified name and the browser was clearly not recieving the correct files:</p>
+<p><code>module.exports = __webpack_public_path__ + &quot;images/code.61e3a3939c2f93f30ac21419625c9a4f.jpg&quot;</code></p>
+<p>This was what the file path was looking like. To remedy this i did a bit of research on StackOverflow:</p>
+<p><a href="https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work">Using Images with Webpack React Won&rsquo;t work</a></p>
+<p>This article pointed me to removing url loader and setting up svg-url-loader in the webpack config.js:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.svg$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;svg-url-loader&#39;</span><span class="p">,</span>
+            <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+              <span class="nx">limit</span><span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+</code></pre></div><p>This solved the first issue but I still had several .SVGs which would not load. That is when I did a bit more digging and found this article:</p>
 <p><a href="https://stackoverflow.com/questions/42395452/webpack-2-svg-files-give-404-error/42420701">increasing limit when 404 errors occur with SVGs</a></p>
+<p>I took the answer from that article and increased the limit in the options param:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.svg$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;svg-url-loader&#39;</span><span class="p">,</span>
+            <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+              <span class="nx">limit</span><span class="o">:</span> <span class="mi">1000000</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+</code></pre></div><p>And hey presto!</p>
+<p><img src="/images/blog-images/icons.png" alt="Icons"></p>
+<p>The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I&rsquo;d love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.</p>
+<p>It&rsquo;s been massively helpful to learn a different framework in Hugo, the site is performant and builds lightning fast and with the content pipeline has a lot of flexibility.</p>
+<p>There are definitely improvements I am seeking to add to the website as time goes on but I really feel I have improved the website from the prior version. The maintainability definitely feels like a huge weight off when it comes to updating content.</p>
+<p>I would like to find a way to automatically push the Public changes to my SiteGround hosting, and have looked into CircleCI, Jenkins and other methods to deploy but am yet to settle on a way right now to deploy smoothly and automatically via SiteGround so that is something I would like to do a bit more research on and if anyone has some suggestions feel free to reach out!</p>
 </article>
 <footer>
   <p class="footer text-center author">Handcrafted by Andrew Lloyd
