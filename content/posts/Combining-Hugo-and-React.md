@@ -345,7 +345,77 @@ The variables from the icons are imported at the top of this data file. This dat
 
 ## How to add more than one React Style Entry File
 
-I needed to run two React scripts one for my projects and
+I needed to run two React scripts one for my projects and one for my skills to map out in a similar way as the above. With the setup I currently had no way to define two entry and output files. After doing a bit of researching I came across this useful post:
+
 [how to add more than one path to webpack](https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.)
 
+I set up the two modules as follows:
+
+![Modules](/images/blog-images/modules.png)
+
+And set up my webpack config to use the two entry points and generate two output files:
+
+```javascript
+module.exports = {
+  entry: {
+    index: './themes/arlmediaTheme/assets/js/modulea/index.js',
+    projects: './themes/arlmediaTheme/assets/js/moduleb/projects.js',
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'themes', 'arlmediaTheme', 'assets', 'js'),
+  },
+  //...
+```
+
+The idea is that this setup can take in index.js and projects.js from the `'./themes/arlmediaTheme/assets/js/[your module]` path and output the files elsewhere the main.js and projects.js that get output in the /js directory are the minified and transpiled versions of the JSX files. The above method is slated as a bit of a workaround but generated the correct results for my needs.
+
+## SVG Limit errors
+
+I also encountered some issues whilst using SVGs at first due to the custom setup with webpack. Initially all of my SVG resources were coming back 404 despite having the correct path. At one point a lot of .SVG files were being generated with a minified name and the browser was clearly not recieving the correct files:
+
+`module.exports = __webpack_public_path__ + "images/code.61e3a3939c2f93f30ac21419625c9a4f.jpg"`
+
+This was what the file path was looking like. To remedy this i did a bit of research on StackOverflow:
+
+[Using Images with Webpack React Won't work](https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work)
+
+This article pointed me to removing url loader and setting up svg-url-loader in the webpack config.js:
+
+```javascript
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
+```
+
+This solved the first issue but I still had several .SVGs which would not load. That is when I did a bit more digging and found this article:
+
 [increasing limit when 404 errors occur with SVGs](https://stackoverflow.com/questions/42395452/webpack-2-svg-files-give-404-error/42420701)
+
+I took the answer from that article and increased the limit in the options param:
+
+```javascript
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 1000000,
+            },
+          },
+        ],
+      },
+```
+
+And hey presto:
+
+![Icons](/images/blog-images/icons.png)
