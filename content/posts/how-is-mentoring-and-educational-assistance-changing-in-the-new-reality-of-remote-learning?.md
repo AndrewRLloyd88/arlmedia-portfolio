@@ -2,6 +2,7 @@
 title: 'How Is Mentoring and Educational Assistance Changing in the New Reality of Remote Learning?'
 date: 2020-10-17T10:54:09-08:00
 draft: false
+tags: ['Mentoring', 'Education', 'Industry', 'Research']
 ---
 
 ![](/images/blog-images/mentoring/0_cQM-WNZ8wKDFIbmv.jpg#header)
