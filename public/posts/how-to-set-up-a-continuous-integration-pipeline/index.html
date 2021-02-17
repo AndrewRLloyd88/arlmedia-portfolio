@@ -65,7 +65,7 @@ I am always looking to connect for opportunities and find a way to bring my know
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   
   
-  <title>ArlMedia | Posts</title>
+  <title>ArlMedia | How To Set Up A Continuous Integration Pipeline with Github and Next.JS</title>
 </head><body>
   <div id="content"><div id="nav-border">
   <nav id="nav" class="nav">
@@ -187,245 +187,223 @@ I am always looking to connect for opportunities and find a way to bring my know
     </div>
   </div>
 </section>
-<section class="posts container wrapper">
-  <h2>Posts</h2>
+<section class="posts container single-post">
+  <h2>How To Set Up A Continuous Integration Pipeline with Github and Next.JS</h2>
 </section>
-
 <article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/how-to-set-up-a-continuous-integration-pipeline/">How To Set Up A Continuous Integration Pipeline with Github and Next.JS</a></h3>
-    <div class="post-date-time">
-      
+  
 
 <div class="time-date">
   <i data-feather="calendar"></i>
   <time class="post-time" datetime="2021-02-16">Feb 16, 2021</time>
 </div>
 
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/how-to-set-up-a-continuous-integration-pipeline/">
-      <div class="summary"><p><img src="https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header" alt=""></p></div>
-  </div>
-  </a>
+  <br><br>
+  <p><img src="https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header" alt=""></p>
+<h3 id="how-to-set-up-a-continuous-integration-pipeline-with-github-andnextjs">How To Set Up A Continuous Integration Pipeline with Github and Next.JS</h3>
+<p>I wanted to learn a bit more about Continuous Integration Pipelines, so I took the opportunity with <a href="https://www.linkedin.com/in/npwoodcock/">Nicole Woodcock</a> working on <a href="https://www.mintbean.io/meets/988938b2-f615-414d-8b5b-7be96b49bec6">MB Javascript Hacks: Social Justice Hack Week</a>.</p>
+<h3 id="what-is-continuous-integration">What is Continuous Integration?</h3>
+<p>Continuous integration safely allows multiple users to contribute to one repository on Github. In essence continuous integration gives us a safety net to stop us pushing bad or broken code to our production build and hence our deployment.</p>
+<p>We can write tests using a test runner like <a href="https://jestjs.io/">Jest</a> to check functional logic we write does what we expect it to do (or not do in some cases) What continuous integraton does is take it a step further by automating the entire process of running our tests and deploying the application if all of the tests pass.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_ZpINHyTC7VPeXqs3R-NoKw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Jest test runner in action</p>
+<p>At first when we are writing features or adding dependencies we can use branches to build out a new feature for an application until we are happy with it. When satisfied with our feature, we will merge our changes to the main branch. Pushing our changes to the main repository branch (or the branch you set up to be watched by our Continuous integration watcher) on GitHub will start this automated pipeline.</p>
+<h3 id="setting-up-your-nextjs-project-forci">Setting Up Your Next.JS Project For CI</h3>
+<p>Assuming you have set up your Next.JS project using:</p>
+<p><code>npx create-next-app &lt;your-app&gt;</code></p>
+<p>You should have the starter shell for a Next.JS project. You can follow the <a href="https://nextjs.org/learn/basics/create-nextjs-app/setup">getting started guide here</a></p>
+<p>Next what you will want to do is add the testing dependencies to your package.json:</p>
+<p><code>npm install -D jest @testing-library/react @testing-library/jest-dom @testing-library/dom babel-jest</code></p>
+<p>or</p>
+<p><code>yarn add -D jest @testing-library/react @testing-library/jest-dom @testing-library/dom babel-jest</code></p>
+<p>The next step is to make a file called <code>.babelrc</code> in your root directory (see folder structure image below)</p>
+<p>In this file you will want to insert the following code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+<span class="s2">&#34;presets&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;next/babel&#34;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div><p>Now you will want to open up your <code>package.json</code> file, add the following section for <code>jest</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s2">&#34;jest&#34;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&#34;testPathIgnorePatterns&#34;</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s2">&#34;&lt;rootDir&gt;/.next/&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;&lt;rootDir&gt;/node_modules/&#34;</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;transform&#34;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&#34;^.+\\.(js|jsx|ts|tsx)$&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;rootDir&gt;/node_modules/babel-jest&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;moduleNameMapper&#34;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&#34;\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;rootDir&gt;/__mocks__/fileMock.js&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;\\.(css|less)$&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;rootDir&gt;/__mocks__/styleMock.js&#34;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>You will also want to add the code below in the scripts section of your <code>package.json</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">    <span class="s2">&#34;scripts&#34;</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&#34;test&#34;</span><span class="o">:</span> <span class="s2">&#34;jest&#34;</span><span class="p">},</span>
+</code></pre></div><p>Following this you should make a folder named <code>.circleci</code> at the root of the project and add a configuration file named <code>config.yml</code> inside of the .circleCI folder</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_9zsXqKuA5l4gNjS-p4g8Kw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Then this file, enter the following code:</p>
+<p>if you are using NPM:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">version</span><span class="o">:</span> <span class="mf">2.1</span>
+<span class="nx">jobs</span><span class="o">:</span>
+  <span class="nx">build</span><span class="o">:</span>
+    <span class="nx">working_directory</span><span class="o">:</span> <span class="o">~</span><span class="err">/repo</span>
+    <span class="nx">docker</span><span class="o">:</span>
+      <span class="o">-</span> <span class="nx">image</span><span class="o">:</span> <span class="nx">circleci</span><span class="o">/</span><span class="nx">node</span><span class="o">:</span><span class="mf">10.16.3</span>
+    <span class="nx">steps</span><span class="o">:</span>
+      <span class="o">-</span> <span class="nx">checkout</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">Update</span> <span class="nx">NPM</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="s2">&#34;sudo npm install -g npm@5&#34;</span>
+      <span class="o">-</span> <span class="nx">restore_cache</span><span class="o">:</span>
+          <span class="nx">key</span><span class="o">:</span> <span class="nx">dependency</span><span class="o">-</span><span class="nx">cache</span><span class="o">-</span><span class="p">{{</span> <span class="nx">checksum</span> <span class="s2">&#34;package.json&#34;</span> <span class="p">}}</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">Install</span> <span class="nx">Dependencies</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="nx">npm</span> <span class="nx">install</span>
+      <span class="o">-</span> <span class="nx">save_cache</span><span class="o">:</span>
+          <span class="nx">key</span><span class="o">:</span> <span class="nx">dependency</span><span class="o">-</span><span class="nx">cache</span><span class="o">-</span><span class="p">{{</span> <span class="nx">checksum</span> <span class="s2">&#34;package.json&#34;</span> <span class="p">}}</span>
+          <span class="nx">paths</span><span class="o">:</span>
+            <span class="o">-</span> <span class="p">.</span><span class="o">/</span><span class="nx">node_modules</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">Run</span> <span class="nx">tests</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="nx">npm</span> <span class="nx">run</span> <span class="nx">test</span> <span class="o">--</span><span class="nx">passWithNoTests</span>
+
+</code></pre></div><p>or if you are using Yarn:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">version</span><span class="o">:</span> <span class="mf">2.1</span>
+<span class="nx">jobs</span><span class="o">:</span>
+  <span class="nx">build</span><span class="o">:</span>
+    <span class="nx">working_directory</span><span class="o">:</span> <span class="o">~</span><span class="err">/repo</span>
+    <span class="nx">docker</span><span class="o">:</span>
+      <span class="o">-</span> <span class="nx">image</span><span class="o">:</span> <span class="nx">circleci</span><span class="o">/</span><span class="nx">node</span><span class="o">:</span><span class="mf">10.16.3</span>
+    <span class="nx">steps</span><span class="o">:</span>
+      <span class="o">-</span> <span class="nx">checkout</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">yarn</span> <span class="nx">update</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="s2">&#34;sudo npm install -g yarn&#34;</span>
+      <span class="o">-</span> <span class="nx">restore_cache</span><span class="o">:</span>
+          <span class="nx">key</span><span class="o">:</span> <span class="nx">dependency</span><span class="o">-</span><span class="nx">cache</span><span class="o">-</span><span class="p">{{</span> <span class="nx">checksum</span> <span class="s2">&#34;package.json&#34;</span> <span class="p">}}</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">Install</span> <span class="nx">Dependencies</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="nx">yarn</span> <span class="nx">install</span>
+      <span class="o">-</span> <span class="nx">save_cache</span><span class="o">:</span>
+          <span class="nx">key</span><span class="o">:</span> <span class="nx">dependency</span><span class="o">-</span><span class="nx">cache</span><span class="o">-</span><span class="p">{{</span> <span class="nx">checksum</span> <span class="s2">&#34;package.json&#34;</span> <span class="p">}}</span>
+          <span class="nx">paths</span><span class="o">:</span>
+            <span class="o">-</span> <span class="p">.</span><span class="o">/</span><span class="nx">node_modules</span>
+      <span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">yarn</span> <span class="nx">run</span> <span class="nx">tests</span>
+          <span class="nx">command</span><span class="o">:</span> <span class="nx">yarn</span> <span class="nx">run</span> <span class="nx">test</span> <span class="o">--</span><span class="nx">passWithNoTests</span>
+</code></pre></div><p>You will notice the — passWithNoTests flag after the run test command on the last line of the yml file. This needs to be removed when you add Jest tests to your project. For now it will allow the run test command to pass even if there are no Jest test suites present in your project.</p>
+<h3 id="setting-up-withcircleci">Setting Up With CircleCI</h3>
+<p>Once you have set up your project in your IDE, you will want to go to <a href="https://circleci.com/">CircleCI</a> and if you haven’t already make an account.</p>
+<p>Once you are in you will see a dashboard. From here you can select on the top left corner what account or organisation on Github you want to use and within those accounts will be the repo or repos you want to hook up to CircleCI. Press the Set Up Project button.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_XmG3b1NCj2CtfFaCOJ9k9Q.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>You may also need to give authorisation for CircleCI to access your repo or organisation this can be in the form of third party access</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_vRNhsDnW2BsLSu3zg1gC2Q.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Or through a deploy key:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_DmYZuuuLkCN8X_p0OVq8sw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>These will have to be set up on Github.</p>
+<p>You should now see a screen that looks like the below. Remember our config.yml file we wrote earlier? This is where we are going to bring that into play. Press the Use Existing Config button:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_aeOxAYOMXvq7-cjgvJ6bww.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Then you will be asked Have you added a config.yml file? We already have so you can press Start Building.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_I2I79O2L_1CLrO2O1yrCzw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>All being well the screen will progress onto your build screen. You can also view this on the dashboard. Your build will start to run with all the parameters we set in the config.yml file:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_79oDPA3C0JFSH2sEgcHK8Q.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>The build in the above picture failed because the line yarn add was incorrect in the YML file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">-</span> <span class="nx">run</span><span class="o">:</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="nx">Install</span> <span class="nx">Dependencies</span>
+<span class="c1">//yarn install is the correct syntax also .yml files are white space sensitive which can cause build failures
+</span><span class="c1"></span>          <span class="nx">command</span><span class="o">:</span> <span class="nx">yarn</span> <span class="nx">add</span>
+</code></pre></div><p>When we fix that line the below result happened:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_admZdaYxCE44Y5EIfpvdZw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Congratulations! If you are seeing a similar result to this screen with green ticks and success your automated continuous integration pipeline is now set up! If you don’t see this and the build fails examine the logs carefully in each part of the build to see what failed and what needs to be fixed. If you have tests running in Jest it could also be that your tests are not passing but your build would compile.</p>
+<h3 id="what-happens-now-when-i-create-a-pull-request-or-push-something-to-the-mainbranch">What happens now when I create a pull request or push something to the main branch?</h3>
+<p>When you submit the pull request or push some code to the main branch with the CI automation pipeline set up one of two things can happen. Your code can pass all of the tests and checks that CircleCI (and your deployment platform) needs to create a non crashing and successful build:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_8_yPl4FvZNZ8Q_aCUaS4uw.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>A successful pull request passing checks on CircleCI and Vercel — awaiting review</p>
+<p>These changes should be merged into the main branch with a tick</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_N9ECn7ROv-xUOVRtGDC-mA.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Or if there is a problem with some aspect of your code you can also have an unsuccessful pull request that can either be edited in GitHub to fix by the reviewer, or it can be commented on, or most likely it will be rejected.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_1QorRs3rUKgSRmEECWXvUA.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>In some cases depending on your project or organisation setup on github you may see a pull request or merge appear with a cross:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/circle-ci/1_m9H6-pYupFomSVy6k1CtWA.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>It’s not necessarily a bad thing to see this as the CI pipeline is trying to stop you deploying the code live!</p>
+<p>Credit goes to <a href="https://circleci.com/blog/building-postman-test-reports/">https://circleci.com/blog/building-postman-test-reports/</a> which contains even more detailed information about unit testing in Next.JS with Jest!</p>
 </article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/combining-hugo-and-react/">Combining Hugo and React</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2021-02-08">Feb 8, 2021</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/hugo">Hugo</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/combining-hugo-and-react/">
-      <div class="summary"><p><img src="/images/blog-images/hugo-react/Hugo.png#header" alt="Hugo"></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/building-a-beat-machine-with-react/">Building a Beat Machine With React</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-12-03">Dec 3, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/howlerjs">HowlerJS</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/building-a-beat-machine-with-react/">
-      <div class="summary"><p><img src="/images/blog-images/beat-machine/1_LjKIZSKxt0YPEniUmR1NsA.gif#header.width-800" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-3/">Creating a Pong Clone in Phaser JS Part 3</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-28">Nov 28, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-3/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt3/4250119467_ecbbfbce0d_b.jpg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-2/">Creating a Pong Clone in Phaser JS Part 2</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-25">Nov 25, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-2/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt2/1_VjYPM6gxld_xS-EN1L_pRA.jpeg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-1/">Creating a Pong Clone in Phaser JS Part 1</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-23">Nov 23, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-1/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt1/1_mpj36aaGse8i4wavnyZwhA.jpeg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/">How Is Mentoring and Educational Assistance Changing in the New Reality of Remote Learning?</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-10-17">Oct 17, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/mentoring">Mentoring</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/education">Education</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/industry">Industry</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/research">Research</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/">
-      <div class="summary"><p><img src="/images/blog-images/mentoring/0_cQM-WNZ8wKDFIbmv.jpg#header" alt=""></p>
-<p>Photo courtesy of <a href="/images/blog-images/mentoring/mentorship.jpg">codementor.io</a></p></div>
-  </div>
-  </a>
-</article>
-
-
 <footer>
   <p class="footer text-center author">Handcrafted by Andrew Lloyd
     <svg class="copyright" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copyright" role="img"
