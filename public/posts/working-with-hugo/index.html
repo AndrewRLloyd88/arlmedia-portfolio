@@ -65,7 +65,7 @@ I am always looking to connect for opportunities and find a way to bring my know
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   
   
-  <title>ArlMedia | Posts</title>
+  <title>ArlMedia | Working with Hugo — New Year, New Technology</title>
 </head><body>
   <div id="content"><div id="nav-border">
   <nav id="nav" class="nav">
@@ -187,266 +187,41 @@ I am always looking to connect for opportunities and find a way to bring my know
     </div>
   </div>
 </section>
-<section class="posts container wrapper">
-  <h2>Posts</h2>
+<section class="posts container single-post">
+  <h2>Working with Hugo — New Year, New Technology</h2>
 </section>
-
 <article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/combining-hugo-and-react/">Combining Hugo and React</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2021-02-08">Feb 8, 2021</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/hugo">Hugo</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/combining-hugo-and-react/">
-      <div class="summary"><p><img src="/images/blog-images/hugo-react/Hugo.png#header" alt="Hugo"></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/working-with-hugo/">Working with Hugo — New Year, New Technology</a></h3>
-    <div class="post-date-time">
-      
+  
 
 <div class="time-date">
   <i data-feather="calendar"></i>
   <time class="post-time" datetime="2021-01-05">Jan 5, 2021</time>
 </div>
 
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/working-with-hugo/">
-      <div class="summary"><p><img src="/images/blog-images/working-with-hugo/1_edrHHUk9_xuhacDZEHLJaw.jpeg#header" alt=""></p></div>
-  </div>
-  </a>
+  <br><br>
+  <p><img src="/images/blog-images/working-with-hugo/1_edrHHUk9_xuhacDZEHLJaw.jpeg#header" alt=""></p>
+<h4 id="how-to-format-an-image-to-be-a-link-inmarkdown">How to format an image to be a link in markdown</h4>
+<p>I am currently working on learning <a href="https://gohugo.io/">Hugo</a> following along with <a href="https://pragprog.com/titles/bhhugo/build-websites-with-hugo/">Build Websites with Hugo by Brian P. Hogan</a>. This was introduced to me by <a href="https://medium.com/u/ffdda1bb71c0">Tomas Gallucci</a> last year. Towards the end of the previous year I got up to about the 3rd chapter of the book. I can already see the potential with Hugo static site generation and what that will come in useful for in it’s archetype based page generation using markdown format.</p>
+<p>Markdown is something that I got acquainted with last year writing various different read-mes in my journey onto the web development scene. I took a lot of time writing different read-mes along the way in various levels of detail.</p>
+<p><img src="/images/blog-images/working-with-hugo/1_l0DSpxWN7a5YT_o00-P6lA.png" alt=""></p>
+<p>A readme for the forkitall project from last year</p>
+<p>Hugo uses markdown in a different way to give you a base template or in Hugo’s lingo archetype:</p>
+<p><img src="/images/blog-images/working-with-hugo/1_mruQXXMUfbfF6vLCiTjF5g.png" alt=""></p>
+<p>This acts as a base template for any page generated using this archetype</p>
+<p>With the command <code>hugo new projects/jabberwocky.md</code> you end up with a new markdown file generated in the tree:</p>
+<p><img src="/images/blog-images/working-with-hugo/1_Aas7-uO2WfdxzCzFCm7Xzg.png" alt=""></p>
+<p>The projects.md has in effect acted as a boilerplate and created jabberwocky.MD. Jabberwocky.MD then works in conjunction with the layouts folder, the style.css and in this case specifically the projects folder and the single.html file:</p>
+<p><img src="/images/blog-images/working-with-hugo/1*fuwCnjzp5g9NCbDDfYEapA.png" alt=""></p>
+<p>To generate this page:</p>
+<p><img src="/images/blog-images/working-with-hugo/1_jSOQThAzcku8D_6jcIx8RA.png" alt=""></p>
+<p>Now we come to the interesting bit! At the end of chapter 4 the gauntlet is thrown down to try creating a content type and archetype for yourself. So having videography work and considering the ease at which you can put boilerplated material together I thought I would create videos as a content type.</p>
+<p><img src="/images/blog-images/working-with-hugo/1_T58MvVEcfk0OwirVODjs6w.png" alt=""></p>
+<p>I wanted my banner sized image to go to a page. And after trying various combinations this is what I found worked:</p>
+<p>[![Alt](<a href="https://via.placeholder.com/640x150">https://via.placeholder.com/640x150</a>)](<a href="https://www.youtube.com/watch?v=soZ9rBhGM5k&amp;feature=youtu.be">https://www.youtube.com/watch?v=soZ9rBhGM5k&amp;feature=youtu.be</a>)</p>
+<p>This image now links to the video I made a while back for Anglican Campus spirituality!</p>
+<p><img src="/images/blog-images/working-with-hugo/1_GH7X8LAx2H7hWij1Y52HVA.gif" alt=""></p>
+<p>I will continue to post on my progress and the things I am learning about Hugo as I go along during the course of the tutorial. You can find progress in my <a href="https://github.com/AndrewRLloyd88/hugo-porfolio-template">repo here</a>.</p>
 </article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/how-to-set-up-a-continuous-integration-pipeline/">How To Set Up A Continuous Integration Pipeline with Github and Next.JS</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-12-04">Dec 4, 2020</time>
-</div>
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/how-to-set-up-a-continuous-integration-pipeline/">
-      <div class="summary"><p><img src="https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/building-a-beat-machine-with-react/">Building a Beat Machine With React</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-12-03">Dec 3, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/howlerjs">HowlerJS</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/building-a-beat-machine-with-react/">
-      <div class="summary"><p><img src="/images/blog-images/beat-machine/1_LjKIZSKxt0YPEniUmR1NsA.gif#header.width-800" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-3/">Creating a Pong Clone in Phaser JS Part 3</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-28">Nov 28, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-3/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt3/4250119467_ecbbfbce0d_b.jpg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-2/">Creating a Pong Clone in Phaser JS Part 2</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-25">Nov 25, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-2/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt2/1_VjYPM6gxld_xS-EN1L_pRA.jpeg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/creating-a-pong-clone-in-phaser-js-part-1/">Creating a Pong Clone in Phaser JS Part 1</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-11-23">Nov 23, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/creating-a-pong-clone-in-phaser-js-part-1/">
-      <div class="summary"><p><img src="/images/blog-images/pong-pt1/1_mpj36aaGse8i4wavnyZwhA.jpeg#header" alt=""></p></div>
-  </div>
-  </a>
-</article>
-
-
-<article class="container post">
-  <div class="post-title-meta">
-    <h3><a class="post-title" href="/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/">How Is Mentoring and Educational Assistance Changing in the New Reality of Remote Learning?</a></h3>
-    <div class="post-date-time">
-      
-
-<div class="time-date">
-  <i data-feather="calendar"></i>
-  <time class="post-time" datetime="2020-10-17">Oct 17, 2020</time>
-</div>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/mentoring">Mentoring</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/education">Education</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/industry">Industry</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/research">Research</a>
-
-
-    </div>
-  </div>
-  <div class="summary">
-    <a class="article-image" href="/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/">
-      <div class="summary"><p><img src="/images/blog-images/mentoring/0_cQM-WNZ8wKDFIbmv.jpg#header" alt=""></p>
-<p>Photo courtesy of <a href="/images/blog-images/mentoring/mentorship.jpg">codementor.io</a></p></div>
-  </div>
-  </a>
-</article>
-
-
 <footer>
   <p class="footer text-center author">Handcrafted by Andrew Lloyd
     <svg class="copyright" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copyright" role="img"
