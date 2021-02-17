@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HowlerJS on ArlMedia</title>
+    <link>https://arlmedia.ca/tags/howlerjs/</link>
+    <description>Recent content in HowlerJS on ArlMedia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 18:17:12 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/howlerjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Beat Machine With React</title>
+      <link>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</link>
+      <pubDate>Thu, 03 Dec 2020 18:17:12 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/beat-machine/1_LjKIZSKxt0YPEniUmR1NsA.gif#header.width-800&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

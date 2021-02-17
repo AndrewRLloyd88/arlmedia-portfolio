@@ -16,5 +16,14 @@
       <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/hugo-react/Hugo.png#header&#34; alt=&#34;Hugo&#34;&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Building a Beat Machine With React</title>
+      <link>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</link>
+      <pubDate>Thu, 03 Dec 2020 18:17:12 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/beat-machine/1_LjKIZSKxt0YPEniUmR1NsA.gif#header.width-800&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

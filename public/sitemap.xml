@@ -48,17 +48,27 @@
   </url>
   
   <url>
-    <loc>https://arlmedia.ca/posts/creating-a-pong-clone-in-phaser-js-part-3/</loc>
-    <lastmod>2020-11-28T16:44:32-08:00</lastmod>
+    <loc>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</loc>
+    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://arlmedia.ca/tags/development/</loc>
-    <lastmod>2020-11-28T16:44:32-08:00</lastmod>
+    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/howlerjs/</loc>
+    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://arlmedia.ca/tags/javascript/</loc>
+    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/creating-a-pong-clone-in-phaser-js-part-3/</loc>
     <lastmod>2020-11-28T16:44:32-08:00</lastmod>
   </url>
   
