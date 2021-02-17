@@ -75,8 +75,8 @@ For the positioning the scores will be placed at 128 and 672 in the X axis and 1
 
 The result looks like this:
 
-| ![](https://cdn-images-1.medium.com/max/800/0*UYTghCYnlJ0D7o5k) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_UYTghCYnlJ0D7o5k.png) |
+| :------------------------------------------------------: |
 
 ### Scoring Goals
 
@@ -121,8 +121,8 @@ If the left side is hit by the ball player 2’s score will increase, and if the
 
 The result should look like this:
 
-| ![](https://cdn-images-1.medium.com/max/800/1*JWuCuPt7fQVA40g1W32mbA.gif) |
-| :-----------------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/1_JWuCuPt7fQVA40g1W32mbA.gif) |
+| :------------------------------------------------------------: |
 
 I made a slight modification to the ball in this instance with the following line:
 
@@ -158,8 +158,8 @@ align: “center”,
 
 Resulting in this:
 
-| ![](https://cdn-images-1.medium.com/max/800/0*4pyN2TjuLpy6Dz_k) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_4pyN2TjuLpy6Dz_k.png) |
+| :------------------------------------------------------: |
 
 Now players will definitely have an indication of who’s who on the field!
 
@@ -224,8 +224,8 @@ resetSceneWhenP1Scores();
 
 We end up with a result that looks like this:
 
-| ![](https://cdn-images-1.medium.com/max/800/0*ndWQ0BYh3wT6Gtwb) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_ndWQ0BYh3wT6Gtwb.png) |
+| :------------------------------------------------------: |
 
 Great the scene is set up for the next round! We can duplicate this logic by recreating the function for when Player2 scores, changing the position of the ball to where player 1 is:
 
@@ -403,8 +403,8 @@ if (ball.body.blocked.left) {
 }
 ```
 
-| ![](https://cdn-images-1.medium.com/max/800/0*nyf6qLfN-SnNTvea) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_nyf6qLfN-SnNTvea.gif) |
+| :------------------------------------------------------: |
 
 ### Finishing the game
 
@@ -548,11 +548,11 @@ If I would have had more time to optimise the win screens ideally I would have f
 
 When the player or CPU reaches 7 points the results will look as follows with the added logic:
 
-| ![](https://cdn-images-1.medium.com/max/800/0*0KlGcu_w6GrU5ocV) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_0KlGcu_w6GrU5ocV.png) |
+| :------------------------------------------------------: |
 
-| ![](https://cdn-images-1.medium.com/max/800/0*7KxBmHSaYZL_jWs4) |
-| :-------------------------------------------------------------: |
+| ![](/images/blog-images/pong-pt3/0_7KxBmHSaYZL_jWs4.png) |
+| :------------------------------------------------------: |
 
 This wraps up part 3 of the technical writeup for PhaserPong. Part 4 will cover:
 

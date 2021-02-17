@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <title>Andrew Lloyd - Full Stack Web Developer</title>
+  <meta name="title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta name="description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arlmedia.ca/">
+  <meta property="og:title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta property="og:description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+  <meta property="og:image" content="https://arlmedia.ca/images/header/64162562.jpeg">
+
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://arlmedia.ca/">
+  <meta property="twitter:title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta property="twitter:description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+  <meta property="twitter:image" content="https://arlmedia.ca/images/header/64162562.jpeg">
+
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/about.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/intro.css">
+  <link rel="stylesheet" type="text/css" href="/css/technicalToolbelt.css">
+  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="/css/projects.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="/css/list.css">
+  <link rel="stylesheet" type="text/css" href="/css/single.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  
+  <title>ArlMedia | Creating a Pong Clone in Phaser JS Part 3</title>
+</head><body>
+  <div id="content"><div id="nav-border">
+  <nav id="nav" class="nav">
+    <div class="menu container">
+      <div class="links">
+        
+        <a class="nav-link" href="/">
+          
+          
+          <i data-feather="home"></i> 
+          
+          
+          Home
+        </a>
+        
+        <a class="nav-link" href="/projects/">
+          
+          
+          <i data-feather="code"></i> 
+          
+          
+          Projects
+        </a>
+        
+        <a class="nav-link" href="/posts/">
+          
+          
+          <i data-feather="pen-tool"></i> 
+          
+          
+          Posts
+        </a>
+        
+        <a class="nav-link" href="/about/">
+          
+          
+          <i data-feather="info"></i> 
+          
+          
+          About
+        </a>
+        
+        <a class="nav-link" href="/contact/">
+          
+          
+          <i data-feather="mail"></i> 
+          
+          
+          Contact
+        </a>
+        
+        <a class="nav-link" href="https://github.com/AndrewRLloyd88/andrew_lloyd_resume/raw/master/andrew-lloyd-resume.pdf">
+          
+          
+          <i data-feather="file-text"></i> 
+          
+          
+          Resume
+        </a>
+        
+      </div>
+      <span class="logo justify-content-right">{ Andrew Lloyd }</span>
+    </div>
+  </nav>
+</div><section class="header">
+  <div id="home-jumbotron" class="jumbotron container wrapper flex-col"><img class="header-img" src="/images/header/64162562.jpeg" alt=""><div class="right">
+      <h1 class="title">Andrew Lloyd</h1>
+      <h2>// Full Stack Web Developer</h2>
+      <div class="socials">
+        <a href="https://github.com/AndrewRLloyd88" target="_blank" style="
+        text-decoration: none;">
+          <svg width="256px" height="250px" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path
+                d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z">
+              </path>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/andrewlloyd01/" target="_blank">
+          <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path
+                d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055">
+              </path>
+            </g>
+          </svg>
+
+        </a>
+        <a href="https://andrew-lloyd01.medium.com/" target="_blank">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path
+              d="M24 24h-24v-24h24v24zm-4.03-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z" />
+          </svg>
+        </a>
+        <a href="https://www.npmjs.com/settings/andrewrlloyd88/packages" target="_blank">
+          <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <polygon fill="#4f5d75" points="0 256 0 0 256 0 256 256"></polygon>
+              <polygon points="48 48 208 48 208 208 176 208 176 80 128 80 128 208 48 208"></polygon>
+            </g>
+          </svg>
+        </a>
+        <a href="https://codepen.io/AndrewRLloyd88/" target="_blank" title="Codepen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-codepen">
+            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+            <line x1="12" y1="2" x2="12" y2="8.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="posts container single-post">
+  <h2>Creating a Pong Clone in Phaser JS Part 3</h2>
+</section>
+<article class="container post">
+  
+
+<div class="time-date">
+  <i data-feather="calendar"></i>
+  <time class="post-time" datetime="2020-11-28">Nov 28, 2020</time>
+</div>
+
+<i data-feather="tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/phaserjs">PhaserJS</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/javascript">JavaScript</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/pong">Pong</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
+
+
+  <br><br>
+  <p><img src="/images/blog-images/pong-pt3/4250119467_ecbbfbce0d_b.jpg#header" alt=""></p>
+<p>Continuing on from <a href="/posts/creating-a-pong-clone-in-phaser-js-part-1/">Part 1</a> and <a href="/posts/creating-a-pong-clone-in-phaser-js-part-2/">Part 2</a>, Part 3 will be focused on:</p>
+<ul>
+<li>Adding and detecting scores</li>
+<li>Indicating which side a player starts on via colours</li>
+<li>Serving the ball from a player perspective</li>
+<li>Serving the ball from beginning of the game</li>
+<li>Serving the ball once scored against</li>
+<li>Game over condition</li>
+</ul>
+<p>Referring to the user stories for the Mintbean.io Pong hackathon I find it logical as a developer to group sets of core requirement user stories together to tackle in a logical way:</p>
+<blockquote>
+<p><em>As a user, I can see that if a ball misses a paddle the opposing side will get a point</em></p>
+<p><em>As a user, If someone scores 7 points they will will win the game</em></p>
+<p><em>As a user, the court will appear and an Indication as of which side I am on will be shown</em></p>
+<p><em>As a user, I will start with the ball, to serve I shall press either the left or right arrow key to serve based on court position</em></p>
+<p><em>As a user, after I serve I will see the ball travel across the court</em></p>
+</blockquote>
+<p>I’m going to first work on implementing the scores and having them display to tackle the requirement for a score and also to indicate which player is which to and end user:</p>
+<h3 id="adding-thescores">Adding the scores</h3>
+<p>The first thing I want to do is to add a visual representation of the score to the game view.</p>
+<p>There are two primary ways to include scores in Phaser, either via Text or Bitmap. Text is the simpler way as bitmap relies on having a texture file as well as an XML or JSON file to parse the character positions. For this example I will use the text method.</p>
+<p>First declare some variables to hold our text score for Player 1 and Player 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">score1_text</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">score2_text</span><span class="p">;</span>
+</code></pre></div><p>In the create method we can add a text object to add our two scores to the game world.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">score1</span><span class="o">*</span><span class="nx">text</span> <span class="o">=</span> <span class="err">\</span><span class="nx">_this</span><span class="o">*</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="err">“</span><span class="mi">0</span><span class="err">”</span><span class="p">,</span> <span class="p">{</span>
+<span class="nx">font</span><span class="o">:</span> <span class="err">“</span><span class="mi">64</span><span class="nx">px</span> <span class="nx">Gabriella</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">fill</span><span class="o">:</span> <span class="err">“#</span><span class="nx">FF0000</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">align</span><span class="o">:</span> <span class="err">“</span><span class="nx">center</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">});</span>
+
+<span class="nx">score2</span><span class="o">*</span><span class="nx">text</span> <span class="o">=</span> <span class="err">\</span><span class="nx">_this</span><span class="o">*</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="mi">672</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="err">“</span><span class="mi">0</span><span class="err">”</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="nx">font</span><span class="o">:</span> <span class="err">“</span><span class="mi">64</span><span class="nx">px</span> <span class="nx">Gabriella</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">fill</span><span class="o">:</span> <span class="err">“#</span><span class="mi">0000</span><span class="nx">FF</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">align</span><span class="o">:</span> <span class="err">“</span><span class="nx">center</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">});</span>
+</code></pre></div><p>The fourth property is an object that you can use to declare your font, fill color and alignment. For now I have set the colors to be #FF0000 or red and #0000FF for blue.</p>
+<p>For the positioning the scores will be placed at 128 and 672 in the X axis and 10 in the Y axis.</p>
+<p>The result looks like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_UYTghCYnlJ0D7o5k.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<h3 id="scoring-goals">Scoring Goals</h3>
+<p>The scores don’t do anything right now, and they must score whenever one or the other player misses the ball, so we can declare two variables to hold both players’ scores:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">score1</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">score2</span><span class="p">;</span>
+
+<span class="nx">And</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">scores</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">create</span><span class="p">()</span> <span class="kd">function</span><span class="o">:</span>
+
+<span class="c1">//set scores
+</span><span class="c1"></span>
+<span class="nx">score1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">score2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div><p>In the update() function we can set score1_text and score2_text to equal our score values:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//setting score text to be value of our scores
+</span><span class="c1"></span>
+<span class="nx">score1_text</span><span class="p">.</span><span class="nx">text</span> <span class="o">=</span> <span class="nx">score1</span><span class="p">;</span>
+
+<span class="nx">score2_text</span><span class="p">.</span><span class="nx">text</span> <span class="o">=</span> <span class="nx">score2</span><span class="p">;</span>
+</code></pre></div><p>And then we can add some conditional logic within our update() to check if the ball has collided with either the left or right side of the board:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//check to see if the ball collides with left or right
+</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">left</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score2</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score1</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>If the left side is hit by the ball player 2’s score will increase, and if the right side is hit player 1’s score will increase:</p>
+<p>The result should look like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/1_JWuCuPt7fQVA40g1W32mbA.gif" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>I made a slight modification to the ball in this instance with the following line:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">ball</span><span class="p">.</span><span class="nx">setScale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">);</span>
+</code></pre></div><p>As we can see the score is increasing on both sides, however we are lacking a reset function and it can be somewhat tricky right now to score past the ultra defensive CPU. We also need a way of addressing the identity of the player so it is clear to know which side is which.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//draw player respective text
+</span><span class="c1"></span>
+<span class="nx">p1Text</span> <span class="o">=</span> <span class="nx">_this_</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="err">“</span><span class="nx">P1</span><span class="o">:</span><span class="err">”</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="nx">font</span><span class="o">:</span> <span class="err">“</span><span class="mi">48</span><span class="nx">px</span> <span class="nx">Gabriella</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">fill</span><span class="o">:</span> <span class="err">“#</span><span class="nx">FF0000</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">align</span><span class="o">:</span> <span class="err">“</span><span class="nx">center</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">});</span>
+
+<span class="nx">cpuText</span> <span class="o">=</span> <span class="nx">_this_</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="mi">550</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="err">“</span><span class="nx">CPU</span><span class="o">:</span><span class="err">”</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="nx">font</span><span class="o">:</span> <span class="err">“</span><span class="mi">48</span><span class="nx">px</span> <span class="nx">Gabriella</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">fill</span><span class="o">:</span> <span class="err">“#</span><span class="mi">0000</span><span class="nx">FF</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">align</span><span class="o">:</span> <span class="err">“</span><span class="nx">center</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">});</span>
+</code></pre></div><p>Resulting in this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_4pyN2TjuLpy6Dz_k.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Now players will definitely have an indication of who’s who on the field!</p>
+<h3 id="serving-theball">Serving the ball</h3>
+<p>Right now the ball just kind of randomly spawns and moves from the center point, we want to be able to serve the ball as per the requirements the user should press the right key to serve it. There are many ways to tackle this, the simplest of which being, placing the ball statically and using the player bat to “serve”</p>
+<p>I set up a function called resetSceneWhenP1Scores()</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//this function resets the playfield if P1 scores
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">resetSceneWhenP1Scores</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paddleP1</span><span class="p">);</span>
+
+  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="c1">//reset the paddles position
+</span><span class="c1"></span>
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">790</span><span class="p">;</span>
+
+  <span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="c1">//set players velocity to 0,0
+</span><span class="c1"></span>
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">setVelocity</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
+
+  <span class="c1">// paddleP2.body.velocity = 0;
+</span><span class="c1"></span>
+  <span class="c1">//reset the balls position
+</span><span class="c1"></span>
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">700</span><span class="p">;</span>
+
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="c1">//set balls velocity to 0,0
+</span><span class="c1"></span>
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocity</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div><p>The logic basically resets the position of both paddles, the ball and sets the players’ velocity to 0 upon scoring.</p>
+<p>The function can be called in the conditional block checking if the ball has collided with the right side:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">score1</span><span class="o">++</span><span class="p">;</span>
+
+<span class="nx">resetSceneWhenP1Scores</span><span class="p">();</span>
+
+<span class="p">}</span>
+</code></pre></div><p>We end up with a result that looks like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_ndWQ0BYh3wT6Gtwb.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Great the scene is set up for the next round! We can duplicate this logic by recreating the function for when Player2 scores, changing the position of the ball to where player 1 is:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//this function resets the playfield if P2 scores
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">resetSceneWhenP2Scores</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paddleP1</span><span class="p">);</span>
+
+  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="c1">//reset the paddles position
+</span><span class="c1"></span>
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">790</span><span class="p">;</span>
+
+  <span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="c1">//set players velocity to 0,0
+</span><span class="c1"></span>
+  <span class="nx">paddleP1</span><span class="p">.</span><span class="nx">setVelocity</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
+
+  <span class="c1">// paddleP2.body.velocity = 0;
+</span><span class="c1"></span>
+  <span class="c1">//reset the balls position
+</span><span class="c1"></span>
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+
+  <span class="c1">//set balls velocity to 0,0
+</span><span class="c1"></span>
+  <span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocity</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">left</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score2</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="nx">resetSceneWhenP2Scores</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score1</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="nx">resetSceneWhenP1Scores</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><p>however at this stage there is a problem, if player 1 scores there is no mechanism to stop player 1 charging over to player 2&rsquo;s side and stealing their launch, and with a human player 2 vice versa. As player 2 (CPU) only moves following the ball’s velocity this should not be a problem with the CPU. A mechanism should be adds a state that can check if the ball is launched which disables movement for the opposite player. When the ball is launched we can change this state to true, which will enable controls for both sides, until a point is scored and the scene reset which would switch our launched check and our disabled controls back to false.</p>
+<p>Let’s start by adding a state at the top of the file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nx">This</span> <span class="nx">should</span> <span class="nx">be</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">false</span> <span class="nx">by</span> <span class="k">default</span>
+
+<span class="nx">The</span> <span class="nx">following</span> <span class="nx">three</span> <span class="nx">variables</span> <span class="nx">should</span> <span class="nx">be</span> <span class="nx">created</span> <span class="nx">also</span><span class="o">:</span>
+
+<span class="kd">let</span> <span class="nx">p1scored</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">p2scored</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">firstLaunch</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</code></pre></div><p>We need to track if the ball launch is with the score at 0–0. The firstLaunch variable will only be used once in this instance. The p1scored and p2scored variables can be used as a quick toggler to check which player scored when the conditional logic is written to check what to do after a reset.</p>
+<p>Inside of the update function I created a launch_ball function which has a block of conditional checks nested inside of a primary conditional check</p>
+<p>The first if statement checks to see if the ball has not been launched, at the start of a new round this check should always be true. At this point we want to disable the player controls by setting the player’s maxVelocity at this point to 0</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">launch_ball</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">ball_launched</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div><p>The three conditions or states of our game we need to check is as follows</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="k">if</span> <span class="p">(</span><span class="nx">cursors</span><span class="p">.</span><span class="nx">right</span><span class="p">.</span><span class="nx">isDown</span> <span class="o">&amp;&amp;</span> <span class="nx">p2scored</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setBounceY</span><span class="p">(</span><span class="nx">Phaser</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">FloatBetween</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">));</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityX</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityY</span><span class="p">(</span><span class="mi">150</span> <span class="err">—</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="err">\</span><span class="o">*</span> <span class="mi">400</span><span class="p">);</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">p2scored</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="k">return</span> <span class="p">(</span><span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">cursors</span><span class="p">.</span><span class="nx">right</span><span class="p">.</span><span class="nx">isDown</span> <span class="o">&amp;&amp;</span> <span class="nx">firstLaunch</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setBounceY</span><span class="p">(</span><span class="nx">Phaser</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">FloatBetween</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">));</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityX</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityY</span><span class="p">(</span><span class="mi">150</span> <span class="err">—</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="err">\</span><span class="o">*</span> <span class="mi">400</span><span class="p">);</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">firstLaunch</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="k">return</span> <span class="p">(</span><span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">p1scored</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">paddleP1</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">maxVelocity</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="nx">p1scored</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setBounceY</span><span class="p">(</span><span class="nx">Phaser</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">FloatBetween</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">));</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityX</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="nx">ball</span><span class="p">.</span><span class="nx">setVelocityY</span><span class="p">(</span><span class="mi">150</span> <span class="err">—</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="err">\</span><span class="o">*</span> <span class="mi">400</span><span class="p">);</span>
+
+<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+
+<span class="k">return</span> <span class="p">(</span><span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>We call the function directly after declaring it as the first action in Update()</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">launch_ball</span><span class="p">();</span>
+</code></pre></div><p>We now need to update our score checker and set the variable to true for the corresponding scorer</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">left</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score2</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="nx">resetSceneWhenP2Scores</span><span class="p">();</span>
+
+  <span class="nx">p2scored</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+  <span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">blocked</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">score1</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="nx">resetSceneWhenP1Scores</span><span class="p">();</span>
+
+  <span class="nx">p1scored</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+  <span class="nx">ball_launched</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_nyf6qLfN-SnNTvea.gif" alt=""></th>
+</tr>
+</thead>
+</table>
+<h3 id="finishing-thegame">Finishing the game</h3>
+<p>To win the game first we need some win screens to go to.</p>
+<p>For for sake of expedience for the hackathon I decided the easiest way to go about managing end game conditions was to going to duplicate the existing WinScreen.js file three times inside the same directory using the following naming conventions:</p>
+<p>Cpuwins.js, P1Wins.js, P2wins.js</p>
+<p>The first thing to do with CPU wins is to rename the key as each scene inside Phaser has to have a unique key, this one I named cpuwinscreen</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">Phaser</span> <span class="nx">from</span> <span class="err">“</span><span class="nx">phaser</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">graphics</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">cursors</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="k">new</span> <span class="nx">Phaser</span><span class="p">.</span><span class="nx">Class</span><span class="p">({</span>
+
+<span class="nx">Extends</span><span class="o">:</span> <span class="nx">Phaser</span><span class="p">.</span><span class="nx">Scene</span><span class="p">,</span>
+
+<span class="nx">initialize</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+<span class="nx">Phaser</span><span class="p">.</span><span class="nx">Scene</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">_this_</span><span class="p">,</span> <span class="p">{</span> <span class="nx">key</span><span class="o">:</span> <span class="err">“</span><span class="nx">cpuwinscreen</span><span class="err">”</span> <span class="p">});</span>
+
+<span class="p">},</span>
+
+<span class="nx">create</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+<span class="nx">cursors</span> <span class="o">=</span> <span class="nx">_this_</span><span class="p">.</span><span class="nx">input</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">createCursorKeys</span><span class="p">();</span>
+
+<span class="nx">graphics</span> <span class="o">=</span> <span class="nx">_this_</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">graphics</span><span class="p">();</span>
+
+<span class="nx">graphics</span><span class="p">.</span><span class="nx">fillStyle</span><span class="p">(</span><span class="mh">0x000000</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+<span class="nx">graphics</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">);</span>
+
+<span class="nx">_this_</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="err">“</span><span class="nx">CPU</span> <span class="nx">Wins</span><span class="o">!</span><span class="err">”</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="nx">font</span><span class="o">:</span> <span class="err">“</span><span class="mi">48</span><span class="nx">px</span> <span class="nx">Gabriella</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">fill</span><span class="o">:</span> <span class="err">“#</span><span class="mi">0000</span><span class="nx">FF</span><span class="err">”</span><span class="p">,</span>
+
+<span class="nx">align</span><span class="o">:</span> <span class="err">“</span><span class="nx">center</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span>
+
+<span class="nx">update</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+<span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">_this_</span><span class="p">.</span><span class="nx">scene</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="err">“</span><span class="nx">mainmenu</span><span class="err">”</span><span class="p">);</span>
+
+<span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+
+<span class="p">},</span>
+
+<span class="p">});</span>
+</code></pre></div><p>I modified the file by adding another text object with different properties on to colour coordinate the win screen text. I also used a setTimeout function in the update to return to the main menu scene after three seconds. I repeated the same process for the P1 and P2 win screens.</p>
+<p>To use the new scenes We must import our scenes into index.js as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="kr">import</span> <span class="nx">Phaser</span> <span class="nx">from</span> <span class="err">“</span><span class="nx">phaser</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">MainMenu</span> <span class="nx">from</span> <span class="err">“</span><span class="p">.</span><span class="o">/</span><span class="nx">scenes</span><span class="o">/</span><span class="nx">MainMenu</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Game</span> <span class="nx">from</span> <span class="err">“</span><span class="p">.</span><span class="o">/</span><span class="nx">scenes</span><span class="o">/</span><span class="nx">Game</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">P1wins</span> <span class="nx">from</span> <span class="err">“</span><span class="p">.</span><span class="o">/</span><span class="nx">scenes</span><span class="o">/</span><span class="nx">P1wins</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">P2wins</span> <span class="nx">from</span> <span class="err">“</span><span class="p">.</span><span class="o">/</span><span class="nx">scenes</span><span class="o">/</span><span class="nx">P2wins</span><span class="err">”</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Cpuwins</span> <span class="nx">from</span> <span class="err">“</span><span class="p">.</span><span class="o">/</span><span class="nx">scenes</span><span class="o">/</span><span class="nx">Cpuwins</span><span class="err">”</span><span class="p">;</span>
+
+<span class="c1">// Resolution setting for the game
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">resolution</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">width</span><span class="o">:</span> <span class="mi">800</span><span class="p">,</span>
+
+<span class="nx">height</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+
+<span class="p">};</span>
+
+<span class="c1">// Configuration for phaser
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">type</span><span class="o">:</span> <span class="nx">Phaser</span><span class="p">.</span><span class="nx">AUTO</span><span class="p">,</span>
+
+<span class="nx">width</span><span class="o">:</span> <span class="nx">resolution</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+
+<span class="nx">height</span><span class="o">:</span> <span class="nx">resolution</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+
+<span class="nx">physics</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="k">default</span><span class="o">:</span> <span class="err">“</span><span class="nx">arcade</span><span class="err">”</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="nx">scene</span><span class="o">:</span> <span class="err">\</span><span class="p">[</span><span class="nx">MainMenu</span><span class="p">,</span> <span class="nx">Game</span><span class="p">,</span> <span class="nx">P1wins</span><span class="p">,</span> <span class="nx">P2wins</span><span class="p">,</span> <span class="nx">Cpuwins</span><span class="err">\</span><span class="p">],</span>
+
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">game</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Phaser</span><span class="p">.</span><span class="nx">Game</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+</code></pre></div><p>We also need to add the scenes into the scene: array so that Phaser knows how to access and reference them in the scene object.</p>
+<p>The next change I made was in the Game.js file. A win condition is needed in the game instance to check for a win at 7 points with a simple equality check and the logic would move the scene on to the winners’ respective screen.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="kr">const</span> <span class="nx">checkWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">score1</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">_this_</span><span class="p">.</span><span class="nx">scene</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="err">“</span><span class="nx">p1winscreen</span><span class="err">”</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">score2</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">_this_</span><span class="p">.</span><span class="nx">scene</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="err">“</span><span class="nx">cpuwinscreen</span><span class="err">”</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="k">return</span><span class="p">;</span>
+
+<span class="p">};</span>
+</code></pre></div><p>If I would have had more time to optimise the win screens ideally I would have found a way to pass a value onto one win screen and make the content dynamic to save the amount of repetition of files and code in the project.</p>
+<p>When the player or CPU reaches 7 points the results will look as follows with the added logic:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_0KlGcu_w6GrU5ocV.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/pong-pt3/0_7KxBmHSaYZL_jWs4.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>This wraps up part 3 of the technical writeup for PhaserPong. Part 4 will cover:</p>
+<ul>
+<li>Add a second player game mode</li>
+<li>More menus and scenes</li>
+<li>Changes to 2nd player physics and velocity limitations</li>
+</ul>
+<p><a href="https://github.com/AndrewRLloyd88/pong-hackathon">You can find the progress on the repo for the project here</a></p>
+</article>
+<footer>
+  <p class="footer text-center author">Handcrafted by Andrew Lloyd
+    <svg class="copyright" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copyright" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+      <path
+        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z">
+      </path>
+    </svg>
+    2021
+  </p>
+  <div class="footer-links">
+    
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+    
+    <a class="nav-link" href="/projects/">
+      
+      Projects
+    </a>
+    
+    <a class="nav-link" href="/posts/">
+      
+      Posts
+    </a>
+    
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+    
+    <a class="nav-link" href="/contact/">
+      
+      Contact
+    </a>
+    
+    <a class="nav-link" href="https://github.com/AndrewRLloyd88/andrew_lloyd_resume/raw/master/andrew-lloyd-resume.pdf">
+      
+      Resume
+    </a>
+    
+  </div>
+  <div class="built-with">
+    <p>Made With</p>
+    <a href="https://gohugo.io/">
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-width="27" aria-label="Logo"
+        viewBox="0 0 1493 391">
+        <path fill="#ebb951" stroke="#fcd804"
+          d="M1345.211 24.704l112.262 64.305a43 43 0 0 1 21.627 37.312v142.237a40 40 0 0 1-20.702 35.037l-120.886 66.584a42 42 0 0 1-41.216-.389l-106.242-61.155a57 57 0 0 1-28.564-49.4V138.71a64 64 0 0 1 31.172-54.939l98.01-58.564a54 54 0 0 1 54.54-.503z" />
+        <path fill="#33ba91" stroke="#00a88a"
+          d="M958.07 22.82l117.31 66.78a41 41 0 0 1 20.72 35.64v139.5a45 45 0 0 1-23.1 39.32L955.68 369.4a44 44 0 0 1-43.54-.41l-105.82-61.6a56 56 0 0 1-27.83-48.4V140.07a68 68 0 0 1 33.23-58.44l98.06-58.35a48 48 0 0 1 48.3-.46z" />
+        <path fill="#0594cb" stroke="#0083c0"
+          d="M575.26 20.97l117.23 68.9a40 40 0 0 1 19.73 34.27l.73 138.67a48 48 0 0 1-24.64 42.2l-115.13 64.11a45 45 0 0 1-44.53-.42l-105.83-61.6a55 55 0 0 1-27.33-47.53V136.52a63 63 0 0 1 29.87-53.59l99.3-61.4a49 49 0 0 1 50.6-.56z" />
+        <path fill="#ff4088" stroke="#c9177e"
+          d="M195.81 24.13l114.41 66.54a44 44 0 0 1 21.88 38.04v136.43a48 48 0 0 1-24.45 41.82L194.1 370.9a49 49 0 0 1-48.48-.23L41.05 310.48a53 53 0 0 1-26.56-45.93V135.08a55 55 0 0 1 26.1-46.8l102.8-63.46a51 51 0 0 1 52.42-.69z" />
+        <path fill="#fff"
+          d="M1320.72 89.15c58.79 0 106.52 47.73 106.52 106.51 0 58.8-47.73 106.52-106.52 106.52-58.78 0-106.52-47.73-106.52-106.52 0-58.78 47.74-106.51 106.52-106.51zm0 39.57c36.95 0 66.94 30 66.94 66.94a66.97 66.97 0 0 1-66.94 66.94c-36.95 0-66.94-29.99-66.94-66.94a66.97 66.97 0 0 1 66.93-66.94h.01zm-283.8 65.31c0 47.18-8.94 60.93-26.81 80.58-17.87 19.65-41.57 27.57-71.1 27.57-27 0-48.75-9.58-67.61-26.23-20.88-18.45-36.08-47.04-36.08-78.95 0-31.37 11.72-58.48 32.49-78.67 18.22-17.67 45.34-29.18 73.3-29.18 33.77 0 68.83 15.98 90.44 47.53l-31.73 26.82c-13.45-25.03-32.94-33.46-60.82-34.26-30.83-.88-64.77 28.53-62.25 67.75 1.4 21.94 11.65 59.65 60.96 66.57 25.9 3.63 55.36-24.02 55.36-39.04H944.4v-37.5h92.5V194l.02.03zm-562.6-94.65h42.29v112.17c0 17.8.49 29.33 1.47 34.61 1.69 8.48 4.81 14.37 11.17 19.5 6.37 5.13 13.8 6.59 24.84 6.59 11.2 0 14.96-1.74 20.66-6.6 5.69-4.85 9.12-9.46 10.28-16.53 1.15-7.07 3.07-18.8 3.07-35.18V99.38h42.28v108.78c0 24.86-1.07 42.43-3.21 52.69-2.14 10.27-6.08 18.93-11.82 26-5.74 7.06-13.42 12.69-23.03 16.88-9.62 4.19-22.16 6.28-37.65 6.28-18.7 0-32.87-2.28-42.52-6.85-9.66-4.57-17.3-10.5-22.9-17.8-5.61-7.3-9.3-14.95-11.08-22.96-2.58-11.86-3.88-29.38-3.88-52.55V99.38h.03zM93.91 299.92V92.7h43.35v75.48h71.92V92.7h43.48v207.22h-43.48v-90.61h-71.92v90.61z" />
+      </svg>
+    </a>
+  </div>
+
+
+</footer><script src="/js/panels.js"></script><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></div>
+</body>
+
+</html>
