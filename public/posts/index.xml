@@ -6,16 +6,7 @@
     <description>Recent content in Posts on ArlMedia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Feb 2021 10:54:09 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How Is Mentoring and Educational Assistance Changing in the New Reality of Remote Learning?</title>
-      <link>https://arlmedia.ca/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/</link>
-      <pubDate>Tue, 16 Feb 2021 10:54:09 -0800</pubDate>
-      
-      <guid>https://arlmedia.ca/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/mentoring/0_cQM-WNZ8wKDFIbmv.jpg#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Mon, 08 Feb 2021 09:30:07 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combining Hugo and React</title>
       <link>https://arlmedia.ca/posts/combining-hugo-and-react/</link>
@@ -23,6 +14,16 @@
       
       <guid>https://arlmedia.ca/posts/combining-hugo-and-react/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/hugo-react/Hugo.png#header&#34; alt=&#34;Hugo&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How Is Mentoring and Educational Assistance Changing in the New Reality of Remote Learning?</title>
+      <link>https://arlmedia.ca/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/</link>
+      <pubDate>Sat, 17 Oct 2020 10:54:09 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/mentoring/0_cQM-WNZ8wKDFIbmv.jpg#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Photo courtesy of &lt;a href=&#34;https://arlmedia.ca/images/blog-images/mentoring/mentorship.jpg&#34;&gt;codementor.io&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
