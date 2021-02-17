@@ -133,7 +133,8 @@ The study explores how the collaborative apprenticeships model of learning can h
 
 The study they examine in detail looks at four phases and roles that “promote collaborative apprenticeships for technology integration in teaching communities.”⁸
 
-![The learning model explored looks at 4 phases of learning Introduction, Development, Proficiency and Mastery.](/images/blog-images/mentoring/0_P7hMxI-e9MKJtFuS.png)
+| ![The learning model explored looks at 4 phases of learning Introduction, Development, Proficiency and Mastery.](/images/blog-images/mentoring/0_P7hMxI-e9MKJtFuS.png) |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 The learning model explored looks at 4 phases of learning that mentees go through whilst studying methods to implement integrated classroom technologies
 
