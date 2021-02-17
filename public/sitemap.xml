@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://arlmedia.ca/</loc>
-    <lastmod>2021-02-16T19:09:35-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</loc>
-    <lastmod>2021-02-16T19:09:35-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arlmedia.ca/posts/</loc>
-    <lastmod>2021-02-16T19:09:35-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://arlmedia.ca/contact/</loc>
     <lastmod>2021-02-11T09:46:07-08:00</lastmod>
   </url>
@@ -33,12 +18,22 @@
   </url>
   
   <url>
+    <loc>https://arlmedia.ca/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arlmedia.ca/posts/combining-hugo-and-react/</loc>
     <lastmod>2021-02-08T09:30:07-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://arlmedia.ca/tags/hugo/</loc>
+    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/</loc>
     <lastmod>2021-02-08T09:30:07-08:00</lastmod>
   </url>
   
@@ -50,6 +45,11 @@
   <url>
     <loc>https://arlmedia.ca/tags/</loc>
     <lastmod>2021-02-08T09:30:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</loc>
+    <lastmod>2020-12-04T19:09:35-08:00</lastmod>
   </url>
   
   <url>
