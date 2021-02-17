@@ -1,6 +1,6 @@
 ---
 title: 'How To Set Up A Continuous Integration Pipeline with Github and Next.JS'
-date: 2021-02-16T19:09:35-08:00
+date: 2020-12-04T19:09:35-08:00
 draft: false
 ---
 
