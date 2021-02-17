@@ -44,7 +44,7 @@ At the same time it was a very exciting prospect! I was starting to experience w
 >
 > _help if I do get stuck has been a huge relief!”²_
 >
-> _“I was no longer afraid of hitting a problem_\*\*
+> _“I was no longer afraid of hitting a problem_
 >
 > _that I couldn’t solve. There would be no more long_
 >
@@ -123,9 +123,9 @@ Some requests still leave me feeling disappointed or frustrated, however I draw 
 - A mentor who treats me as an equal not as a subordinate.
 - A mentor who builds me up and gives me confidence, refraining from tearing me down and making me feel like a burden.
 
-**What Are Others Saying About Remote Mentoring/Assistance Requests?**
+### What Are Others Saying About Remote Mentoring/Assistance Requests?
 
-**Academic Research**
+#### Academic Research
 
 In ‘Promoting Technology integration through collaborative apprenticeships’⁵ Glazer, Hannafin & Song explore how teachers can benefit from a teaching community, when studying how to integrate technology into the classroom.
 
@@ -151,11 +151,12 @@ Online mentorship and assistance requests are a fairly new and emerging way to l
 
 The model above applies to a different area of teaching, however I feel shares some commonalities that could be theoretically applied to the phases of learning during assistance requests. During the peer review section I will highlight where these phases fit in with mentor instructional techniques.
 
-**In Production and industry**
+### In Production and industry
 
 Whilst academic research has exhibited the benefits of a community of teaching based learning, in tech it is far too common to have problematic mentors when trying to roll out a community based learning model.
 
-The article [‘Online Dev Communities: Stop scaring the new developers away](https://medium.com/@hinchman_amanda/online-dev-communities-stop-scaring-the-new-developers-away-b32a26a21edf)’⁹ sounded all too familiar to me in terms of my assistance request journey.The article spoke to me about some of the worst mentors I have encountered during assistance requests.
+The article [‘Online Dev Communities: Stop scaring the new developers away](https://medium.com/@hinchman_amanda/online-dev-communities-stop-scaring-the-new-developers-away-b32a26a21edf)’⁹ sounded all too familiar to me in terms of my assistance request journey.
+The article spoke to me about some of the worst mentors I have encountered during assistance requests.
 
 Some particular quotes of interest include:
 
@@ -179,17 +180,19 @@ With COVID-19 and remote learning becoming even more important, it could be argu
 
 This topic will be further explored in the section ‘does a mentor need to be more than a coder?’
 
-**Peers**
+### Peers
 
 As of October 16 2020 I conducted a [survey](https://forms.gle/SUm2kaXUCvabb7nP7) via the Lighthouse Labs’ slack, canvassing my peers as fellow learners across a few different cohorts. With a sample size of 17, I have provided the following data below. Some of the written questions can also be seen as a do’s and don’t list for both mentees and mentors, as well as some of the biggest flaws with the collaborative apprenticeship model.
 
 **How many mentor sessions have you had so far?**
 
-![](/images/blog-images/mentoring/0_n2TogrMXgBKTegCi.png)
+| ![](/images/blog-images/mentoring/0_n2TogrMXgBKTegCi.png) |
+| :-------------------------------------------------------: |
 
 **What percentage on average would you say have been helpful?**
 
-![](/images/blog-images/mentoring/0_Q3Sc0CDwMnaUSPZR.png)
+| ![](/images/blog-images/mentoring/0_Q3Sc0CDwMnaUSPZR.png) |
+| :-------------------------------------------------------: |
 
 **What are some techniques mentors have used that you have really liked or have really aided your learning or understanding?** _(I have added the phases explored in the academic research section into the responses to illustrate the collaborative apprenticeship model at work)_
 
@@ -219,11 +222,13 @@ As of October 16 2020 I conducted a [survey](https://forms.gle/SUm2kaXUCvabb7nP7
 
 **Do you feel mentor requests have sped up your learning and path to knowledge?**
 
-![](/images/blog-images/mentoring/0_BRxWrCtvedM37JCn.png)
+| ![](/images/blog-images/mentoring/0_BRxWrCtvedM37JCn.png) |
+| :-------------------------------------------------------: |
 
 **Do you feel mentor requests have deepened your understanding of the topic(s) you were seeking aid with?**
 
-![](/images/blog-images/mentoring/0_gXRMGnu5FFl8OZk-.png)
+| ![](/images/blog-images/mentoring/0_gXRMGnu5FFl8OZk-.png) |
+| :-------------------------------------------------------: |
 
 **What recommendations would you have for future learners using mentor requests?**
 
@@ -283,7 +288,7 @@ As of October 16 2020 I conducted a [survey](https://forms.gle/SUm2kaXUCvabb7nP7
 - More mentors so less wait time
 - More mentors on weekends and being able to see their work for motivation and/or discussion
 
-**Analysis Of Peer Feedback**
+### Analysis Of Peer Feedback
 
 15 respondents have found over 60% of their total sessions valuable. On the opposite end of the scale 11 respondents found 10% or less of their sessions unhelpful.
 
@@ -307,7 +312,7 @@ The study could be enhanced and better balanced in future by surveying mentors o
 
 It would be important to gauge mentors’ opinions, if they feel assistance requests are useful and give a list of their dos and don’ts also from both a mentor and mentee perspective.
 
-**What Other Applications Could Remote Mentoring Have?**
+### What Other Applications Could Remote Mentoring Have?
 
 I’d like to speculate in this section on other sectors that could incorporate online remote assistance requests into teaching.
 
@@ -315,7 +320,8 @@ As I mentioned previously I have taught in sound design post-production for film
 
 I’d like to provide a mock-up below of a potential use case outside of learning to code fitting into for the sake of this example sound mixing:
 
-![A mock-up of an audio mixing mentoring platform could look like. Features screen sharing, participants, chat, file sharing.](/images/blog-images/mentoring/0__SeT2sUzimcguWnd.png)
+| ![A mock-up of an audio mixing mentoring platform could look like. Features screen sharing, participants, chat, file sharing.](/images/blog-images/mentoring/0__SeT2sUzimcguWnd.png) |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 A mock-up of what an audio mixing mentoring platform could look like featuring a screen share, a chat, a file dropper and a participants list with options to add files and participants. Adobe Premiere Pro Image courtesy of: [speckyboy.com](https://speckyboy.com/wp-content/uploads/2019/08/adobe-audition-tutorial-05.jpg)
 
@@ -327,7 +333,7 @@ Since using assistance requests as a coding student, my mind has formulated all 
 
 It may be a good exercise for you to think about an industry you have interest in and think would there be a use case for this? If the answer is yes, then you can probably imagine exciting possibilities, and envision how it could alter the very fabric of how we work and train in the future.
 
-**Does A Mentor Need To Be More Than A Coder?**
+### Does A Mentor Need To Be More Than A Coder?
 
 As previously stated in the section ‘In Production and industry’, problematic mentors can create a barrier to the assistance request model working. So what could be a solution to this problem?
 
@@ -337,35 +343,35 @@ What I am actually trying to set up in an assistance session is almost like a mi
 
 During my training into instructional skills workshops at [Camosun College](http://camosun.ca/) I learned the Mini Lesson Cycle
 
-![The 10 minute mini-lesson model broken down into steps. Room given for written and verbal feedback, and to scaffold learning.](/images/blog-images/mentoring/0_pS_77uZcy8gUTPq1.jpeg)
-
-The 10 minute mini-lesson model broken down into steps.
+| ![The 10 minute mini-lesson model broken down into steps. Room given for written and verbal feedback, and to scaffold learning.](/images/blog-images/mentoring/0_pS_77uZcy8gUTPq1.jpeg) |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                _The 10 minute mini-lesson model broken down into steps._                                                                |
 
 Here is a view of this teaching model. The important part of this model to focus on is the Mini-Lesson that should last no longer than ten minutes. In dissecting and asking why ten minutes? The Instructional Skills Workshop guide explains that ten minutes is the appropriate amount of time to balance instructing someone on a concept or material and leaving space for the learner to digest and to participate in a reflection and feedback.
 
 Ten minutes is also “a reasonable length for participants to recall specific details of the lesson in order to provide feedback”¹⁴ What it does is forces the instructor or an assistance request mentor to be concise and directly to the point. Exploration of this model and how to apply this pedagogical method to assistance requests could enhance the usefulness and benefits from the concept itself.
 
-**It Is Important We Review Our Mentors And We Can See Transparent And Measurable Metrics**
+### It Is Important We Review Our Mentors And We Can See Transparent And Measurable Metrics
 
 On current system that I am using on compass for mentor review, the only points for feedback we can give are a rating out of 5 stars and a general comment:
 
-![The current feedback system implemented in lighthouse labs’ Compass learning platform.](/images/blog-images/mentoring/0_HMavxCMXGrzbE_0l.png)
-
-The current feedback system implemented in lighthouse labs’ Compass learning platform.
+| ![The current feedback system implemented in lighthouse labs’ Compass learning platform.](/images/blog-images/mentoring/0_HMavxCMXGrzbE_0l.png) |
+| :---------------------------------------------------------------------------------------------------------------------------------------------: |
+|                            _The current feedback system implemented in lighthouse labs’ Compass learning platform._                             |
 
 I have often felt like this feedback about the quality of mentoring I have gotten (at least on this platform) has had no demonstrable or measurable results. Whilst not having a personal grievance with the mentors in question who haven’t quite delivered professionally, I feel a better review model could be taken up and inbuilt into training and review programs for mentors.
 
-**Say Hello To Stop, Start, Continue**
+### Say Hello To Stop, Start, Continue
 
-![This model could allow student feedback to provide more depth to mentors. Stop doing x, Start doing x and continue doing x.](/images/blog-images/mentoring/0_C-jI-bOVufxpBT6h.png)
-
-The Stop, Start, Continue technique allows options for more targeted feedback. Arguably reviews should work this way for both mentor and mentee to improve.
+| ![This model could allow student feedback to provide more depth to mentors. Stop doing x, Start doing x and continue doing x.](/images/blog-images/mentoring/0_C-jI-bOVufxpBT6h.png) |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|            _The Stop, Start, Continue technique allows options for more targeted feedback. Arguably reviews should work this way for both mentor and mentee to improve._             |
 
 My biggest frustration with mentoring on Compass has been the lack of transparency with this process - seeing mentors who I have had negative experiences with and provided appropriate feedback for still residing in the queue, makes me want to avoid jumping in the queue that day.
 
 I feel the above feedback model alongside the review and comments could go some way to addressing these issues even during a session. I feel this would benefit both mentor and mentee and actually tighten up training getting the mentor to constantly review and improve their processes.
 
-**Conclusion**
+### Conclusion
 
 In this article I have attempted to demonstrate the concept of assistance requests, that it is a powerful and effective tool for learning. Whilst it is still in its infancy and there are many, improvements to make for mentors, mentees and technology, I hope this research serves as a valuable point going forward.
 
