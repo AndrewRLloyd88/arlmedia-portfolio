@@ -6,7 +6,16 @@
     <description>Recent content in JavaScript on ArlMedia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2020 16:44:22 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Nov 2020 16:44:27 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Pong Clone in Phaser JS Part 2</title>
+      <link>https://arlmedia.ca/posts/creating-a-pong-clone-in-phaser-js-part-2/</link>
+      <pubDate>Wed, 25 Nov 2020 16:44:27 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/creating-a-pong-clone-in-phaser-js-part-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/pong-pt2/1_VjYPM6gxld_xS-EN1L_pRA.jpeg#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Creating a Pong Clone in Phaser JS Part 1</title>
       <link>https://arlmedia.ca/posts/creating-a-pong-clone-in-phaser-js-part-1/</link>
