@@ -208,7 +208,7 @@ I am always looking to connect for opportunities and find a way to bring my know
 
 
   <br><br>
-  <p><img src="/images/blog-images/Hugo.png#header" alt="Hugo"></p>
+  <p><img src="/images/blog-images/hugo-react/Hugo.png#header" alt="Hugo"></p>
 <p>I am currently in the process of re-designing my portfolio website and wanted to use the Hugo framework as it is lightning fast to build, comes with a neat blogging feature and is low maintenance.</p>
 <p>The reason for the re-design and moving framework is that the original site was just coded using html, css and js. I want to move the website over to a modern framework which is easier to maintain and apply some component based logic where appropriate.</p>
 <h2 id="why-hugo">Why Hugo?</h2>
@@ -489,12 +489,12 @@ I am always looking to connect for opportunities and find a way to bring my know
   <span class="c1">//more projects are below in the array
 </span></code></pre></div><p>The variables from the icons are imported at the top of this data file. This data object and all of the project properties are then mapped out in index.js. Further refactoring could be done to split all of the elements into seperate components in the future. This overall is much more maintainable as I would only have to change my project data in one place as opposed to copying and pasting HTML content. Map takes care of the rest in the index.js file.</p>
 <p><!-- raw HTML omitted -->The finished result:<!-- raw HTML omitted --></p>
-<p><img src="/images/blog-images/portfolio_section.png" alt="Portfolio Section"></p>
+<p><img src="/images/blog-images/hugo-react/portfolio_section.png" alt="Portfolio Section"></p>
 <h2 id="how-to-add-more-than-one-react-style-entry-file">How to add more than one React Style Entry File</h2>
 <p>I needed to run two React scripts one for my projects and one for my skills to map out in a similar way as the above. With the setup I currently had no way to define two entry and output files. After doing a bit of researching I came across this useful post:</p>
 <p><a href="https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&amp;text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.">how to add more than one path to webpack</a></p>
 <p>I set up the two modules as follows:</p>
-<p><img src="/images/blog-images/modules.png" alt="Modules"></p>
+<p><img src="/images/blog-images/hugo-react/modules.png" alt="Modules"></p>
 <p>And set up my webpack config to use the two entry points and generate two output files:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
@@ -539,7 +539,7 @@ I am always looking to connect for opportunities and find a way to bring my know
         <span class="p">],</span>
       <span class="p">},</span>
 </code></pre></div><p>And hey presto!</p>
-<p><img src="/images/blog-images/icons.png" alt="Icons"></p>
+<p><img src="/images/blog-images/hugo-react/icons.png" alt="Icons"></p>
 <p>The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I&rsquo;d love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.</p>
 <p>It&rsquo;s been massively helpful to learn a different framework in Hugo, the site is performant and builds lightning fast and with the content pipeline has a lot of flexibility.</p>
 <p>There are definitely improvements I am seeking to add to the website as time goes on but I really feel I have improved the website from the prior version. The maintainability definitely feels like a huge weight off when it comes to updating content.</p>

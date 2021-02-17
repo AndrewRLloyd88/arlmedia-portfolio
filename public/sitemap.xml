@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://arlmedia.ca/</loc>
+    <lastmod>2021-02-16T10:54:09-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/how-is-mentoring-and-educational-assistance-changing-in-the-new-reality-of-remote-learning/</loc>
+    <lastmod>2021-02-16T10:54:09-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/posts/</loc>
+    <lastmod>2021-02-16T10:54:09-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arlmedia.ca/contact/</loc>
     <lastmod>2021-02-11T09:46:07-08:00</lastmod>
   </url>
@@ -18,22 +33,12 @@
   </url>
   
   <url>
-    <loc>https://arlmedia.ca/</loc>
-    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://arlmedia.ca/posts/combining-hugo-and-react/</loc>
     <lastmod>2021-02-08T09:30:07-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://arlmedia.ca/tags/hugo/</loc>
-    <lastmod>2021-02-08T09:30:07-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arlmedia.ca/posts/</loc>
     <lastmod>2021-02-08T09:30:07-08:00</lastmod>
   </url>
   

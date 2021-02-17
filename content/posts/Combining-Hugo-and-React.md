@@ -5,7 +5,7 @@ draft: false
 tags: ['Hugo', 'React']
 ---
 
-![Hugo](/images/blog-images/Hugo.png#header)
+![Hugo](/images/blog-images/hugo-react/Hugo.png#header)
 
 <!--more-->
 
@@ -341,7 +341,7 @@ The variables from the icons are imported at the top of this data file. This dat
 
 <b>The finished result:</b>
 
-![Portfolio Section](/images/blog-images/portfolio_section.png)
+![Portfolio Section](/images/blog-images/hugo-react/portfolio_section.png)
 
 ## How to add more than one React Style Entry File
 
@@ -351,7 +351,7 @@ I needed to run two React scripts one for my projects and one for my skills to m
 
 I set up the two modules as follows:
 
-![Modules](/images/blog-images/modules.png)
+![Modules](/images/blog-images/hugo-react/modules.png)
 
 And set up my webpack config to use the two entry points and generate two output files:
 
@@ -418,7 +418,7 @@ I took the answer from that article and increased the limit in the options param
 
 And hey presto!
 
-![Icons](/images/blog-images/icons.png)
+![Icons](/images/blog-images/hugo-react/icons.png)
 
 The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I'd love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.
 
