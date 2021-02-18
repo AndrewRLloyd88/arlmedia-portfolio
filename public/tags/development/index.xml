@@ -6,7 +6,16 @@
     <description>Recent content in Development on ArlMedia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 15:00:25 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jan 2021 16:26:36 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Write-up for the Shopify UX Developer Intern &amp; Web Developer Intern Challenge — Summer 2021 — The Shoppies</title>
+      <link>https://arlmedia.ca/posts/shopify-internship-developer-challenge-writeup/</link>
+      <pubDate>Sun, 17 Jan 2021 16:26:36 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/shopify-internship-developer-challenge-writeup/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/shopify-tech-challenge/1_douFb-tnRnjLtp4bw53CCA.png#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Working with Hugo — New Year, New Technology</title>
       <link>https://arlmedia.ca/posts/working-with-hugo/</link>

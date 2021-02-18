@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <title>Andrew Lloyd - Full Stack Web Developer</title>
+  <meta name="title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta name="description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arlmedia.ca/">
+  <meta property="og:title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta property="og:description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+  <meta property="og:image" content="https://arlmedia.ca/images/header/64162562.jpeg">
+
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://arlmedia.ca/">
+  <meta property="twitter:title" content="Andrew Lloyd - Full Stack Web Developer">
+  <meta property="twitter:description"
+    content="I'm currently working as a freelance full-stack developer and am part of the Mintbean.io developer collective.
+
+I love building things with people.
+
+I made my journey into tech with a background in the film industry and freelance videography. Last year I completed an introductory course to frontend and a web development bootcamp with Lighthouse Labs.
+
+My previous roles have been primarily client focused which has allowed me to become naturally adept at communicating with clients and teams alike.
+
+I am always looking to connect for opportunities and find a way to bring my knowledge and enthusiasm to your projects.">
+  <meta property="twitter:image" content="https://arlmedia.ca/images/header/64162562.jpeg">
+
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/about.css">
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/intro.css">
+  <link rel="stylesheet" type="text/css" href="/css/technicalToolbelt.css">
+  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="/css/projects.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="/css/list.css">
+  <link rel="stylesheet" type="text/css" href="/css/single.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  
+  <title>ArlMedia | Technical Write-up for the Shopify UX Developer Intern &amp; Web Developer Intern Challenge — Summer 2021 — The Shoppies</title>
+</head><body>
+  <div id="content"><div id="nav-border">
+  <nav id="nav" class="nav">
+    <div class="menu container">
+      <div class="links">
+        
+        <a class="nav-link" href="/">
+          
+          
+          <i data-feather="home"></i> 
+          
+          
+          Home
+        </a>
+        
+        <a class="nav-link" href="/projects/">
+          
+          
+          <i data-feather="code"></i> 
+          
+          
+          Projects
+        </a>
+        
+        <a class="nav-link" href="/posts/">
+          
+          
+          <i data-feather="pen-tool"></i> 
+          
+          
+          Posts
+        </a>
+        
+        <a class="nav-link" href="/about/">
+          
+          
+          <i data-feather="info"></i> 
+          
+          
+          About
+        </a>
+        
+        <a class="nav-link" href="/contact/">
+          
+          
+          <i data-feather="mail"></i> 
+          
+          
+          Contact
+        </a>
+        
+        <a class="nav-link" href="https://github.com/AndrewRLloyd88/andrew_lloyd_resume/raw/master/andrew-lloyd-resume.pdf">
+          
+          
+          <i data-feather="file-text"></i> 
+          
+          
+          Resume
+        </a>
+        
+      </div>
+      <span class="logo justify-content-right">{ Andrew Lloyd }</span>
+    </div>
+  </nav>
+</div><section class="header">
+  <div id="home-jumbotron" class="jumbotron container wrapper flex-col"><img class="header-img" src="/images/header/64162562.jpeg" alt=""><div class="right">
+      <h1 class="title">Andrew Lloyd</h1>
+      <h2>// Full Stack Web Developer</h2>
+      <div class="socials">
+        <a href="https://github.com/AndrewRLloyd88" target="_blank" style="
+        text-decoration: none;">
+          <svg width="256px" height="250px" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path
+                d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z">
+              </path>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/andrewlloyd01/" target="_blank">
+          <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path
+                d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055">
+              </path>
+            </g>
+          </svg>
+
+        </a>
+        <a href="https://andrew-lloyd01.medium.com/" target="_blank">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path
+              d="M24 24h-24v-24h24v24zm-4.03-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z" />
+          </svg>
+        </a>
+        <a href="https://www.npmjs.com/settings/andrewrlloyd88/packages" target="_blank">
+          <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <polygon fill="#4f5d75" points="0 256 0 0 256 0 256 256"></polygon>
+              <polygon points="48 48 208 48 208 208 176 208 176 80 128 80 128 208 48 208"></polygon>
+            </g>
+          </svg>
+        </a>
+        <a href="https://codepen.io/AndrewRLloyd88/" target="_blank" title="Codepen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-codepen">
+            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+            <line x1="12" y1="2" x2="12" y2="8.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="posts container single-post">
+  <h2>Technical Write-up for the Shopify UX Developer Intern &amp; Web Developer Intern Challenge — Summer 2021 — The Shoppies</h2>
+</section>
+<article class="container post">
+  
+
+<div class="time-date">
+  <i data-feather="calendar"></i>
+  <time class="post-time" datetime="2021-01-17">Jan 17, 2021</time>
+</div>
+
+<i data-feather="tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/development">Development</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/react">React</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/ruby-on-rails">Ruby on Rails</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://arlmedia.ca/tags/full-stack">Full Stack</a>
+
+
+  <br><br>
+  <p><img src="/images/blog-images/shopify-tech-challenge/1_douFb-tnRnjLtp4bw53CCA.png#header" alt=""></p>
+<p>I was introduced to this technical challenge by <a href="https://www.linkedin.com/in/andreiskandar/">Andre Iskandar</a> who forwarded me the advertised role and technical challenge from Shopify located <a href="https://jobs.smartrecruiters.com/ni/Shopify/ee14b4f1-62ec-4a47-850b-2311c57f855b-front-end-developer-intern-remote-summer-2021">here</a>. These kinds of technical challenges I am viewing as an awesome opportunity to push my learning and problem solving skills further as well as keep fresh on the skills I have learned so far. They also give another amazing portfolio piece. I was excited to delve into this challenge as it had a number of interesting components to it!</p>
+<p>The repository can be viewed <a href="https://github.com/AndrewRLloyd88/Shoppies-Challenge">here</a> and the final app is available to view live at: <a href="https://theshoppies-movie-awards.netlify.app/">https://theshoppies-movie-awards.netlify.app/</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_KGC8_O2k2lcX4F6hMmK9Ow.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>The final product deployed on Netlify</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-challenge">The Challenge</h3>
+<p>We need a webpage that can search <a href="http://www.omdbapi.com">OMDB</a> for movies, and allow the user to save their favourite films they feel should be up for nomination. When they’ve selected 5 nominees they should be notified they’re finished.</p>
+<p>We’d like a simple to use interface that makes it easy to:</p>
+<ul>
+<li>Search OMDB and display the results (movies only)</li>
+<li>Add a movie from the search results to our nomination list</li>
+<li>View the list of films already nominated</li>
+<li>Remove a nominee from the nomination list</li>
+</ul>
+<h3 id="technical-requirements">Technical requirements</h3>
+<ol>
+<li>Search results should come from OMDB’s API (free API key: <a href="http://www.omdbapi.com/apikey.aspx">OMDB API</a>).</li>
+<li>Each search result should list at least its title, year of release and a button to nominate that film.</li>
+<li>Updates to the search terms should update the result list</li>
+<li>Movies in search results can be added and removed from the nomination list.</li>
+<li>If a search result has already been nominated, disable its nominate button.</li>
+<li>Display a banner when the user has 5 nominations.</li>
+</ol>
+<h3 id="making-user-stories-from-our-requirements-list">Making user stories from our requirements list</h3>
+<p>I always find it helpful to frame a list of user stories from the technical requirements given. It helps to shape things such as the programming logic, the verbs for potential API routes and the entities that will be contained in tables or that need state applied to them. I have also found whether it be for hackathons, personal projects or technical challenges such as this it helps guide you towards minimum viable demo or minimum viable product.</p>
+<ul>
+<li>As a user I should be able to search for films to nominate</li>
+<li>Users must be able to see at least a title, year of release and a nominate button</li>
+<li>As a user I expect that the list of results will change as I update my search term</li>
+<li>As a user I should be able to nominate a film which will appear in a nomination list</li>
+<li>As a user I should be able to un-nominate a film or remove a nomination.</li>
+<li>As a user I should be able to see a list of the films I have nominated</li>
+<li>As a user I should not be able to nominate the same film twice</li>
+<li>As a user I should be able to nominate a film if it is a remake or reboot and has a different year of release but the same title as a prior release</li>
+<li>Users should have the ability to share a link with others that shows what films they have nominated</li>
+<li>Users nominations should be remembered when they return to the page</li>
+<li>As a user I should see a banner when I nominate 5 films</li>
+<li>As a user I should not see a banner if I have nominated 5 films and remove one</li>
+</ul>
+<h3 id="considerations">Considerations</h3>
+<p>What frameworks to use?<br>
+The internship job description mentions the use of Ruby on Rails and React:</p>
+<blockquote>
+<p>“Developing React components, managing data with GraphQL, and using libraries like Redux and Apollo</p>
+<p>Building reusable and scaleable components and documenting in our UX style guides</p>
+<p>Using modern technologies and frameworks, including JavaScript and Typescript, to develop large front-end web applications that scale and perform well on all devices</p>
+<p>Writing and maintaining unit and integration tests</p>
+<p>Using Ruby on Rails to add and modify controllers, models, views, and integrating front-end code into a Rails application”</p>
+</blockquote>
+<p>Thinking ahead to some of the criteria such as remembering users and in my position of having linked a React frontend to a Rails backend this seemed like a good candidate.</p>
+<p>The justification I made for Rails, despite it seeming a little heavy as an overhead for the project, I feel it allowed me to prototype the database and relations faster with ActiveRecord’s Rake and Migrate features.</p>
+<p>Having previously used Foreman to run both the front and backend simultaneously I decided to go with that again to cut down on amount of terminals needed and also shows logging from both the front and backend.</p>
+<p>React in my mind was the best candidate for the frontend as I am familiar with it and the requirements of the projects require the following:</p>
+<p><strong>We have to manage state:</strong></p>
+<ul>
+<li>The project requirements call for remembering the state of entities such as nominations, search results, isSearching. useState is a perfect way to manage this.</li>
+<li>UseEffect is a perfect candidate for pulling results on load, checking the number of nominations per render and conditionally checking other states of the app with guard clauses</li>
+<li>Ways to pass properties down to child components such as movie results, user information etc.</li>
+<li>Comes with a useDebounce hook that is a perfect candidate for the search bar.</li>
+<li>Methods like hiddden, onClick and other props can give re-usable components more flexibility.</li>
+<li>React Router is a good candidate for navigating between the / and /{GUID} for sharing nominations with other users.</li>
+</ul>
+<p><strong>User Interface — Front End and UX considerations</strong></p>
+<p>Material UI — this is a nice library with a lot of flexibility to edit and customise colours, add different properties to the buttons</p>
+<p>We should allow the user to remove nominations and nominate new movies.</p>
+<p>What do we limit at 5 nominations, the ability to search, the ability to see nomination buttons? A banner should appear when number of user nominations is equal to 5.</p>
+<p>Easy way to map multiple components and make a single component such as nominations and designing a nomination component.</p>
+<p>React-UUID library could be used to give a unique slug to users for sharing links.</p>
+<p><strong>Backend Considerations</strong></p>
+<p>Is a backend necessary? Some methods the movie nominations could be held without a backend would include local storage, JSON file, a predefined XML or HTML file that renders out the nominations or even using Redux or a central store in the app. I could have also used a server-less approach with either Firebase or AWS Lambda. I made the choice to use Rails with a Postgres and relational database instead as I feel it gives more flexibility to get data such as how many people have voted, what are the most popular movies and other data querying options in the long run.</p>
+<p>Implement sessions/cookies/tokens to remember users choices even if they navigate away from site</p>
+<p>Design database to hold user’s nominations and have some way to retrieve data. Normalise data so we are not duplicating movies and make an association from a user to movies via nominations (many to many relationship).</p>
+<h3 id="solutions">Solutions</h3>
+<p>In this section I will be tackling the user stories one by one:</p>
+<h4 id="as-a-user-i-should-be-able-to-search-for-films-tonominate"><strong>As a user I should be able to search for films to nominate</strong></h4>
+<p>This was a fairly straightforward requirement that was solved with a basic axios call to the API:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">mainURL</span> <span class="o">=</span> <span class="sb">`http://www.omdbapi.com/?s=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">&amp;type=movie&amp;page=1&amp;apikey=</span><span class="si">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_KEY</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</code></pre></div><p>I set up a .env file to hold the secret key and included a .env.example in the project as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">REACT_APP_API_KEY</span> <span class="o">=</span> <span class="s1">&#39;YOUR_OMDB_KEY&#39;</span><span class="p">;</span>
+</code></pre></div><p>It’s important to note the API has a query type=movie to limit the return type to movies only as shows, video games and other medium can be returned.</p>
+<p>First I set up the above mainURL to hold our query with a dynamic term using a template literal:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">mainURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([...</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Search</span><span class="p">]);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[</span><span class="nx">term</span><span class="p">]);</span>
+</code></pre></div><p>Then I was able to set the response state object holding our results. Initially I debugged the return object’s structure to see how each movie was laid out</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_m4xtJXuLGN5glDswPGmm5Q.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Limiting parameters to just returning movies</td>
+</tr>
+</tbody>
+</table>
+<p>This links nicely into the next user story.</p>
+<h4 id="users-must-be-able-to-see-at-least-a-title-year-of-release-and-a-nominatebutton"><strong>Users must be able to see at least a title, year of release and a nominate button</strong></h4>
+<p>Now the correct data was coming back I had to figure a way to make the search feel a bit more dynamic. I set up a debounce hook:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">useDebounce</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">ms</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">[</span><span class="nx">debounced</span><span class="p">,</span> <span class="nx">setDebounced</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">setDebounced</span><span class="p">(</span><span class="nx">input</span><span class="p">),</span> <span class="nx">ms</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timeout</span><span class="p">);</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">input</span><span class="p">,</span> <span class="nx">ms</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="nx">debounced</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>This hook essentially acts as a throttle in this case to so we are not making repeated calls to the API. It plugs into the search bar as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useCallback</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">useDebounce</span> <span class="nx">from</span> <span class="s1">&#39;../Hooks/useDebounce&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">SearchBar</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">[</span><span class="nx">value</span><span class="p">,</span> <span class="nx">setValue</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+
+  <span class="kr">const</span> <span class="nx">term</span> <span class="o">=</span> <span class="nx">useDebounce</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="mi">400</span><span class="p">);</span>
+
+  <span class="kr">const</span> <span class="nx">onSearch</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(</span><span class="nx">props</span><span class="p">.</span><span class="nx">onSearch</span><span class="p">,</span> <span class="p">[</span><span class="nx">term</span><span class="p">]);</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">onSearch</span><span class="p">(</span><span class="nx">term</span><span class="p">);</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">term</span><span class="p">,</span> <span class="nx">onSearch</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">section</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;search&#34;</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">form</span>
+        <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;search__form&#34;</span>
+        <span class="nx">onSubmit</span><span class="o">=</span><span class="p">{(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()}</span>
+      <span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">input</span>
+          <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;radius&#34;</span>
+          <span class="nx">spellCheck</span><span class="o">=</span><span class="s2">&#34;false&#34;</span>
+          <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&#34;Search Movies&#34;</span>
+          <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;search&#34;</span>
+          <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span>
+          <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">value</span><span class="p">}</span>
+          <span class="nx">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">setValue</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+        <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/form&gt;</span>
+    <span class="o">&lt;</span><span class="err">/section&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>When any change in the search bar is detected from the top level component the LiveSearch the term is passed down as a prop as well as the OnSearch and events get triggered in the SearchBar file due to the useEffect looking for onSearch(term) and any change to this from our LiveSearch component.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">SearchBar</span> <span class="nx">onSearch</span><span class="o">=</span><span class="p">{(</span><span class="nx">term</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">setTerm</span><span class="p">(</span><span class="nx">term</span><span class="p">)}</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">Results</span> <span class="nx">results</span><span class="o">=</span><span class="p">{</span><span class="nx">results</span><span class="p">}</span> <span class="o">/&gt;</span>
+
+<span class="nx">Calls</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">api</span> <span class="nx">are</span> <span class="nx">then</span> <span class="nx">throttled</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">search</span> <span class="nx">term</span> <span class="nx">changes</span> <span class="nx">at</span> <span class="mi">400</span><span class="nx">ms</span><span class="p">.</span>
+
+<span class="nx">The</span> <span class="nx">display</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">results</span> <span class="nx">is</span> <span class="nx">first</span> <span class="nx">defined</span> <span class="k">in</span> <span class="nx">Movie</span><span class="p">,</span> <span class="nx">to</span> <span class="nx">build</span> <span class="nx">an</span> <span class="nx">individual</span> <span class="nx">block</span><span class="p">.</span>
+
+<span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">classnames</span> <span class="nx">from</span> <span class="s1">&#39;classnames&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Movie</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="kr">const</span> <span class="nx">movieInfoClass</span> <span class="o">=</span> <span class="nx">classnames</span><span class="p">(</span><span class="s1">&#39;movie__info&#39;</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="s1">&#39;movie__info--explicit&#39;</span><span class="o">:</span> <span class="nx">props</span><span class="p">.</span><span class="nx">collectionExplicitness</span> <span class="o">===</span> <span class="s1">&#39;explicit&#39;</span><span class="p">,</span>
+
+<span class="k">return</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">article</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie&#34;</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">img</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__thumbnail&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Poster</span><span class="p">}</span> <span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;Movie&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">movieInfoClass</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__name&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Title</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__artist&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Year</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="c1">//the button below will be used for the nominations feature
+</span><span class="c1"></span>
+<span class="o">&lt;</span><span class="nx">button</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominate__btn&#34;</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="nx">Nominate</span>
+
+<span class="o">&lt;</span><span class="err">/button&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/article&gt;</span>
+
+<span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>Then to get the final output to display to the user:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Movie</span> <span class="nx">from</span> <span class="s1">&#39;./Movie&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Results</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">{</span> <span class="nx">results</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">props</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="nx">results</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">movie</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">//guards against an empty movie object and nominate button
+</span><span class="c1"></span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">movie</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;False&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//return our movie or movies to display to the user
+</span><span class="c1"></span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Movie</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">movie</span><span class="p">.</span><span class="nx">collectionId</span><span class="p">}</span> <span class="p">{...</span><span class="nx">movie</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/&gt;</span>
+    <span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div><p>The following result meeting that requirement and user story:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_rppeJ9aRlpVpgEFB6iFpVQ.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">The final result of this completing this user story</td>
+</tr>
+</tbody>
+</table>
+<p>The next requirement was a slight bit trickier even with the debouncing in place.</p>
+<h4 id="as-a-user-i-expect-that-the-list-of-results-will-change-as-i-update-my-searchterm"><strong>As a user I expect that the list of results will change as I update my search term</strong></h4>
+<h3 id="api-data-limitation">API Data Limitation</h3>
+<p>The OMDb has a major limitation on the free tier, you can only retrieve 10 results and if the results exceed a certain number due to putting in a generic term like the letter ‘a’ you will receive this error:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+ <span class="s2">&#34;Response&#34;</span><span class="o">:</span> <span class="s2">&#34;False&#34;</span><span class="p">,</span>
+ <span class="s2">&#34;Error&#34;</span><span class="o">:</span> <span class="s2">&#34;Too many results.&#34;</span>
+<span class="p">}</span>
+</code></pre></div><p>How do we work around the fact that the search returns too many results due to the limitation? Ideally it would not be limited but since this is what we are working with we do want to make our search more responsive. Something like a loading panel with a spinner could be beneficial.</p>
+<p>The API does have pagination so my first thought was could we limit the amount of results the API sends. Usually APIs have a Max or Offset or Limit option however this did not seem to be the case with OMDb. I tried the pagination option however I was still getting the “Too many results” message.</p>
+<p>Initially I just debugged the structure with console logs so I could understand what was going on with the API:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">mainURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span><span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>With no search result returned this object:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">results</span><span class="o">:</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="mi">0</span><span class="o">:</span> <span class="p">{</span><span class="nx">Response</span><span class="o">:</span> <span class="s2">&#34;False&#34;</span><span class="p">,</span> <span class="nb">Error</span><span class="o">:</span> <span class="s2">&#34;Incorrect IMDb ID.&#34;</span><span class="p">}</span>
+<span class="nx">length</span><span class="o">:</span> <span class="mi">1</span>
+</code></pre></div><p>And with “too many results” path:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="nx">Response</span><span class="o">:</span> <span class="s2">&#34;False&#34;</span><span class="p">,</span> <span class="nb">Error</span><span class="o">:</span> <span class="s2">&#34;Too many results.&#34;</span><span class="p">}</span>
+<span class="nb">Error</span><span class="o">:</span> <span class="s2">&#34;Too many results.&#34;</span>
+<span class="nx">Response</span><span class="o">:</span> <span class="s2">&#34;False&#34;</span>
+<span class="nx">__proto__</span><span class="o">:</span> <span class="nb">Object</span>
+</code></pre></div><p>The commonality here seemed to be:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="err">“</span><span class="nx">False</span><span class="err">”</span>
+</code></pre></div><p>Thus prompting me to add the following guard clause:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">mainURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([...</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Search</span><span class="p">]);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span><span class="p">);</span>
+
+<span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div><p>However this was then only returning results with multiple hits but an amount of hits under the “too many results” number which I believe must be north of 2000+ results. Helpfully the API does return a parameter called “totalResults” if you do successfully get data back:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Response</span><span class="o">:</span> <span class="s2">&#34;True&#34;</span>
+<span class="nx">Search</span><span class="o">:</span> <span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">[{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">},</span> <span class="p">{</span><span class="err">…</span><span class="p">}]</span>
+<span class="nx">totalResults</span><span class="o">:</span> <span class="s2">&#34;872&#34;</span>
+<span class="nx">__proto__</span><span class="o">:</span> <span class="nb">Object</span>
+</code></pre></div><p>This is less helpful in the case of “Too many results” as it doesn’t tell you how many were found. I believe this to be a limitation of whatever service the API itself is querying or scraping data from:</p>
+<p>User <a href="https://github.com/nnikolov06">nnikolov06</a> commented <a href="https://github.com/omdbapi/OMDb-API/issues/36#issuecomment-545132252">on 22 Oct 2019</a>:</p>
+<p><a href="https://github.com/omdbapi/OMDb-API/issues/36">OMDb-API/issues/36</a></p>
+<blockquote>
+<p>I don’t know what the implementation is, but I suppose there is some kind of throttling.<br>
+I can’t find an API for IMDb, so it’s probably based on requests sent to IMDb.</p>
+</blockquote>
+<p>So I decided to do more investigating.</p>
+<p>After searching through the API documents and documentation at:</p>
+<p><a href="https://github.com/omdbapi/OMDb-API/issues/164"><strong>Error : Too many results · Issue #164 · omdbapi/OMDb-API</strong></a></p>
+<p>and</p>
+<p><a href="http://www.omdbapi.com/">http://www.omdbapi.com/</a></p>
+<p>I stumbled on this post doing more investigation on Stack Overflow about the API issues:</p>
+<p><a href="https://stackoverflow.com/questions/40340151/omdb-api-multiple-results"><strong>OMDb API multiple results</strong></a></p>
+<p>Whilst the implementation of the original posters code was slightly different the question and answer discussed drove me to use the conditional logic to check the fallback and establish a fallback too.</p>
+<h4 id="solution-implemented">Solution Implemented</h4>
+<p>The solution I implemented was to make use of the other API call by title search or t= as a fallback:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//triggers on term changing
+</span><span class="c1"></span><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="kr">const</span> <span class="nx">mainURL</span> <span class="o">=</span> <span class="sb">`http://www.omdbapi.com/?s=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">&amp;type=movie&amp;page=1&amp;apikey=</span><span class="si">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_KEY</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fallbackURL</span> <span class="o">=</span> <span class="sb">`http://www.omdbapi.com/?t=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">&amp;type=movie&amp;apikey=</span><span class="si">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_KEY</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="c1">//our happy path GET request with the s={term} to get multiple results
+</span><span class="c1"></span>
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">mainURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([...</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Search</span><span class="p">]);</span>
+<span class="c1">//debug to check the structure of the return object
+</span><span class="c1"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span><span class="p">);</span>
+<span class="c1">//if we don&#39;t meet happy path and we encounter &#34;too many results&#34;
+</span><span class="c1"></span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;False&#39;</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">//hit our second get request using our fallbackURL with t={term} in
+</span><span class="c1"></span>
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">fallbackURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+<span class="c1">//we don&#39;t need to spread in this case since 1 or less results should come back.
+</span><span class="c1"></span>
+<span class="nx">setResults</span><span class="p">([</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">]);</span>
+
+<span class="p">});</span>
+
+<span class="p">}</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[</span><span class="nx">term</span><span class="p">]);</span>
+</code></pre></div><p>This results in the following:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_vkvU2d7eP00HyJIznZQHbg.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">The search bar does not hang now as it did previously and utilises both search terms from the API documentation</td>
+</tr>
+</tbody>
+</table>
+<p>I made this decision for two reasons:</p>
+<p>One — I think it’s bad UX and doesn’t meet the “Users must be able to see changes to the list of films as their search terms are updated” user story and technical requirement. Especially if the search bar is incapable of updating per keystroke. The user would be sitting there thinking what is going on?</p>
+<p>Two — Whilst only returning one result is counter with the letter ‘a’, usually in a debounce or autocomplete situation you would have a mass amount of options, I feel this is potentially the only workaround with this API short of caching all the movie results into our own backend which could be a possibility. In terms of time/cost/performance it arguably makes the most sense to at least encourage the user to type on in this case in my mind.</p>
+<p>I will also make a mention to another benefit of using a relational database and backend here, that this opens the options of caching search results. One of the major limitations I had with working with this API is that the search results were only as good as the data present. Searching for ‘A Bugs Life’ for instance returns 0 results as it needs to be spelt ‘a bug’s life’ This is a tricky problem to solve as an algorithm that either adds apostrophes or puts search terms to lower case or looks for a variant of the search term would not be possible with this API and their pre-defined search terms. It may be easier to reason that with the results being cached a backend could have more flexibility using SQL queries with a LIKE or WHERE clause with more detailed parameters.</p>
+<h4 id="users-must-be-able-to-add-movies-in-search-results-to-their-nomination-list">Users must be able to add Movies in search results to their nomination list</h4>
+<p>This was the next problem to tackle. There are many ways to go about this, it could be done entirely on the front end, it could be implemented as part of the backend too. That opens the need for sessions at this stage and for now I was just developing on the happy path and meeting the base criteria. This criteria also went hand in hand with: <strong>As a user I should be able to nominate a film which will appear in a nomination list</strong></p>
+<p>I decided to take some prescriptive steps:</p>
+<p>Re-design the UI and CSS to accommodate for the second row:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_KuEd0M7EoH3j_Oz6Sv8dHg.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Replicate the pattern for Nominations (an array of nominations) and a single nomination (to map out to the right column)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//nominations component
+</span><span class="c1"></span><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Nomination</span> <span class="nx">from</span> <span class="s1">&#39;./Nomination&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Nominations</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">{</span> <span class="nx">nominations</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">props</span><span class="p">;</span>
+
+  <span class="c1">//index is a number in this case
+</span><span class="c1"></span>
+  <span class="k">return</span> <span class="nx">nominations</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">nomination</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Nomination</span>
+          <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}</span>
+          <span class="nx">index</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}</span>
+          <span class="p">{...</span><span class="nx">nomination</span><span class="p">}</span>
+          <span class="nx">deleteNomination</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">deleteNomination</span><span class="p">}</span>
+        <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/&gt;</span>
+    <span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//nomination component
+</span><span class="c1"></span><span class="k">return</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">article</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nomination&#34;</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">img</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__thumbnail&#34;</span>
+
+<span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">movie_poster</span> <span class="o">===</span> <span class="s1">&#39;N/A&#39;</span> <span class="o">?</span> <span class="nx">filmThumbnail</span> <span class="o">:</span> <span class="nx">props</span><span class="p">.</span><span class="nx">movie_poster</span><span class="p">}</span>
+
+<span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;Movie&#34;</span>
+
+<span class="err">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">movieInfoClass</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__name&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">movie_title</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__year&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">movie_year</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">Button</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">button</span><span class="p">}</span>
+
+<span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span>
+
+<span class="nx">variant</span><span class="o">=</span><span class="s2">&#34;contained&#34;</span>
+
+<span class="nx">color</span><span class="o">=</span><span class="s2">&#34;secondary&#34;</span>
+
+<span class="nx">startIcon</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">RemoveCircleIcon</span> <span class="o">/&gt;</span><span class="p">}</span>
+
+<span class="o">&gt;</span>
+
+<span class="nx">Remove</span>
+
+<span class="o">&lt;</span><span class="err">/Button&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/article&gt;</span>
+
+<span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>Nominations are saved in an array in state:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">nominations</span><span class="p">,</span> <span class="nx">setNominations</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+
+<span class="c1">//for when a user wants to add a nomination
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">addNomination</span> <span class="o">=</span> <span class="p">(</span><span class="nx">movie</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="kr">const</span> <span class="nx">newNomination</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">Title</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Title</span><span class="p">,</span> <span class="nx">Year</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Year</span><span class="p">,</span> <span class="nx">Poster</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Poster</span><span class="p">,</span> <span class="p">};</span> <span class="nx">setNominations</span><span class="p">((</span><span class="nx">prevNominations</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[...</span><span class="nx">prevNominations</span><span class="p">,</span> <span class="nx">newNomination</span><span class="p">];</span> <span class="p">});</span>
+</code></pre></div><h4 id="as-a-user-i-should-be-able-to-un-nominate-a-film-or-remove-a-nomination">As a user I should be able to un-nominate a film or remove a nomination.</h4>
+<p>In order to tackle this user story I started by writing a function that handles the deletion:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">deleteNomination</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">setNominations</span><span class="p">((</span><span class="nx">prevNominations</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">prevNominations</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">nomination</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">index</span> <span class="o">!==</span> <span class="nx">id</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div><p>I Assigned each nomination an index and id (to satisfy react key props) and used this function taking the index value of the clicked component into this function with filter to go through and find the associated id clicked on and remove that element from the array.</p>
+<p>I passed the function down as a prop to the singular nomination component 2 levels down the tree. When the user clicks on the remove button the function is then called in the LiveSearch component that removes that particular movie from the array.</p>
+<h4 id="users-must-not-be-able-to-nominate-the-same-movietwice">Users must not be able to nominate the same movie twice.</h4>
+<p>For this criteria the Nominate button must be disabled if the movie title on the search results (left) matches any title exactly on the nomination side (right).</p>
+<p>We could do this with a conditional render on the Movie component:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="nx">isNominated</span><span class="p">()</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominated_label&#34;</span><span class="o">&gt;</span><span class="nx">Nominated</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">Button</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">button</span><span class="p">}</span>
+
+<span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span>
+
+<span class="nx">startIcon</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">AddCircleIcon</span> <span class="o">/&gt;</span><span class="p">}</span>
+
+<span class="o">&gt;</span>
+
+<span class="nx">Nominate</span>
+
+<span class="o">&lt;</span><span class="err">/Button&gt;</span>
+
+<span class="p">)}</span>
+</code></pre></div><p>I had to pass the nominations props down to the movie component so it could access the movie title, movie year and poster and and do a comparison for each nomination in nominations. The check sees if movie title in the results matches the nomination title in the nominations array then conditionally render a nominated label otherwise it displays the nominate button. A problem cropped up with the movie Argo which has the same title with two different entries but two different years. This justifies why I had to have the additional check for year as it is possible that two titles could match because they could be a re-release or re-boot.</p>
+<h4 id="users-must-be-able-to-see-a-banner-when-they-have-5-nominations-in-theirlist">Users must be able to see a banner when they have 5 nominations in their list.</h4>
+<p>This requirement was left a bit ambiguous by the challenge creator.</p>
+<p>My interpretation of a banner would be a modal popup notifying the user that they have nominated their 5 films and some instructions if they choose to edit (remove existing nominations)</p>
+<p>When this condition is met it would imply disabling the nominate button fully if the number of nominations === 5.</p>
+<p>I decided to wrap the Movie components existing check in another ternary operator:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">numNominated</span> <span class="o">!==</span> <span class="mi">5</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+
+<span class="p">{</span><span class="nx">isNominated</span><span class="p">()</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominated_label&#34;</span><span class="o">&gt;</span><span class="nx">Nominated</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">Button</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">button</span><span class="p">}</span>
+
+<span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span>
+
+<span class="nx">startIcon</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">AddCircleIcon</span> <span class="o">/&gt;</span><span class="p">}</span>
+
+<span class="o">&gt;</span>
+
+<span class="nx">Nominate</span>
+
+<span class="o">&lt;</span><span class="err">/Button&gt;</span>
+
+<span class="p">)}</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+
+<span class="p">{</span><span class="nx">isNominated</span><span class="p">()</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominated_label&#34;</span><span class="o">&gt;</span><span class="nx">Nominated</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="kc">null</span><span class="p">}</span>
+</code></pre></div><p>At the LiveSearch level I passed through the Nomination prop on the Nominations component and to the individual nomination component so when the user clicks the comparison can be made and deleteNomination can be called at the LiveSearch level.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">nominations</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">nominations</span> <span class="p">};</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_KuEd0M7EoH3j_Oz6Sv8dHg.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Nominated label for movies already nominated</td>
+</tr>
+</tbody>
+</table>
+<h4 id="as-a-user-i-should-see-a-banner-when-i-nominate-5films">As a user I should see a banner when I nominate 5 films</h4>
+<p>This was another requirement that required state at the LiveSearch level. I first declared another variable numNominations to keep track of the length of the nominations array.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">numNominated</span> <span class="o">=</span> <span class="nx">nominations</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</code></pre></div><p>Another useEffect in the LiveSearch component checks to see if the number of nominations is === 5 each time the value changes</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">getNominations</span><span class="p">();</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">numNominated</span> <span class="o">===</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setOpen</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="p">[(</span><span class="nx">numNominated</span><span class="p">,</span> <span class="nx">deleteNomination</span><span class="p">,</span> <span class="nx">addNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNomination</span><span class="p">)]);</span>
+
+<span class="c1">// handles close for Modal
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">handleClose</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">setOpen</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div><p>The modals display state was stored in a useState variable :</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">open</span><span class="p">,</span> <span class="nx">setOpen</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</code></pre></div><p>The result looked like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_t6fBQtX7Q7mt0PYwd53UQw.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">First iteration of the modal popup when user has nominated 5 films</td>
+</tr>
+</tbody>
+</table>
+<p>This about wrapped up the base requirements all working on the front end. I wanted to tackle some of the extras on the project which I will talk about in the below section.</p>
+<h3 id="tackling-theextras">Tackling the Extras</h3>
+<p>Below are the stretch features outlined by the challenge doc.</p>
+<h4 id="extras-stretch-features">Extras (Stretch Features)</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/0_EPJBz5n_I4sqjDzb.png" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>There is a lot to be improved on here, you can polish the required features by crafting a nicer design, or improve the app by adding new features! Choose something that you feel best showcases your passion and skills.</p>
+<p>If you need inspiration, here are examples of what you can work on. If you work on these ideas, <strong>we recommend choosing only one or two</strong>.</p>
+<ul>
+<li><strong>Save nomination lists if the user leaves the page</strong></li>
+<li><strong>Animations for loading, adding/deleting movies, notifications</strong></li>
+<li><strong>Create shareable links</strong></li>
+</ul>
+<p><strong>Remembering Users Nominations List</strong></p>
+<p>I first decided to tackle saving nomination lists if the user leaves the page. This could be all done on the front end with session cookies however I like to build applications that are scaleable, have upgrade options and are long lasting.</p>
+<p>Thinking forward to the ‘create shareable links’ requirement it makes sense to handle this on the backend with tokens. This means re-designing the app on the front end and designing a back end system to accommodate users, movie entries and nominations.</p>
+<p>I started by designing an Entity Relationship diagram:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_VuzTJItTZV3V6LvhO-qAYg.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Users can have many nominations and movies can be nominated multiple times by different users</em></td>
+</tr>
+</tbody>
+</table>
+<p>The many to many relationship was the key in normalising movie data so we are not entering the same titles multiple times. Nominations was used as a join table containing user_id and movie_id as foreign keys referencing both users and movies.</p>
+<p>I generated migrations and set up my controllers as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="err">#</span> <span class="nx">Schema</span>
+
+<span class="nx">ActiveRecord</span><span class="o">::</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="nx">version</span><span class="o">:</span> <span class="mi">2021</span><span class="nx">_01_14_033303</span><span class="p">)</span> <span class="k">do</span>
+
+<span class="err">#</span> <span class="nx">These</span> <span class="nx">are</span> <span class="nx">extensions</span> <span class="nx">that</span> <span class="nx">must</span> <span class="nx">be</span> <span class="nx">enabled</span> <span class="k">in</span> <span class="nx">order</span> <span class="nx">to</span> <span class="nx">support</span> <span class="k">this</span> <span class="nx">database</span>
+
+<span class="nx">enable_extension</span> <span class="s2">&#34;plpgsql&#34;</span>
+
+<span class="nx">create_table</span> <span class="s2">&#34;movies&#34;</span><span class="p">,</span> <span class="nx">force</span><span class="o">:</span> <span class="o">:</span><span class="nx">cascade</span> <span class="k">do</span> <span class="o">|</span><span class="nx">t</span><span class="o">|</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">string</span> <span class="s2">&#34;movie_title&#34;</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">string</span> <span class="s2">&#34;movie_year&#34;</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">string</span> <span class="s2">&#34;movie_poster&#34;</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;created_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;updated_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">end</span>
+
+<span class="nx">create_table</span> <span class="s2">&#34;nominations&#34;</span><span class="p">,</span> <span class="nx">force</span><span class="o">:</span> <span class="o">:</span><span class="nx">cascade</span> <span class="k">do</span> <span class="o">|</span><span class="nx">t</span><span class="o">|</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">bigint</span> <span class="s2">&#34;user_id&#34;</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">bigint</span> <span class="s2">&#34;movie_id&#34;</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;created_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;updated_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">index</span> <span class="p">[</span><span class="s2">&#34;movie_id&#34;</span><span class="p">],</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;index_nominations_on_movie_id&#34;</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">index</span> <span class="p">[</span><span class="s2">&#34;user_id&#34;</span><span class="p">],</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;index_nominations_on_user_id&#34;</span>
+
+<span class="nx">end</span>
+
+<span class="nx">create_table</span> <span class="s2">&#34;users&#34;</span><span class="p">,</span> <span class="nx">force</span><span class="o">:</span> <span class="o">:</span><span class="nx">cascade</span> <span class="k">do</span> <span class="o">|</span><span class="nx">t</span><span class="o">|</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">string</span> <span class="s2">&#34;access_token&#34;</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">string</span> <span class="s2">&#34;slug&#34;</span><span class="p">,</span> <span class="nx">limit</span><span class="o">:</span> <span class="mi">255</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="s2">&#34;0&#34;</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;created_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">datetime</span> <span class="s2">&#34;updated_at&#34;</span><span class="p">,</span> <span class="nx">precision</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">null</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="nx">t</span><span class="p">.</span><span class="nx">index</span> <span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">],</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;index_users_on_access_token&#34;</span><span class="p">,</span> <span class="nx">unique</span><span class="o">:</span> <span class="kc">true</span>
+
+<span class="nx">end</span>
+
+<span class="nx">add_foreign_key</span> <span class="s2">&#34;nominations&#34;</span><span class="p">,</span> <span class="s2">&#34;movies&#34;</span>
+
+<span class="nx">add_foreign_key</span> <span class="s2">&#34;nominations&#34;</span><span class="p">,</span> <span class="s2">&#34;users&#34;</span>
+
+<span class="nx">end</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">User</span> <span class="o">&lt;</span> <span class="nx">ApplicationRecord</span>
+
+<span class="nx">has_many</span> <span class="o">:</span><span class="nx">nominations</span><span class="p">,</span> <span class="o">:</span><span class="nx">dependent</span> <span class="p">=&gt;</span> <span class="o">:</span><span class="nx">destroy</span>
+
+<span class="nx">has_many</span> <span class="o">:</span><span class="nx">nominated_movies</span><span class="p">,</span> <span class="nx">through</span><span class="o">:</span> <span class="o">:</span><span class="nx">nominations</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="o">:</span><span class="nx">movie</span>
+
+<span class="nx">def</span> <span class="nx">self</span><span class="p">.</span><span class="nx">authenticate_with_credentials</span><span class="p">(</span><span class="nx">slug</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="err">@</span><span class="nx">user</span> <span class="o">&amp;&amp;</span> <span class="err">@</span><span class="nx">user</span><span class="p">.</span><span class="nx">authenticate</span><span class="p">(</span><span class="nx">slug</span><span class="p">)</span>
+
+<span class="k">return</span> <span class="err">@</span><span class="nx">user</span>
+
+<span class="nx">end</span>
+
+<span class="nx">nil</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>The user controller was set up to authenticate using the unique access_token generated on the front end by the UUID module. When a user first visits the page a user is posted to the user route via the App level:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BrowserRouter</span> <span class="nx">as</span> <span class="nx">Router</span><span class="p">,</span> <span class="nx">Route</span><span class="p">,</span> <span class="nx">Switch</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-router-dom&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">axios</span> <span class="nx">from</span> <span class="s1">&#39;axios&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;./styles/App.css&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">LiveSearch</span> <span class="nx">from</span> <span class="s1">&#39;./components/LiveSearch&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">uuid</span> <span class="nx">from</span> <span class="s1">&#39;react-uuid&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Slug</span> <span class="nx">from</span> <span class="s1">&#39;./components/Slug&#39;</span><span class="p">;</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+<span class="kr">const</span> <span class="p">[</span><span class="nx">state</span><span class="p">,</span> <span class="nx">setState</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">({</span>
+<span class="nx">loggedInStatus</span><span class="o">:</span> <span class="s1">&#39;NOT_LOGGED_IN&#39;</span><span class="p">,</span>
+<span class="nx">user</span><span class="o">:</span> <span class="p">{},</span>
+<span class="p">});</span>
+<span class="c1">//posts a user to database and generates unique slug via UUID
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">createUser</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">axios</span>
+<span class="p">.</span><span class="nx">post</span><span class="p">(</span>
+<span class="s1">&#39;/api/registrations&#39;</span><span class="p">,</span>
+<span class="p">{</span>
+<span class="nx">slug</span><span class="o">:</span> <span class="nx">uuid</span><span class="p">(),</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+<span class="nx">authorization</span><span class="o">:</span> <span class="sb">`Token token=</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span>
+<span class="s1">&#39;access_token&#39;</span>
+<span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">},</span>
+<span class="p">{</span> <span class="nx">withCredentials</span><span class="o">:</span> <span class="kc">false</span> <span class="p">}</span>
+<span class="p">)</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="s1">&#39;created&#39;</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="nx">handleSuccessfulAuth</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Error: &#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="p">};</span>
+<span class="c1">//sets React state accordingly
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">handleSuccessfulAuth</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;access_token&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">access_token</span><span class="p">);</span>
+<span class="nx">setState</span><span class="p">({</span>
+<span class="nx">loggedInStatus</span><span class="o">:</span> <span class="s1">&#39;LOGGED_IN&#39;</span><span class="p">,</span>
+<span class="nx">user</span><span class="o">:</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user</span><span class="p">,</span>
+<span class="p">});</span>
+<span class="p">};</span>
+<span class="c1">//check if a user exists where access token === access token (in local storage)
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">checkLoginStatus</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">axios</span>
+<span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/api/logged_in&#39;</span><span class="p">,</span> <span class="p">{</span>
+<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+<span class="nx">authorization</span><span class="o">:</span> <span class="sb">`Token token=</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;access_token&#39;</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="nx">withCredentials</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">logged_in</span> <span class="o">&amp;&amp;</span>
+<span class="nx">state</span><span class="p">.</span><span class="nx">loggedInStatus</span> <span class="o">===</span> <span class="s1">&#39;NOT_LOGGED_IN&#39;</span>
+<span class="p">)</span> <span class="p">{</span>
+<span class="nx">setState</span><span class="p">({</span>
+<span class="nx">loggedInStatus</span><span class="o">:</span> <span class="s1">&#39;LOGGED_IN&#39;</span><span class="p">,</span>
+<span class="nx">user</span><span class="o">:</span> <span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">user</span><span class="p">,</span>
+<span class="p">});</span>
+<span class="c1">//catch all clause for setting states correctly
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span>
+<span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">logged_in</span> <span class="o">&amp;&amp;</span>
+<span class="nx">state</span><span class="p">.</span><span class="nx">loggedInStatus</span> <span class="o">===</span> <span class="s1">&#39;LOGGED_IN&#39;</span>
+<span class="p">)</span> <span class="p">{</span>
+<span class="nx">setState</span><span class="p">({</span>
+<span class="nx">loggedInStatus</span><span class="o">:</span> <span class="s1">&#39;NOT_LOGGED_IN&#39;</span><span class="p">,</span>
+<span class="nx">user</span><span class="o">:</span> <span class="p">{},</span>
+<span class="p">});</span>
+<span class="p">}</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Error: &#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="p">};</span>
+<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">checkLoginStatus</span><span class="p">();</span>
+<span class="c1">//check if there is an access token in the browser
+</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;access_token&#39;</span><span class="p">))</span> <span class="p">{</span>
+<span class="nx">createUser</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">},</span> <span class="p">[</span><span class="nx">state</span><span class="p">]);</span>
+<span class="k">return</span> <span class="p">(</span>
+<span class="o">&lt;</span><span class="nx">Router</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">Switch</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">Route</span>
+<span class="nx">exact</span>
+<span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+<span class="nx">render</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="o">&lt;</span><span class="nx">LiveSearch</span> <span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">state</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">}</span>
+<span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+<span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/:slug&#34;</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Slug</span><span class="p">}</span> <span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="err">/Switch&gt;</span>
+<span class="o">&lt;</span><span class="err">/Router&gt;</span>
+<span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>When a user is newly created the route on the backend api/registrations is hit and forwards to the registrations controller</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">RegistrationsController</span> <span class="o">&lt;</span> <span class="nx">ApplicationController</span>
+
+<span class="nx">skip_before_action</span> <span class="o">:</span><span class="nx">restrict_access</span>
+
+<span class="err">#</span><span class="nx">creates</span> <span class="nx">a</span> <span class="nx">user</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">params</span> <span class="nx">sent</span> <span class="nx">from</span> <span class="nx">react</span>
+
+<span class="nx">def</span> <span class="nx">create</span>
+
+<span class="err">@</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">User</span><span class="p">.</span><span class="nx">create</span><span class="o">!</span><span class="p">(</span>
+
+<span class="nx">slug</span><span class="o">:</span> <span class="nx">params</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">],</span>
+
+<span class="nx">access_token</span><span class="o">:</span> <span class="nx">SecureRandom</span><span class="p">.</span><span class="nx">hex</span>
+
+<span class="p">)</span>
+
+<span class="err">#</span> <span class="nx">confirms</span> <span class="nx">creation</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">user</span>
+
+<span class="k">if</span> <span class="err">@</span><span class="nx">user</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">status</span><span class="o">:</span> <span class="o">:</span><span class="nx">created</span><span class="p">,</span>
+
+<span class="nx">user</span><span class="o">:</span> <span class="err">@</span><span class="nx">user</span>
+
+<span class="p">}</span>
+
+<span class="k">else</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span> <span class="nx">status</span><span class="o">:</span> <span class="mi">500</span> <span class="p">}</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>If a user exists (an auth token is present in local storage) the /logged_in route is hit on the backend which is redirected to the sessions controller via routes.rb</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">delete</span> <span class="o">:</span><span class="nx">logout</span><span class="p">,</span> <span class="nx">to</span><span class="o">:</span> <span class="s2">&#34;sessions#logout&#34;</span>
+
+<span class="nx">get</span> <span class="o">:</span><span class="nx">logged_in</span><span class="p">,</span> <span class="nx">to</span><span class="o">:</span> <span class="s2">&#34;sessions#logged_in&#34;</span>
+</code></pre></div><p>The session controller then sends the response back to the front end on successful authentication and sets the status of if the user is logged in to LOGGED_IN.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">SessionsController</span> <span class="o">&lt;</span> <span class="nx">ApplicationController</span>
+
+<span class="nx">skip_before_action</span> <span class="o">:</span><span class="nx">restrict_access</span><span class="p">,</span> <span class="nx">only</span><span class="o">:</span> <span class="p">[</span><span class="o">:</span><span class="nx">create</span><span class="p">,</span> <span class="o">:</span><span class="nx">destroy</span><span class="p">]</span>
+
+<span class="nx">def</span> <span class="k">new</span>
+
+<span class="nx">end</span>
+
+<span class="nx">def</span> <span class="nx">logged_in</span>
+
+<span class="k">if</span> <span class="err">@</span><span class="nx">current_user</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">logged_in</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+<span class="nx">user</span><span class="o">:</span> <span class="err">@</span><span class="nx">current_user</span><span class="p">,</span>
+
+<span class="p">}</span>
+
+<span class="k">else</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">logged_in</span><span class="o">:</span> <span class="kc">false</span>
+
+<span class="p">}</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+
+<span class="nx">def</span> <span class="nx">logout</span>
+
+<span class="err">@</span><span class="nx">current_user</span><span class="p">.</span><span class="nx">update_attributes</span><span class="p">(</span><span class="nx">access_token</span><span class="o">:</span> <span class="nx">nil</span><span class="p">)</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span> <span class="nx">status</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nx">logged_out</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+
+<span class="nx">end</span>
+
+<span class="nx">def</span> <span class="nx">create</span>
+
+<span class="k">if</span> <span class="err">@</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">User</span><span class="p">.</span><span class="nx">authenticate_with_credentials</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span>
+
+<span class="err">@</span><span class="nx">user</span><span class="p">.</span><span class="nx">update_attributes</span><span class="p">(</span><span class="nx">access_token</span><span class="o">:</span> <span class="nx">SecureRandom</span><span class="p">.</span><span class="nx">hex</span><span class="p">)</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">status</span><span class="o">:</span> <span class="o">:</span><span class="nx">created</span><span class="p">,</span>
+
+<span class="nx">logged_in</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+<span class="nx">user</span><span class="o">:</span> <span class="err">@</span><span class="nx">user</span>
+
+<span class="p">}</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+
+<span class="err">#</span><span class="nx">destroy</span> <span class="nx">cookie</span><span class="o">/</span><span class="nx">session</span> <span class="nx">on</span> <span class="nx">logout</span>
+
+<span class="nx">def</span> <span class="nx">destroy</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_IP2YRCmz91grW_BTB1kfhA.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">access_token generated for user</td>
+</tr>
+</tbody>
+</table>
+<p>Once I had successfully got the app to generate the access_token and find the correct user to verify the LOGGED_IN status I decided to tackle entering entries into the database for movies next.</p>
+<h4 id="adding-movies-to-thedatabase">Adding Movies to the Database</h4>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">addNomination</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">movie</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="kr">const</span> <span class="nx">movieNomination</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">movie_title</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Title</span><span class="p">,</span>
+
+<span class="nx">movie_year</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Year</span><span class="p">,</span>
+
+<span class="nx">movie_poster</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Poster</span><span class="p">,</span>
+
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">userID</span><span class="o">:</span> <span class="nx">userID</span><span class="p">,</span>
+
+<span class="p">};</span>
+
+<span class="nx">axios</span>
+
+<span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;/api/movies&#39;</span><span class="p">,</span>
+
+<span class="p">{</span>
+
+<span class="nx">movieNomination</span><span class="p">,</span>
+
+<span class="nx">user</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">{</span>
+
+<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">authorization</span><span class="o">:</span> <span class="sb">`Token token=</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span>
+
+<span class="s1">&#39;access_token&#39;</span>
+
+<span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">}</span>
+
+<span class="p">)</span>
+
+<span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">getNominations</span><span class="p">();</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[]);</span>
+</code></pre></div><p>I had to re-write the logic for adding the movie to the stateful nominations variable on the React side from directly adding to the array and instead pulling from the API itself. I will discuss this in more depth further down as it involved making new queries on the backend. For now I just wanted to ensure movies were posting and build on that.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_sKcii_KBjcIa9PSSuYjxUQ.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">The final state of the movie data being added to the local db</td>
+</tr>
+</tbody>
+</table>
+<p>I had to put a safeguard in the movies controller on the backend such as a check to see if the movie exists already to stop duplicate entries:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">def</span> <span class="nx">create</span>
+
+<span class="k">if</span> <span class="o">!</span><span class="nx">Movie</span><span class="p">.</span><span class="nx">exists</span><span class="o">?</span><span class="p">(</span><span class="nx">movie_params</span><span class="p">)</span>
+
+<span class="err">@</span><span class="nx">movie</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">create</span><span class="o">!</span><span class="p">(</span><span class="nx">movie_params</span><span class="p">)</span>
+
+<span class="nx">end</span>
+
+<span class="err">@</span><span class="nx">movie</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">where</span><span class="p">(</span><span class="nx">movie_title</span><span class="o">:</span> <span class="nx">movie_params</span><span class="p">[</span><span class="o">:</span><span class="nx">movie_title</span><span class="p">],</span> <span class="nx">movie_year</span><span class="o">:</span> <span class="nx">movie_params</span><span class="p">[</span><span class="o">:</span><span class="nx">movie_year</span><span class="p">]</span> <span class="p">).</span><span class="nx">first</span>
+
+<span class="err">@</span><span class="nx">current_user</span><span class="p">.</span><span class="nx">nominated_movies</span> <span class="o">&lt;&lt;</span> <span class="err">@</span><span class="nx">movie</span>
+
+<span class="nx">end</span>
+
+<span class="err">####</span> <span class="nx">Retrieving</span> <span class="nx">a</span> <span class="nx">users</span> <span class="nx">nominations</span> <span class="nx">via</span> <span class="nx">the</span> <span class="nx">Nominations</span> <span class="nx">join</span> <span class="nx">table</span>
+
+<span class="nx">I</span> <span class="nx">had</span> <span class="nx">to</span> <span class="nx">establish</span> <span class="nx">the</span> <span class="nx">relationships</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">backend</span> <span class="k">in</span> <span class="nx">Ruby</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">users</span><span class="p">,</span> <span class="nx">nominations</span> <span class="nx">and</span> <span class="nx">movies</span> <span class="nx">models</span><span class="o">:</span>
+
+<span class="err">#</span><span class="nx">user</span><span class="p">.</span><span class="nx">rb</span>  
+<span class="nx">has_many</span> <span class="o">:</span><span class="nx">nominations</span><span class="p">,</span> <span class="o">:</span><span class="nx">dependent</span> <span class="p">=&gt;</span> <span class="o">:</span><span class="nx">destroy</span>
+
+<span class="err">#</span> <span class="nx">add</span> <span class="nx">a</span> <span class="kr">class</span> <span class="nx">nominated_movies</span> <span class="nx">onto</span> <span class="nx">users</span> <span class="k">for</span> <span class="nx">easier</span> <span class="nx">reference</span>
+
+<span class="nx">has_many</span> <span class="o">:</span><span class="nx">nominated_movies</span><span class="p">,</span> <span class="nx">through</span><span class="o">:</span> <span class="o">:</span><span class="nx">nominations</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="o">:</span><span class="nx">movie</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">Nomination</span> <span class="o">&lt;</span> <span class="nx">ApplicationRecord</span>
+
+<span class="nx">belongs_to</span> <span class="o">:</span><span class="nx">user</span>
+
+<span class="nx">belongs_to</span> <span class="o">:</span><span class="nx">movie</span>
+
+<span class="err">#</span><span class="nx">join</span> <span class="nx">nominations</span> <span class="nx">and</span> <span class="nx">users</span> <span class="nx">using</span> <span class="nx">the</span> <span class="nx">relationshsip</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">user_id</span> <span class="nx">foreign</span> <span class="nx">key</span>
+
+<span class="nx">scope</span> <span class="o">:</span><span class="nx">is_nominated</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nx">nomination</span><span class="p">)</span> <span class="p">{</span><span class="nx">joins</span><span class="p">(</span><span class="o">:</span><span class="nx">user</span><span class="p">).</span><span class="nx">where</span><span class="p">(</span><span class="nx">user_id</span><span class="o">:</span> <span class="nx">users</span><span class="p">.</span><span class="nx">id</span><span class="p">)}</span>
+
+<span class="nx">end</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">class</span> <span class="nx">Movie</span> <span class="o">&lt;</span> <span class="nx">ApplicationRecord</span>
+
+<span class="nx">has_many</span> <span class="o">:</span><span class="nx">nominations</span><span class="p">,</span>
+
+<span class="o">:</span><span class="nx">dependent</span> <span class="p">=&gt;</span> <span class="o">:</span><span class="nx">destroy</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>The new method on the User class nominated_movies allowed me to create a nomination using the movie information that came in from the backend in a post request to as part of the post request to ‘/api/movies’ in the addNomination function in LiveSearch.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">def</span> <span class="nx">create</span>
+
+<span class="k">if</span> <span class="o">!</span><span class="nx">Movie</span><span class="p">.</span><span class="nx">exists</span><span class="o">?</span><span class="p">(</span><span class="nx">movie_params</span><span class="p">)</span>
+
+<span class="err">@</span><span class="nx">movie</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">create</span><span class="o">!</span><span class="p">(</span><span class="nx">movie_params</span><span class="p">)</span>
+
+<span class="nx">end</span>  
+<span class="err">#</span><span class="nx">get</span> <span class="nx">the</span> <span class="nx">record</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">query</span> <span class="nx">params</span> <span class="nx">coming</span> <span class="nx">into</span> <span class="nx">the</span> <span class="nx">route</span> <span class="nx">and</span> <span class="nx">post</span> <span class="nx">the</span> <span class="nx">id</span> <span class="k">of</span> <span class="nx">that</span> <span class="nx">movie</span> <span class="nx">via</span> <span class="nx">the</span> <span class="nx">route</span> <span class="nx">established</span> <span class="k">in</span> <span class="nx">routes</span><span class="p">.</span><span class="nx">rb</span>
+
+<span class="err">@</span><span class="nx">movie</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">where</span><span class="p">(</span><span class="nx">movie_title</span><span class="o">:</span> <span class="nx">movie_params</span><span class="p">[</span><span class="o">:</span><span class="nx">movie_title</span><span class="p">],</span> <span class="nx">movie_year</span><span class="o">:</span> <span class="nx">movie_params</span><span class="p">[</span><span class="o">:</span><span class="nx">movie_year</span><span class="p">]</span> <span class="p">).</span><span class="nx">first</span>
+
+<span class="err">@</span><span class="nx">current_user</span><span class="p">.</span><span class="nx">nominated_movies</span> <span class="o">&lt;&lt;</span> <span class="err">@</span><span class="nx">movie</span>
+
+<span class="nx">end</span>
+
+<span class="err">#</span><span class="k">in</span> <span class="nx">routes</span><span class="p">.</span><span class="nx">rb</span>  
+<span class="err">#</span><span class="nx">when</span> <span class="nx">the</span> <span class="nx">movie</span><span class="o">/</span><span class="nx">create</span> <span class="nx">route</span> <span class="nx">is</span> <span class="nx">hit</span> <span class="nx">make</span> <span class="nx">a</span> <span class="nx">record</span> <span class="k">in</span> <span class="nx">nominations</span> <span class="k">for</span> <span class="nx">that</span> <span class="nx">movie_id</span> <span class="k">for</span> <span class="nx">that</span> <span class="nx">user_id</span><span class="p">.</span>
+
+<span class="nx">resources</span> <span class="o">:</span><span class="nx">movies</span> <span class="k">do</span>
+
+<span class="nx">put</span> <span class="o">:</span><span class="nx">nomination</span><span class="p">,</span> <span class="nx">on</span><span class="o">:</span> <span class="o">:</span><span class="nx">member</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>For the get request and retrieving nominations I had to implement a query which I worked on in stages first via the SQL editor in DBeaver:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">-</span><span class="nx">Select</span> <span class="nx">all</span> <span class="nx">movies</span>  
+<span class="nx">select</span> <span class="o">*</span> <span class="nx">from</span> <span class="nx">movies</span>  
+<span class="o">-</span> <span class="nx">join</span> <span class="nx">nominations</span> <span class="nx">table</span>  
+<span class="nx">join</span> <span class="nx">nominations</span>  
+<span class="o">-</span> <span class="nx">using</span> <span class="nx">foreign</span> <span class="nx">keys</span>  
+<span class="nx">on</span> <span class="nx">movies</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="nx">nominations</span><span class="p">.</span><span class="nx">movie_id</span>  
+<span class="o">-</span><span class="nx">join</span> <span class="nx">users</span> <span class="nx">table</span>  
+<span class="nx">join</span> <span class="nx">users</span>  
+<span class="o">-</span><span class="nx">using</span> <span class="nx">foreign</span> <span class="nx">keys</span> <span class="k">of</span> <span class="nx">nominations</span> <span class="nx">table</span>  
+<span class="nx">on</span> <span class="nx">nominations</span><span class="p">.</span><span class="nx">user_id</span> <span class="o">=</span> <span class="nx">users</span><span class="p">.</span><span class="nx">id</span>  
+<span class="o">-</span><span class="k">for</span> <span class="nx">the</span> <span class="nx">current</span> <span class="nx">user</span>  
+<span class="nx">where</span> <span class="nx">users</span><span class="p">.</span><span class="nx">slug</span> <span class="o">=</span> <span class="s1">&#39;some-UUID-value&#39;</span> <span class="p">;</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_b-h-d-QXoMItVd-iqaeBNw.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>SQL query written in DBeaver returning results from the many to many relationship</em></td>
+</tr>
+</tbody>
+</table>
+<p>Then I did some research via <a href="https://stackoverflow.com/questions/21083625/rails-joining-multiple-tables/21083678">stackoverflow</a> on how to join multiple tables in Rails using activeRecords syntax. The result of my research and modelling a successful query translated to the following on the index route in the movies controller:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">def</span> <span class="nx">index</span>
+
+<span class="err">@</span><span class="nx">movies</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">joins</span><span class="p">(</span><span class="o">:</span><span class="nx">nominations</span><span class="p">).</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">).</span><span class="nx">where</span><span class="p">(</span><span class="nx">nominations</span><span class="o">:</span> <span class="p">{</span><span class="nx">user_id</span><span class="o">:</span> <span class="err">@</span><span class="nx">current_user</span><span class="p">.</span><span class="nx">id</span><span class="p">})</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="err">@</span><span class="nx">movies</span><span class="p">.</span><span class="nx">to_json</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>As mentioned earlier I had to change the method of storing and adding the nominations on the frontend as now I had to track state from the DB rather than locally as part of implementing the feature to remember a users list of nominations:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">getNominations</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">axios</span>
+
+<span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/api/movies&#39;</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">authorization</span><span class="o">:</span> <span class="sb">`Token token=</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;access_token&#39;</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">})</span>
+
+<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">setNominations</span><span class="p">([...</span><span class="nx">result</span><span class="p">.</span><span class="nx">data</span><span class="p">]);</span>
+
+<span class="p">});</span>
+
+<span class="p">};</span>
+
+<span class="c1">//delete nominations by index from the array
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">deleteNomination</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">getNominations</span><span class="p">();</span>
+
+<span class="p">},</span> <span class="p">[]);</span>
+
+<span class="c1">//for when a user wants to add a nomination
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">addNomination</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">movie</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="kr">const</span> <span class="nx">movieNomination</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">movie_title</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Title</span><span class="p">,</span>
+
+<span class="nx">movie_year</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Year</span><span class="p">,</span>
+
+<span class="nx">movie_poster</span><span class="o">:</span> <span class="nx">movie</span><span class="p">.</span><span class="nx">Poster</span><span class="p">,</span>
+
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">userID</span><span class="o">:</span> <span class="nx">userID</span><span class="p">,</span>
+
+<span class="p">};</span>
+
+<span class="nx">axios</span>
+
+<span class="p">.</span><span class="nx">post</span><span class="p">(</span>
+
+<span class="s1">&#39;/api/movies&#39;</span><span class="p">,</span>
+
+<span class="p">{</span>
+
+<span class="nx">movieNomination</span><span class="p">,</span>
+
+<span class="nx">user</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">{</span>
+
+<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">authorization</span><span class="o">:</span> <span class="sb">`Token token=</span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span>
+
+<span class="s1">&#39;access_token&#39;</span>
+
+<span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">}</span>
+
+<span class="p">)</span>
+
+<span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">getNominations</span><span class="p">();</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[]);</span>
+
+<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">getNominations</span><span class="p">();</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">numNominated</span> <span class="o">===</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setOpen</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="p">},</span> <span class="p">[</span><span class="nx">numNominated</span><span class="p">,</span> <span class="nx">deleteNomination</span><span class="p">,</span> <span class="nx">addNomination</span><span class="p">]);</span>
+</code></pre></div><p>I had to add the deleteNomination and addNomination as dependencies to the useEffect and as per rules of react wrap the functions inside of useCallback to stop them firing endlessly.</p>
+<p>The result of implementing the new structure to save and get nominations fro the database ended up with the following result:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_LchJfNGykr016SWbEwV6cw.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Revisiting and refreshing a page a user has already conducted their votes on</td>
+</tr>
+</tbody>
+</table>
+<h4 id="implementing-shareable-links">Implementing Shareable Links</h4>
+<p>An advantage of using the database and creating users in this fashion was that I could generate a slug via React-UUID on a unique users’ first visit to the page on the front end of the app and build a user into the database with this unique slug.</p>
+<p>In order to implement the slug or shareable link I had to implement React Router on the front end to create a route such as <a href="https://theshoppies-movie-awards.netlify.app/70b4c0e-111-f3b-51-53bbe685f18">https://theshoppies-movie-awards.netlify.app/70b4c0e-111-f3b-51-53bbe685f18</a> as well as define the routes and queries on the backend.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//App.js return wrapped in Router and Switch routing between / and /:slug
+</span><span class="c1"></span>
+<span class="k">return</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">Router</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">Switch</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">Route</span>
+
+<span class="nx">exact</span>
+
+<span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+
+<span class="nx">render</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="o">&lt;</span><span class="nx">LiveSearch</span> <span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">state</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">}</span>
+
+<span class="o">&gt;&lt;</span><span class="err">/Route&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">Route</span> <span class="nx">path</span><span class="o">=</span><span class="s2">&#34;/:slug&#34;</span> <span class="nx">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Slug</span><span class="p">}</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/Switch&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/Router&gt;</span>
+
+<span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="nx">routes</span><span class="p">.</span><span class="nx">rb</span>  
+<span class="err">#</span><span class="nx">redirects</span> <span class="nx">users</span> <span class="nx">to</span> <span class="nx">get</span><span class="o">/</span><span class="nx">Nominations</span> <span class="p">(</span><span class="nx">nominations</span> <span class="nx">controller</span><span class="p">)</span> <span class="nx">when</span> <span class="nx">a</span> <span class="nx">slug</span> <span class="nx">parameter</span> <span class="nx">is</span> <span class="nx">sent</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">front</span> <span class="nx">end</span>  
+<span class="nx">get</span> <span class="o">:</span><span class="nx">slug</span><span class="p">,</span> <span class="nx">to</span><span class="o">:</span> <span class="s2">&#34;nominations#slug&#34;</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="nx">nominations_controller</span><span class="p">.</span><span class="nx">rb</span>
+
+<span class="nx">def</span> <span class="nx">show</span>
+
+<span class="err">#</span> <span class="nx">takes</span> <span class="k">in</span> <span class="nx">a</span> <span class="nx">slug</span> <span class="nx">from</span> <span class="nx">user</span> <span class="nx">e</span><span class="p">.</span><span class="nx">g</span><span class="p">.</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:3001/api/nominations/7c5dec-e47-4c4e-a3ce-280a3b38ce5b
+</span><span class="c1"></span>
+<span class="nx">slug</span> <span class="o">=</span> <span class="nx">params</span><span class="p">[</span><span class="o">:</span><span class="nx">id</span><span class="p">]</span>
+
+<span class="err">#</span><span class="nx">joins</span> <span class="nx">from</span> <span class="nx">movies</span> <span class="nx">to</span> <span class="nx">nominations</span> <span class="nx">to</span> <span class="nx">user</span> <span class="nx">and</span> <span class="nx">gets</span> <span class="nx">all</span> <span class="nx">associated</span> <span class="nx">movies</span> <span class="nx">by</span> <span class="nx">slug</span>
+
+<span class="err">@</span><span class="nx">nominatedMoviesFromSlug</span> <span class="o">=</span> <span class="nx">Movie</span><span class="p">.</span><span class="nx">joins</span><span class="p">(</span><span class="nx">nominations</span><span class="o">:</span> <span class="o">:</span><span class="nx">user</span><span class="p">).</span><span class="nx">where</span><span class="p">(</span><span class="s2">&#34;slug=?&#34;</span><span class="p">,</span> <span class="nx">slug</span><span class="p">).</span><span class="nx">all</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="err">@</span><span class="nx">nominatedMoviesFromSlug</span><span class="p">.</span><span class="nx">to_json</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>The above code starts at Movie, joins nominations and user and retrieves each movie by movie_id from the user_id that owns that particular slug has in their nominations.</p>
+<p>Again I started off the query incrementally testing in Dbeaver starting by getting all movies and working outwardly to make the query more specific.</p>
+<p>To implement the front facing functionality of the slug I decided to pass the user props into the banner component like so:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">CompleteBanner</span>
+
+<span class="nx">open</span><span class="o">=</span><span class="p">{</span><span class="nx">open</span><span class="p">}</span>
+
+<span class="nx">numNominated</span><span class="o">=</span><span class="p">{</span><span class="nx">numNominated</span><span class="p">}</span>
+
+<span class="nx">handleClose</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClose</span><span class="p">}</span>
+
+<span class="nx">user</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">user</span><span class="p">}</span>
+
+<span class="err">/&gt;</span>
+</code></pre></div><p>Then in the banner component I could use a template literal with the props to display the user slug:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+
+<span class="nx">You</span> <span class="nx">can</span> <span class="nx">share</span> <span class="nx">your</span> <span class="nx">nominations</span> <span class="nx">by</span> <span class="nx">copying</span> <span class="k">this</span> <span class="nx">link</span><span class="o">:</span>
+
+<span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;&lt;</span><span class="err">/br&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="p">{</span><span class="sb">`http://localhost:3000/</span><span class="si">${</span><span class="nx">props</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">slug</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">link</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="nx">localhost</span><span class="o">:</span><span class="mi">3000</span><span class="o">/</span>
+
+<span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">slug</span><span class="p">}</span>
+
+<span class="o">&lt;</span><span class="err">/span&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/a&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/p&gt;</span>
+</code></pre></div><p>The other part of the functionality to actually display a slug page used React Router and I made a Slug component to make a get request to the API based on the slug in the address bar:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">getTotal</span><span class="p">();</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="sb">`api/nominations/</span><span class="si">${</span><span class="nx">slug</span><span class="si">}</span><span class="sb">`</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="nx">setNominations</span><span class="p">([...</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">]);</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[]);</span>
+</code></pre></div><p>The result was as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_NDjP6XyMo3b5RuvE3nIL3w.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Shareable links via a slug can be distributed online and visited by other users.</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="implementing-a-spinner-animation">Implementing a Spinner Animation</h4>
+<p>I attempted to tackle another stretch requirement of adding a little animation to the page. I felt that before I implemented the spinner it was hard to see what the search bar was doing. I decided to set this up to be conditionally rendered in the LiveSearch component dependent upon if a search term is present during the useEffect:</p>
+<p>I stored the isSearching and setIsSearching in a useState with an initial value of false:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">isSearching</span><span class="p">,</span> <span class="nx">setIsSearching</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+
+<span class="err">#</span><span class="nx">UseEffect</span> <span class="nx">then</span> <span class="nx">triggers</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">search</span> <span class="nx">term</span> <span class="nx">changes</span>
+
+<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">term</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setIsSearching</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">mainURL</span> <span class="o">=</span> <span class="sb">`http://www.omdbapi.com/?s=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">&amp;type=movie&amp;page=1&amp;apikey=</span><span class="si">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_KEY</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fallbackURL</span> <span class="o">=</span> <span class="sb">`http://www.omdbapi.com/?t=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">&amp;type=movie&amp;apikey=</span><span class="si">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_KEY</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">mainURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([...</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Search</span><span class="p">]);</span>  
+<span class="err">#</span><span class="nx">when</span> <span class="nx">the</span> <span class="nx">setTimeout</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">useDebounce</span> <span class="nx">hook</span> <span class="nx">is</span> <span class="nx">done</span> <span class="nx">and</span> <span class="nx">we</span> <span class="nx">either</span> <span class="nx">retrieve</span> <span class="nx">search</span> <span class="nx">results</span> <span class="nx">or</span> <span class="nx">no</span> <span class="nx">results</span> <span class="nx">are</span> <span class="nx">found</span>
+
+<span class="nx">setIsSearching</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;False&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">fallbackURL</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">Response</span> <span class="o">===</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">]);</span>
+
+<span class="nx">setIsSearching</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+<span class="nx">setResults</span><span class="p">([]);</span>
+
+<span class="nx">setIsSearching</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="p">});</span>
+
+<span class="p">}</span>
+
+<span class="p">});</span>
+
+<span class="p">},</span> <span class="p">[</span><span class="nx">term</span><span class="p">]);</span>
+</code></pre></div><hr>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="k">if</span> <span class="nx">isSearching</span> <span class="nx">is</span> <span class="kc">true</span> <span class="nx">show</span> <span class="nx">the</span> <span class="nx">spinner</span>
+
+<span class="p">{</span><span class="nx">isSearching</span> <span class="o">&amp;&amp;</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;searching&#34;</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">searching</span><span class="p">...</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">img</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;spinner&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">status</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="err">/img&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="p">)}</span>
+</code></pre></div><p>The spinner lives as a static graphic in the public/images directory but is animated to spin 360 degrees using CSS:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="err">@</span><span class="nx">keyframes</span> <span class="nx">rotate</span> <span class="p">{</span>
+
+<span class="mi">100</span><span class="o">%</span> <span class="p">{</span>
+
+<span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">transform</span><span class="o">:</span> <span class="nx">rotate</span><span class="p">(</span><span class="mi">360</span><span class="nx">deg</span><span class="p">);</span>
+
+<span class="nx">transform</span><span class="o">:</span> <span class="nx">rotate</span><span class="p">(</span><span class="mi">360</span><span class="nx">deg</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nx">spinner</span> <span class="p">{</span>
+
+<span class="nx">animation</span><span class="o">:</span> <span class="nx">rotate</span> <span class="mi">1</span><span class="nx">s</span> <span class="nx">linear</span> <span class="nx">infinite</span><span class="p">;</span>
+
+<span class="nx">height</span><span class="o">:</span> <span class="mi">2</span><span class="nx">rem</span><span class="p">;</span>
+
+<span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="o">:</span> <span class="mi">1</span><span class="nx">rem</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div><p>This shows the Searching… spinner every time the search term changes and the useDebounce() hook is triggered.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_80NF3DyTsbu4H7kQv6gahQ.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+</table>
+<h4 id="total-number-of-people-who-have-voted-for-5movies">Total number of people who have voted for 5 movies</h4>
+<p>I decided to add this as a nice little UX feature for the app, as a user it can be a nice thing to see other people using the app.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_88Nf7bVW4BxztG2pxpKWAg.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Total people voted counter dynamically adjusts as people do or do not have 5 total voted movies</td>
+</tr>
+</tbody>
+</table>
+<p>I implemented another backend query in the nominations controller:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="err">#</span><span class="nx">get</span> <span class="nx">total</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">people</span> <span class="nx">who</span> <span class="nx">have</span> <span class="nx">nominated</span> <span class="mi">5</span> <span class="nx">movies</span>
+
+<span class="nx">def</span> <span class="nx">total</span>
+
+<span class="err">@</span><span class="nx">totalPeopleWith5Nominations</span> <span class="o">=</span> <span class="nx">Nomination</span><span class="p">.</span><span class="nx">group</span><span class="p">(</span><span class="o">:</span><span class="nx">user_id</span><span class="p">).</span><span class="nx">having</span><span class="p">(</span><span class="nx">count</span><span class="o">:</span> <span class="mi">5</span><span class="p">).</span><span class="nx">count</span>
+
+<span class="err">@</span><span class="nx">counted</span> <span class="o">=</span> <span class="err">@</span><span class="nx">totalPeopleWith5Nominations</span><span class="p">.</span><span class="nx">count</span>
+
+<span class="nx">render</span> <span class="nx">json</span><span class="o">:</span> <span class="err">@</span><span class="nx">counted</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>This returns a simple hash which contains a data: integer key pair of the count of how many users grouped by user_id having 5 nominations are retrieved. I then use that return number in a template literal with total being stored in a useState with null as the initial value:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="nx">total</span> <span class="o">!==</span> <span class="kc">null</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;highlight&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">total</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/span&gt; people have voted for</span>
+
+<span class="nx">their</span> <span class="nx">favorites</span><span class="p">.</span>
+
+<span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="kc">null</span><span class="p">}</span>
+</code></pre></div><h4 id="a-fresh-lick-ofpaint">A fresh lick of paint</h4>
+<p>I wanted to give the app a bit more user-friendly feel by using icons and colors in a consistent way. I chose material-ui to handle buttons and themes as there’s a lot of flexibility with what you can do and materialUI icons also allow you to create icon buttons which I thought would make the app a bit easier to use and understand.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">classnames</span> <span class="nx">from</span> <span class="s1">&#39;classnames&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Button</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/core/Button&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">filmThumbnail</span> <span class="nx">from</span> <span class="s1">&#39;../images/filmdefault.png&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">makeStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/core/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">AddCircleIcon</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/icons/AddCircle&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Icon</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/core/Icon&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">useStyles</span> <span class="o">=</span> <span class="nx">makeStyles</span><span class="p">((</span><span class="nx">theme</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+
+<span class="nx">button</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">margin</span><span class="o">:</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">spacing</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+
+<span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#00e676&#39;</span><span class="p">,</span>
+
+<span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;40px&#39;</span><span class="p">,</span>
+
+<span class="s1">&#39;&amp;:hover&#39;</span><span class="o">:</span> <span class="p">{</span>
+
+<span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;rgb(0, 161, 82)&#39;</span><span class="p">,</span>
+
+<span class="p">},</span>
+
+<span class="p">},</span>
+
+<span class="p">}));</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Movie</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="kr">const</span> <span class="nx">movieInfoClass</span> <span class="o">=</span> <span class="nx">classnames</span><span class="p">(</span><span class="s1">&#39;movie__info&#39;</span><span class="p">,</span> <span class="p">{</span>
+
+<span class="s1">&#39;movie__info--explicit&#39;</span><span class="o">:</span> <span class="nx">props</span><span class="p">.</span><span class="nx">collectionExplicitness</span> <span class="o">===</span> <span class="s1">&#39;explicit&#39;</span><span class="p">,</span>
+
+<span class="p">});</span>
+
+<span class="kr">const</span> <span class="nx">classes</span> <span class="o">=</span> <span class="nx">useStyles</span><span class="p">();</span>
+
+<span class="k">return</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">article</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie&#34;</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">img</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__thumbnail&#34;</span>
+
+<span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Poster</span> <span class="o">===</span> <span class="s1">&#39;N/A&#39;</span> <span class="o">?</span> <span class="nx">filmThumbnail</span> <span class="o">:</span> <span class="nx">props</span><span class="p">.</span><span class="nx">Poster</span><span class="p">}</span>
+
+<span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;Movie&#34;</span>
+
+<span class="err">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">movieInfoClass</span><span class="p">}</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__name&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Title</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__year&#34;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Year</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">numNominated</span> <span class="o">!==</span> <span class="mi">5</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+
+<span class="p">{</span><span class="nx">isNominated</span><span class="p">()</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominated_label&#34;</span><span class="o">&gt;</span><span class="nx">Nominated</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">Button</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">button</span><span class="p">}</span>
+
+<span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span>
+
+<span class="nx">startIcon</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="nx">AddCircleIcon</span> <span class="o">/&gt;</span><span class="p">}</span>
+
+<span class="o">&gt;</span>
+
+<span class="nx">Nominate</span>
+
+<span class="o">&lt;</span><span class="err">/Button&gt;</span>
+
+<span class="p">)}</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+
+<span class="p">{</span><span class="nx">isNominated</span><span class="p">()</span> <span class="o">?</span> <span class="p">(</span>
+
+<span class="o">&lt;</span><span class="nx">p</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;nominated_label&#34;</span><span class="o">&gt;</span><span class="nx">Nominated</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+
+<span class="p">)</span> <span class="o">:</span> <span class="kc">null</span><span class="p">}</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="p">)}</span>
+
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/article&gt;</span>
+
+<span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>Icons, themes and styles from material UI have to be imported, stored as a const and the classes then get applied by using className={classes.classes} on the element you wish to style itself.</p>
+<p>The materialUI workflow is very similar to using CSS only you are writing it in the form of an object and with the syntax that materialUI sets out. Instead of background-color: you would use backgroundColor: as notation. The documentation is very detailed for this library with numerous examples being provided on code sandbox and via external users.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_KGC8_O2k2lcX4F6hMmK9Ow.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+</table>
+<h4 id="adding-opengraph-cards">Adding OpenGraph cards</h4>
+<p>Another small feature I wanted to do was to update the index.html create-react-app gives you as standard and customize the icon, description and information the website gives you as well as come up with some relevant information when a user shares a link in social media:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">charset</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;icon&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;%PUBLIC_URL%/favicon.ico&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;viewport&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;width=device-width, initial-scale=1&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;theme-color&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;#000000&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;Nominate your favorite movies of the year here&#34;</span>
+
+<span class="nx">content</span><span class="o">=</span><span class="s2">&#34;Created for the Shopify Front-End Developer Intern (Remote) - Summer 2021 Challenge&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;apple-touch-icon&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;%PUBLIC_URL%/logo192.png&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;</span><span class="nx">The</span> <span class="nx">Shoppies</span> <span class="nx">Movie</span> <span class="nx">Awards</span><span class="o">&lt;</span><span class="err">/title&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;og:url&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="nx">https</span><span class="o">:</span><span class="c1">//www.theshoppies.netlifyapp.com /&gt;
+</span><span class="c1"></span>
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;og:type&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;Movie &amp; Entertainment&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;og:title&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;The Shoppies - Movie Awards&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;og:description&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;​Nominate your favorite movies of the year here.&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;og:image&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;https://i.imgur.com/SUG2pGw.png&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;twitter:image&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s2">&#34;https://i.imgur.com/SUG2pGw.png&#34;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;twitter:site&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s1">&#39;https://i.imgur.com/SUG2pGw.png&#39;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">property</span><span class="o">=</span><span class="s2">&#34;twitter:title&#34;</span> <span class="nx">content</span><span class="o">=</span><span class="s1">&#39;The Shoppies - Movie Awards&#39;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="err">/head&gt;</span>
+</code></pre></div><p>I uploaded the banner branding to imgur so it had a host on the website and set the card image source to that image.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_U9dSs8QlEzEPH0qD6E90Lg.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">OpenGraph cards appear when sharing the web links online</td>
+</tr>
+</tbody>
+</table>
+<h4 id="making-a-default-image-if-the-movie-poster-isna">Making a default image if the movie poster is N/A</h4>
+<p>I took the decision to come up with a standard image the same way does if album cover artwork is missing on services such as iTunes. To do that I downloaded one of the image covers from my working version of the site:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_ecB-5inikdSqhK_wMpQT2Q.jpeg" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Movie Thumbnail from OMDB</td>
+</tr>
+</tbody>
+</table>
+<p>Took the movie thumbnail into canva to keep the same dimensions as the above image and edited slightly finding appropriate graphics:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_zN9PgKREOg4tJUGso9FKaQ.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Editing the default_thumbnail in Canva</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_AY9YPdb5kf9IQXMzxrrttA.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Final Default Thumbnail</td>
+</tr>
+</tbody>
+</table>
+<p>I then wrote a conditional check in the movie and nomination:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">img</span>
+
+<span class="nx">className</span><span class="o">=</span><span class="s2">&#34;movie__thumbnail&#34;</span>
+
+<span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">Poster</span> <span class="o">===</span> <span class="s1">&#39;N/A&#39;</span> <span class="o">?</span> <span class="nx">filmThumbnail</span> <span class="o">:</span> <span class="nx">props</span><span class="p">.</span><span class="nx">Poster</span><span class="p">}</span>
+
+<span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;Movie&#34;</span>
+
+<span class="err">/&gt;</span>
+</code></pre></div><p>if the poster has the value N/A then the default_thumbnail above should render instead.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_vkvU2d7eP00HyJIznZQHbg.gif#.width-800" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Movies would appear with a broken image and alt text before implementing the default image</td>
+</tr>
+</tbody>
+</table>
+<h4 id="deployment">Deployment</h4>
+<p>I decided to deploy the rails backend via Heroku and the front-end on Netlify via the CLIs. I had to make a few changes to the cors file as I was getting a lot of errors to start with because of same-site requests and cross origin resource sharing permissions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_9MFaFC86K23z5WhZWdyyNw.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Cors and HTTP: issues on the requests</td>
+</tr>
+</tbody>
+</table>
+<p>I had to change my cors configuration in initializers/cors.rb using the rack-cors gem as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Rails</span><span class="p">.</span><span class="nx">application</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">middleware</span><span class="p">.</span><span class="nx">insert_before</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">Rack</span><span class="o">::</span><span class="nx">Cors</span><span class="p">,</span> <span class="nx">debug</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">logger</span><span class="o">:</span> <span class="p">(</span><span class="o">-&gt;</span> <span class="p">{</span> <span class="nx">Rails</span><span class="p">.</span><span class="nx">logger</span> <span class="p">})</span> <span class="k">do</span>
+
+<span class="nx">allow</span> <span class="k">do</span>
+
+<span class="nx">origins</span> <span class="s1">&#39;*&#39;</span>
+
+<span class="nx">resource</span> <span class="s1">&#39;/cors&#39;</span><span class="p">,</span>
+
+<span class="o">:</span><span class="nx">headers</span> <span class="p">=&gt;</span> <span class="o">:</span><span class="nx">any</span><span class="p">,</span>
+
+<span class="o">:</span><span class="nx">methods</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="o">:</span><span class="nx">post</span><span class="p">],</span>
+
+<span class="o">:</span><span class="nx">max_age</span> <span class="p">=&gt;</span> <span class="mi">0</span>
+
+<span class="nx">resource</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span>
+
+<span class="o">:</span><span class="nx">headers</span> <span class="p">=&gt;</span> <span class="o">:</span><span class="nx">any</span><span class="p">,</span>
+
+<span class="o">:</span><span class="nx">methods</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="o">:</span><span class="nx">get</span><span class="p">,</span> <span class="o">:</span><span class="nx">post</span><span class="p">,</span> <span class="o">:</span><span class="k">delete</span><span class="p">,</span> <span class="o">:</span><span class="nx">put</span><span class="p">,</span> <span class="o">:</span><span class="nx">patch</span><span class="p">,</span> <span class="o">:</span><span class="nx">options</span><span class="p">,</span> <span class="o">:</span><span class="nx">head</span><span class="p">],</span>
+
+<span class="o">:</span><span class="nx">max_age</span> <span class="p">=&gt;</span> <span class="mi">0</span>
+
+<span class="nx">end</span>
+
+<span class="nx">end</span>
+</code></pre></div><p>This as well as disabling <code>{ withCredentials : true }</code> on the front end requests took care of that problem. The http:// issue when making requests to the OMDB was solved by changing the request link to https:// on the production branch. I decided to branch out my production to a new branch for safety so no bad code would get pushed to the production build.</p>
+<p>I also had to write a _redirects file for the Netlify deployment to re-direct requests from netlify.app/api to herokuapp.com/api.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="sr">/api/</span><span class="o">*</span> <span class="nx">https</span><span class="o">:</span><span class="c1">//myrubyapiandbackend.herokuapp.com/api/:splat 200
+</span><span class="c1"></span>
+<span class="err">/* /index.html 200</span>
+</code></pre></div><h3 id="future-improvements">Future Improvements</h3>
+<p><strong>Add different search filters to the search bar e.g. search by type, year</strong></p>
+<p>Theoretically with the different options the API has available a filter could be built into the search as a dropdown option and applied to the query.</p>
+<p><strong>Add unit testing and integration testing with Jest and Cypress for frontend and Capybara and Rspec on the backend</strong></p>
+<p>I feel this would help during a re-factor process, for making code more generic as well as testing and having confidence in the overall codebase itself. There are a lot of places the codebase can be made more efficient and testing is often makes me think about code from a different perspective.</p>
+<p><strong>Add media queries for mobile responsive layouts</strong></p>
+<p>I had some friends test the code over various computers and mobile devices. Whilst the device did display the site the results were not as pretty as desktop:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_RPqFgFxacqqXv0udsyNZDg.jpeg" alt=""></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_rNKr0g2Yw8xn_MjrAHQpQg.jpeg" alt=""></th>
+</tr>
+</thead>
+</table>
+<p>Whilst the criteria didn’t specify responsiveness it should always be a consideration in UX and UI design as many sites are designed with a mobile first approach.</p>
+<p><strong>Add nomination envelope placeholders when the user has nominations still to make</strong></p>
+<p>This was a feature that would help the user experience a little bit and clue the end user into what the app is expecting from them. Having 5 empty envelopes as placeholders may give more visual clues as to what to do with the app with each envelope transitioning away once a choice is made.</p>
+<p><strong>Cache movie search results in database for faster and more relevant searches/implement pagination for results.</strong></p>
+<p>I alluded to this earlier in the technical write up. Some work would have to be done on both the front and backend to adapt the app to check the internal database first for our cached results as well as falling back to the other search results via OMDB. OMDB has many limitations like data being inaccurate or missing, some tv shows and making ofs getting slated as movies. See this example below:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/shopify-tech-challenge/1_qot45_heZCZAglWdArRV7w.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Data is sometimes inaccurate or mis-typed</td>
+</tr>
+</tbody>
+</table>
+<p>This result looks arguably like a stand-up comedian on tour, and whilst this may be the subject of debate I personally would not class this as a movie.</p>
+<p>With caching the results our app users are getting paired with either a machine learning algorithm or some form of aggregating the results on the backend the search function could work more efficiently to get over the deficiencies and shortcomings of the API as well as decrease loading times so results show up more rapidly.</p>
+<p>The API does offer pagination so it would make sense to cache the first page of results and implement an algorithm that checks if either some or all of the results exist in the database. Potentially on the backend if a search term was received the back end could make the calls to the API to index each page of the results into the database also.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Overall I have really enjoyed crafting this app and having a chance to tie together all the knowledge I have learned in the past year. I hope this walk through my thought processes can be of use to current and future developers looking to tackle such challenges as well. I hope this outlines some of the considerations and trickier aspects of designing, implementing and deploying a full stack application.</p>
+</article>
+<footer>
+  <p class="footer text-center author">Handcrafted by Andrew Lloyd
+    <svg class="copyright" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copyright" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+      <path
+        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z">
+      </path>
+    </svg>
+    2021
+  </p>
+  <div class="footer-links">
+    
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+    
+    <a class="nav-link" href="/projects/">
+      
+      Projects
+    </a>
+    
+    <a class="nav-link" href="/posts/">
+      
+      Posts
+    </a>
+    
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+    
+    <a class="nav-link" href="/contact/">
+      
+      Contact
+    </a>
+    
+    <a class="nav-link" href="https://github.com/AndrewRLloyd88/andrew_lloyd_resume/raw/master/andrew-lloyd-resume.pdf">
+      
+      Resume
+    </a>
+    
+  </div>
+  <div class="built-with">
+    <p>Made With</p>
+    <a href="https://gohugo.io/">
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-width="27" aria-label="Logo"
+        viewBox="0 0 1493 391">
+        <path fill="#ebb951" stroke="#fcd804"
+          d="M1345.211 24.704l112.262 64.305a43 43 0 0 1 21.627 37.312v142.237a40 40 0 0 1-20.702 35.037l-120.886 66.584a42 42 0 0 1-41.216-.389l-106.242-61.155a57 57 0 0 1-28.564-49.4V138.71a64 64 0 0 1 31.172-54.939l98.01-58.564a54 54 0 0 1 54.54-.503z" />
+        <path fill="#33ba91" stroke="#00a88a"
+          d="M958.07 22.82l117.31 66.78a41 41 0 0 1 20.72 35.64v139.5a45 45 0 0 1-23.1 39.32L955.68 369.4a44 44 0 0 1-43.54-.41l-105.82-61.6a56 56 0 0 1-27.83-48.4V140.07a68 68 0 0 1 33.23-58.44l98.06-58.35a48 48 0 0 1 48.3-.46z" />
+        <path fill="#0594cb" stroke="#0083c0"
+          d="M575.26 20.97l117.23 68.9a40 40 0 0 1 19.73 34.27l.73 138.67a48 48 0 0 1-24.64 42.2l-115.13 64.11a45 45 0 0 1-44.53-.42l-105.83-61.6a55 55 0 0 1-27.33-47.53V136.52a63 63 0 0 1 29.87-53.59l99.3-61.4a49 49 0 0 1 50.6-.56z" />
+        <path fill="#ff4088" stroke="#c9177e"
+          d="M195.81 24.13l114.41 66.54a44 44 0 0 1 21.88 38.04v136.43a48 48 0 0 1-24.45 41.82L194.1 370.9a49 49 0 0 1-48.48-.23L41.05 310.48a53 53 0 0 1-26.56-45.93V135.08a55 55 0 0 1 26.1-46.8l102.8-63.46a51 51 0 0 1 52.42-.69z" />
+        <path fill="#fff"
+          d="M1320.72 89.15c58.79 0 106.52 47.73 106.52 106.51 0 58.8-47.73 106.52-106.52 106.52-58.78 0-106.52-47.73-106.52-106.52 0-58.78 47.74-106.51 106.52-106.51zm0 39.57c36.95 0 66.94 30 66.94 66.94a66.97 66.97 0 0 1-66.94 66.94c-36.95 0-66.94-29.99-66.94-66.94a66.97 66.97 0 0 1 66.93-66.94h.01zm-283.8 65.31c0 47.18-8.94 60.93-26.81 80.58-17.87 19.65-41.57 27.57-71.1 27.57-27 0-48.75-9.58-67.61-26.23-20.88-18.45-36.08-47.04-36.08-78.95 0-31.37 11.72-58.48 32.49-78.67 18.22-17.67 45.34-29.18 73.3-29.18 33.77 0 68.83 15.98 90.44 47.53l-31.73 26.82c-13.45-25.03-32.94-33.46-60.82-34.26-30.83-.88-64.77 28.53-62.25 67.75 1.4 21.94 11.65 59.65 60.96 66.57 25.9 3.63 55.36-24.02 55.36-39.04H944.4v-37.5h92.5V194l.02.03zm-562.6-94.65h42.29v112.17c0 17.8.49 29.33 1.47 34.61 1.69 8.48 4.81 14.37 11.17 19.5 6.37 5.13 13.8 6.59 24.84 6.59 11.2 0 14.96-1.74 20.66-6.6 5.69-4.85 9.12-9.46 10.28-16.53 1.15-7.07 3.07-18.8 3.07-35.18V99.38h42.28v108.78c0 24.86-1.07 42.43-3.21 52.69-2.14 10.27-6.08 18.93-11.82 26-5.74 7.06-13.42 12.69-23.03 16.88-9.62 4.19-22.16 6.28-37.65 6.28-18.7 0-32.87-2.28-42.52-6.85-9.66-4.57-17.3-10.5-22.9-17.8-5.61-7.3-9.3-14.95-11.08-22.96-2.58-11.86-3.88-29.38-3.88-52.55V99.38h.03zM93.91 299.92V92.7h43.35v75.48h71.92V92.7h43.48v207.22h-43.48v-90.61h-71.92v90.61z" />
+      </svg>
+    </a>
+  </div>
+
+
+</footer><script src="/js/panels.js"></script><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></div>
+</body>
+
+</html>

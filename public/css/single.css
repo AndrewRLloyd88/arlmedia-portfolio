@@ -36,10 +36,29 @@ img[src*='.width-800'] {
 
 /* Media Queries */
 
+@media only screen and (max-width: 768px) {
+  img[src*='#header'] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+  }
+
+  th img {
+    width: 80vw;
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 577px) {
   .post {
     width: 80vw;
     margin: 0 auto;
+  }
+
+  th img {
+    width: 80vw;
+    margin: 0;
   }
 
   .single-post {

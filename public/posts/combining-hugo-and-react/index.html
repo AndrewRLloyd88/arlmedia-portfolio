@@ -329,14 +329,14 @@ I am always looking to connect for opportunities and find a way to bring my know
   <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
       <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.(js|jsx)$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.(js|jsx)$/</span><span class="p">,</span>
         <span class="nx">exclude</span><span class="o">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">{</span>
           <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;babel-loader&#39;</span><span class="p">,</span>
         <span class="p">},</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.html$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.html$/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;html-loader&#39;</span><span class="p">,</span>
@@ -344,12 +344,12 @@ I am always looking to connect for opportunities and find a way to bring my know
         <span class="p">],</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.css$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.css$/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;style-loader&#39;</span><span class="p">,</span> <span class="s1">&#39;css-loader&#39;</span><span class="p">],</span>
         <span class="nx">include</span><span class="o">:</span> <span class="sr">/flexboxgrid/</span><span class="p">,</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.(png|svg|jpg|gif)$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.(png|svg|jpg|gif)$/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;file-loader&#39;</span><span class="p">],</span>
       <span class="p">},</span>
     <span class="p">],</span>
@@ -489,12 +489,24 @@ I am always looking to connect for opportunities and find a way to bring my know
   <span class="c1">//more projects are below in the array
 </span></code></pre></div><p>The variables from the icons are imported at the top of this data file. This data object and all of the project properties are then mapped out in index.js. Further refactoring could be done to split all of the elements into seperate components in the future. This overall is much more maintainable as I would only have to change my project data in one place as opposed to copying and pasting HTML content. Map takes care of the rest in the index.js file.</p>
 <p><!-- raw HTML omitted -->The finished result:<!-- raw HTML omitted --></p>
-<p><img src="/images/blog-images/hugo-react/portfolio_section.png" alt="Portfolio Section"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/hugo-react/portfolio_section.png" alt="Portfolio Section"></th>
+</tr>
+</thead>
+</table>
 <h2 id="how-to-add-more-than-one-react-style-entry-file">How to add more than one React Style Entry File</h2>
 <p>I needed to run two React scripts one for my projects and one for my skills to map out in a similar way as the above. With the setup I currently had no way to define two entry and output files. After doing a bit of researching I came across this useful post:</p>
 <p><a href="https://stackoverflow.com/questions/35903246/how-to-create-multiple-output-paths-in-webpack-config#:~:text=Webpack%20does%20support%20multiple%20output,the%20name%20as%20output%20template.&amp;text=Basically%20you%20don't%20follow,a%20path%20for%20the%20filename.">how to add more than one path to webpack</a></p>
 <p>I set up the two modules as follows:</p>
-<p><img src="/images/blog-images/hugo-react/modules.png" alt="Modules"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/hugo-react/modules.png" alt="Modules"></th>
+</tr>
+</thead>
+</table>
 <p>And set up my webpack config to use the two entry points and generate two output files:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
@@ -511,10 +523,16 @@ I am always looking to connect for opportunities and find a way to bring my know
 <p>I also encountered some issues whilst using SVGs at first due to the custom setup with webpack. Initially all of my SVG resources were coming back 404 despite having the correct path. At one point a lot of .SVG files were being generated with a minified name and the browser was clearly not recieving the correct files:</p>
 <p><code>module.exports = __webpack_public_path__ + &quot;images/code.61e3a3939c2f93f30ac21419625c9a4f.jpg&quot;</code></p>
 <p>This was what the file path was looking like. To remedy this i did a bit of research on StackOverflow:</p>
-<p><a href="https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work">Using Images with Webpack React Won&rsquo;t work</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work">Using Images with Webpack React Won&rsquo;t work</a></th>
+</tr>
+</thead>
+</table>
 <p>This article pointed me to removing url loader and setting up svg-url-loader in the webpack config.js:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">      <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.svg$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.svg$/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;svg-url-loader&#39;</span><span class="p">,</span>
@@ -528,7 +546,7 @@ I am always looking to connect for opportunities and find a way to bring my know
 <p><a href="https://stackoverflow.com/questions/42395452/webpack-2-svg-files-give-404-error/42420701">increasing limit when 404 errors occur with SVGs</a></p>
 <p>I took the answer from that article and increased the limit in the options param:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">      <span class="p">{</span>
-        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.svg$/</span><span class="p">,</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.svg$/</span><span class="p">,</span>
         <span class="nx">use</span><span class="o">:</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;svg-url-loader&#39;</span><span class="p">,</span>
@@ -539,7 +557,13 @@ I am always looking to connect for opportunities and find a way to bring my know
         <span class="p">],</span>
       <span class="p">},</span>
 </code></pre></div><p>And hey presto!</p>
-<p><img src="/images/blog-images/hugo-react/icons.png" alt="Icons"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/blog-images/hugo-react/icons.png" alt="Icons"></th>
+</tr>
+</thead>
+</table>
 <p>The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I&rsquo;d love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.</p>
 <p>It&rsquo;s been massively helpful to learn a different framework in Hugo, the site is performant and builds lightning fast and with the content pipeline has a lot of flexibility.</p>
 <p>There are definitely improvements I am seeking to add to the website as time goes on but I really feel I have improved the website from the prior version. The maintainability definitely feels like a huge weight off when it comes to updating content.</p>

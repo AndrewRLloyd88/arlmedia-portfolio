@@ -299,7 +299,7 @@ I am always looking to connect for opportunities and find a way to bring my know
 
 <span class="c1">//move in the opposite X direction at half the speed (tweak for higher CPU difficulty)
 </span><span class="c1"></span>
-<span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="o">-</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="err">\</span><span class="o">*</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="nx">paddleP2</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="o">-</span><span class="nx">ball</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">;</span>
 
 <span class="c1">//limit the max Y velocity
 </span><span class="c1"></span>
@@ -334,9 +334,9 @@ I am always looking to connect for opportunities and find a way to bring my know
 </thead>
 </table>
 <p>Start by importing the assets at the top of the file</p>
-<div class="highlight"><pre class="chroma"><code class="language-Javascript" data-lang="Javascript"><span class="kr">import</span> <span class="nx">blip1</span> <span class="nx">from</span> <span class="err">“</span><span class="p">..</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="mi">4390</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_noisecollector</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_pongblipf</span><span class="o">-</span><span class="mf">4.</span><span class="nx">wav</span><span class="err">”</span><span class="p">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-Javascript" data-lang="Javascript"><span class="kr">import</span> <span class="nx">blip1</span> <span class="nx">from</span> <span class="err">“</span><span class="p">..</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="mi">4390</span><span class="nx">__noisecollector__pongblipf</span><span class="o">-</span><span class="mf">4.</span><span class="nx">wav</span><span class="err">”</span><span class="p">;</span>
 
-<span class="kr">import</span> <span class="nx">blip2</span> <span class="nx">from</span> <span class="err">“</span><span class="p">..</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="mi">4391</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_noisecollector</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_pongblipf</span><span class="o">-</span><span class="mf">5.</span><span class="nx">wav</span><span class="err">”</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">blip2</span> <span class="nx">from</span> <span class="err">“</span><span class="p">..</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="mi">4391</span><span class="nx">__noisecollector__pongblipf</span><span class="o">-</span><span class="mf">5.</span><span class="nx">wav</span><span class="err">”</span><span class="p">;</span>
 </code></pre></div><p>Include them in the preload function with load.audio method:</p>
 <div class="highlight"><pre class="chroma"><code class="language-Javascript" data-lang="Javascript"><span class="nx">preload</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">preload</span><span class="p">()</span> <span class="p">{</span>
 
