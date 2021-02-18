@@ -2,6 +2,7 @@
 title: 'How To Set Up A Continuous Integration Pipeline with Github and Next.JS'
 date: 2020-12-04T19:09:35-08:00
 draft: false
+tags: ['CircleCI', 'NextJS', 'Development', 'JavaScript', 'Github']
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header)

@@ -2,6 +2,7 @@
 title: 'Working with Hugo — New Year, New Technology'
 date: 2021-01-05T15:00:25-08:00
 draft: false
+tags: ['Hugo', 'Development', 'Markdown', 'Static Site']
 ---
 
 ![](/images/blog-images/working-with-hugo/1_edrHHUk9_xuhacDZEHLJaw.jpeg#header)
@@ -16,15 +17,13 @@ Markdown is something that I got acquainted with last year writing various diffe
 
 | ![](/images/blog-images/working-with-hugo/1_l0DSpxWN7a5YT_o00-P6lA.png) |
 | :---------------------------------------------------------------------: |
-
-A readme for the forkitall project from last year
+|           _A readme for the forkitall project from last year_           |
 
 Hugo uses markdown in a different way to give you a base template or in Hugo’s lingo archetype:
 
-| ![](/images/blog-images/working-with-hugo/1_mruQXXMUfbfF6vLCiTjF5g.png) |
-| :---------------------------------------------------------------------: |
-
-This acts as a base template for any page generated using this archetype
+|  ![](/images/blog-images/working-with-hugo/1_mruQXXMUfbfF6vLCiTjF5g.png)   |
+| :------------------------------------------------------------------------: |
+| _This acts as a base template for any page generated using this archetype_ |
 
 With the command `hugo new projects/jabberwocky.md` you end up with a new markdown file generated in the tree:
 
@@ -33,7 +32,7 @@ With the command `hugo new projects/jabberwocky.md` you end up with a new markdo
 
 The projects.md has in effect acted as a boilerplate and created jabberwocky.MD. Jabberwocky.MD then works in conjunction with the layouts folder, the style.css and in this case specifically the projects folder and the single.html file:
 
-| ![](/images/blog-images/working-with-hugo/1*fuwCnjzp5g9NCbDDfYEapA.png) |
+| ![](/images/blog-images/working-with-hugo/1_fuwCnjzp5g9NCbDDfYEapA.png) |
 | :---------------------------------------------------------------------: |
 
 To generate this page:
