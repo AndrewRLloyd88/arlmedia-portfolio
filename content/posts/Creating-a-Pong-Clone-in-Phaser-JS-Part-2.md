@@ -107,7 +107,7 @@ paddleP2.body.setVelocity(ball.body.velocity.y);
 
 //move in the opposite X direction at half the speed (tweak for higher CPU difficulty)
 
-paddleP2.body.velocity.x = -ball.body.velocity.x \* 0.5;
+paddleP2.body.velocity.x = -ball.body.velocity.x * 0.5;
 
 //limit the max Y velocity
 
@@ -145,9 +145,9 @@ Now to import the sounds into the phaser-js-gh-pages/src/assets directory
 Start by importing the assets at the top of the file
 
 ```Javascript
-import blip1 from “../assets/4390\_\_noisecollector\_\_pongblipf-4.wav”;
+import blip1 from “../assets/4390__noisecollector__pongblipf-4.wav”;
 
-import blip2 from “../assets/4391\_\_noisecollector\_\_pongblipf-5.wav”;
+import blip2 from “../assets/4391__noisecollector__pongblipf-5.wav”;
 ```
 
 Include them in the preload function with load.audio method:

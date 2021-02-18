@@ -248,7 +248,7 @@ This project helped get me more practise with Functions Objects Conditionals, Lo
 
 ```javascript
 export const instruments =
-  \[
+  [
     ({
       name: 'Clap',
       sound: './DrumSamples/Claps/Clap1.wav',

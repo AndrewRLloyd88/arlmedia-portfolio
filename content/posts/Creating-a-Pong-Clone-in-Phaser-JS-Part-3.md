@@ -49,7 +49,7 @@ let score2_text;
 In the create method we can add a text object to add our two scores to the game world.
 
 ```javascript
-score1*text = \_this*.add.text(128, 10, “0”, {
+score1*text = _this*.add.text(128, 10, “0”, {
 font: “64px Gabriella”,
 
 fill: “#FF0000”,
@@ -58,7 +58,7 @@ align: “center”,
 
 });
 
-score2*text = \_this*.add.text(672, 10, “0”, {
+score2*text = _this*.add.text(672, 10, “0”, {
 
 font: “64px Gabriella”,
 
@@ -322,7 +322,7 @@ ball.setBounceY(Phaser.Math.FloatBetween(0.5, 0.9));
 
 ball.setVelocityX(100);
 
-ball.setVelocityY(150 — Math.random() \* 400);
+ball.setVelocityY(150 — Math.random() * 400);
 
 paddleP1.body.maxVelocity.x = 250;
 
@@ -340,7 +340,7 @@ ball.setBounceY(Phaser.Math.FloatBetween(0.5, 0.9));
 
 ball.setVelocityX(100);
 
-ball.setVelocityY(150 — Math.random() \* 400);
+ball.setVelocityY(150 — Math.random() * 400);
 
 paddleP1.body.maxVelocity.x = 250;
 
@@ -366,7 +366,7 @@ ball.setBounceY(Phaser.Math.FloatBetween(0.5, 0.9));
 
 ball.setVelocityX(-100);
 
-ball.setVelocityY(150 — Math.random() \* 400);
+ball.setVelocityY(150 — Math.random() * 400);
 
 }, 2000);
 
@@ -512,7 +512,7 @@ default: “arcade”,
 
 },
 
-scene: \[MainMenu, Game, P1wins, P2wins, Cpuwins\],
+scene: [MainMenu, Game, P1wins, P2wins, Cpuwins],
 
 };
 

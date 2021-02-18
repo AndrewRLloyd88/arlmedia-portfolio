@@ -115,7 +115,7 @@ In this section I will be tackling the user stories one by one:
 This was a fairly straightforward requirement that was solved with a basic axios call to the API:
 
 ```javascript
-const mainURL = \`http://www.omdbapi.com/?s=${term}&type=movie&page=1&apikey=${process.env.REACT\_APP\_API\_KEY}\`;
+const mainURL = `http://www.omdbapi.com/?s=${term}&type=movie&page=1&apikey=${process.env.REACT_APP_API_KEY}`;
 ```
 
 I set up a .env file to hold the secret key and included a .env.example in the project as follows:
@@ -131,7 +131,7 @@ First I set up the above mainURL to hold our query with a dynamic term using a t
 ```javascript
 axios.get(mainURL).then((response) => {
 
-setResults(\[...response.data.Search\]);
+setResults([...response.data.Search]);
 console.log(response)
 
 }
@@ -225,25 +225,25 @@ import classnames from 'classnames';
 
 export default function Movie(props) {
 
-const movieInfoClass = classnames('movie\_\_info', {
+const movieInfoClass = classnames('movie__info', {
 
-'movie\_\_info--explicit': props.collectionExplicitness === 'explicit',
+'movie__info--explicit': props.collectionExplicitness === 'explicit',
 
 return (
 
 <article className="movie">
 
-<img className="movie\_\_thumbnail" src={props.Poster} alt="Movie" />
+<img className="movie__thumbnail" src={props.Poster} alt="Movie" />
 
 <div className={movieInfoClass}>
 
-<div className="movie\_\_name">{props.Title}</div>
+<div className="movie__name">{props.Title}</div>
 
-<div className="movie\_\_artist">{props.Year}</div>
+<div className="movie__artist">{props.Year}</div>
 
 //the button below will be used for the nominations feature
 
-<button className="nominate\_\_btn" onClick={handleClick}>
+<button className="nominate__btn" onClick={handleClick}>
 
 Nominate
 
@@ -328,25 +328,27 @@ With no search result returned this object:
 results: Array(1)
 0: {Response: "False", Error: "Incorrect IMDb ID."}
 length: 1
-
+```
 And with “too many results” path:
 
+```javascript
 {Response: "False", Error: "Too many results."}
 Error: "Too many results."
 Response: "False"
-\_\_proto\_\_: Object
-
+__proto__: Object
+```
 The commonality here seemed to be:
-
+```javascript
 response.data.Response === “False”
-
+```
 Thus prompting me to add the following guard clause:
 
+```javascript
 axios.get(mainURL).then((response) => {
 
 if (response.data.Response === 'True') {
 
-setResults(\[...response.data.Search\]);
+setResults([...response.data.Search]);
 
 console.log(response.data);
 
@@ -360,9 +362,9 @@ However this was then only returning results with multiple hits but an amount of
 
 ```javascript
 Response: "True"
-Search: (10) \[{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}\]
+Search: (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
 totalResults: "872"
-\_\_proto\_\_: Object
+__proto__: Object
 ```
 
 This is less helpful in the case of “Too many results” as it doesn’t tell you how many were found. I believe this to be a limitation of whatever service the API itself is querying or scraping data from:
@@ -398,9 +400,9 @@ The solution I implemented was to make use of the other API call by title search
 //triggers on term changing
 useEffect(() => {
 
-const mainURL = \`http://www.omdbapi.com/?s=${term}&type=movie&page=1&apikey=${process.env.REACT\_APP\_API\_KEY}\`;
+const mainURL = `http://www.omdbapi.com/?s=${term}&type=movie&page=1&apikey=${process.env.REACT_APP_API_KEY}`;
 
-const fallbackURL = \`http://www.omdbapi.com/?t=${term}&type=movie&apikey=${process.env.REACT\_APP\_API\_KEY}\`;
+const fallbackURL = `http://www.omdbapi.com/?t=${term}&type=movie&apikey=${process.env.REACT_APP_API_KEY}`;
 
 //our happy path GET request with the s={term} to get multiple results
 
@@ -408,7 +410,7 @@ axios.get(mainURL).then((response) => {
 
 if (response.data.Response === 'True') {
 
-setResults(\[...response.data.Search\]);
+setResults([...response.data.Search]);
 //debug to check the structure of the return object
 
 console.log(response.data);
@@ -424,7 +426,7 @@ axios.get(fallbackURL).then((response) => {
 if (response.data.Response === 'True') console.log(response);
 //we don't need to spread in this case since 1 or less results should come back.
 
-setResults(\[response.data\]);
+setResults([response.data]);
 
 });
 
@@ -432,7 +434,7 @@ setResults(\[response.data\]);
 
 });
 
-}, \[term\]);
+}, [term]);
 ```
 
 This results in the following:
@@ -497,7 +499,7 @@ return (
 
 <img
 
-className="movie\_\_thumbnail"
+className="movie__thumbnail"
 
 src={props.movie_poster === 'N/A' ? filmThumbnail : props.movie_poster}
 
@@ -507,9 +509,9 @@ alt="Movie"
 
 <div className={movieInfoClass}>
 
-<div className="movie\_\_name">{props.movie\_title}</div>
+<div className="movie__name">{props.movie_title}</div>
 
-<div className="movie\_\_year">{props.movie\_year}</div>
+<div className="movie__year">{props.movie_year}</div>
 
 <div>
 
@@ -525,7 +527,7 @@ color="secondary"
 
 startIcon={<RemoveCircleIcon />}
 
-\>
+>
 
 Remove
 
@@ -545,10 +547,10 @@ Remove
 Nominations are saved in an array in state:
 
 ```javascript
-const \[nominations, setNominations\] = useState(\[\]);
+const [nominations, setNominations] = useState([]);
 
 //for when a user wants to add a nomination
-const addNomination = (movie) => { const newNomination = { Title: movie.Title, Year: movie.Year, Poster: movie.Poster, }; setNominations((prevNominations) => { return \[...prevNominations, newNomination\]; });
+const addNomination = (movie) => { const newNomination = { Title: movie.Title, Year: movie.Year, Poster: movie.Poster, }; setNominations((prevNominations) => { return [...prevNominations, newNomination]; });
 ```
 
 #### As a user I should be able to un-nominate a film or remove a nomination.
@@ -578,7 +580,7 @@ We could do this with a conditional render on the Movie component:
 ```javascript
 {isNominated() ? (
 
-<p className="nominated\_label">Nominated</p>
+<p className="nominated_label">Nominated</p>
 
 ) : (
 
@@ -590,7 +592,7 @@ onClick={handleClick}
 
 startIcon={<AddCircleIcon />}
 
-\>
+>
 
 Nominate
 
@@ -618,7 +620,7 @@ I decided to wrap the Movie components existing check in another ternary operato
 
 {isNominated() ? (
 
-<p className="nominated\_label">Nominated</p>
+<p className="nominated_label">Nominated</p>
 
 ) : (
 
@@ -630,7 +632,7 @@ onClick={handleClick}
 
 startIcon={<AddCircleIcon />}
 
-\>
+>
 
 Nominate
 
@@ -646,7 +648,7 @@ Nominate
 
 {isNominated() ? (
 
-<p className="nominated\_label">Nominated</p>
+<p className="nominated_label">Nominated</p>
 
 ) : null}
 ```
@@ -678,7 +680,7 @@ useEffect(() => {
   if (numNominated === 5) {
     setOpen(true);
   }
-}, \[(numNominated, deleteNomination, addNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNomination\)]);
+}, [(numNominated, deleteNomination, addNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNominationaddNomination)]);
 
 // handles close for Modal
 
@@ -690,7 +692,7 @@ const handleClose = () => {
 The modals display state was stored in a useState variable :
 
 ```javascript
-const \[open, setOpen\] = useState(false);
+const [open, setOpen] = useState(false);
 ```
 
 The result looked like this:
@@ -735,11 +737,11 @@ The many to many relationship was the key in normalising movie data so we are no
 I generated migrations and set up my controllers as follows:
 
 ```javascript
-\# Schema
+# Schema
 
 ActiveRecord::Schema.define(version: 2021_01_14_033303) do
 
-\# These are extensions that must be enabled in order to support this database
+# These are extensions that must be enabled in order to support this database
 
 enable_extension "plpgsql"
 
@@ -767,9 +769,9 @@ t.datetime "created_at", precision: 6, null: false
 
 t.datetime "updated_at", precision: 6, null: false
 
-t.index \["movie_id"\], name: "index_nominations_on_movie_id"
+t.index ["movie_id"], name: "index_nominations_on_movie_id"
 
-t.index \["user_id"\], name: "index_nominations_on_user_id"
+t.index ["user_id"], name: "index_nominations_on_user_id"
 
 end
 
@@ -783,7 +785,7 @@ t.datetime "created_at", precision: 6, null: false
 
 t.datetime "updated_at", precision: 6, null: false
 
-t.index \["access_token"\], name: "index_users_on_access_token", unique: true
+t.index ["access_token"], name: "index_users_on_access_token", unique: true
 
 end
 
@@ -979,7 +981,7 @@ The session controller then sends the response back to the front end on successf
 ```javascript
 class SessionsController < ApplicationController
 
-skip_before_action :restrict_access, only: \[:create, :destroy\]
+skip_before_action :restrict_access, only: [:create, :destroy]
 
 def new
 
@@ -1126,7 +1128,7 @@ if !Movie.exists?(movie_params)
 
 end
 
-@movie = Movie.where(movie_title: movie_params\[:movie_title\], movie_year: movie_params\[:movie_year\] ).first
+@movie = Movie.where(movie_title: movie_params[:movie_title], movie_year: movie_params[:movie_year] ).first
 
 @current_user.nominated_movies << @movie
 
@@ -1139,7 +1141,7 @@ I had to establish the relationships on the backend in Ruby in the users, nomina
 #user.rb  
 has_many :nominations, :dependent => :destroy
 
-\# add a class nominated_movies onto users for easier reference
+# add a class nominated_movies onto users for easier reference
 
 has_many :nominated_movies, through: :nominations, source: :movie
 ```
@@ -1183,7 +1185,7 @@ if !Movie.exists?(movie_params)
 end  
 #get the record from the query params coming into the route and post the id of that movie via the route established in routes.rb
 
-@movie = Movie.where(movie_title: movie_params\[:movie_title\], movie_year: movie_params\[:movie_year\] ).first
+@movie = Movie.where(movie_title: movie_params[:movie_title], movie_year: movie_params[:movie_year] ).first
 
 @current_user.nominated_movies << @movie
 
@@ -1224,7 +1226,7 @@ Then I did some research via [stackoverflow](https://stackoverflow.com/questions
 ```javascript
 def index
 
-@movies = Movie.joins(:nominations).select('\*').where(nominations: {user_id: @current_user.id})
+@movies = Movie.joins(:nominations).select('*').where(nominations: {user_id: @current_user.id})
 
 render json: @movies.to_json
 
@@ -1242,7 +1244,7 @@ axios
 
 headers: {
 
-authorization: \`Token token=${localStorage.getItem('access_token')}\`,
+authorization: `Token token=${localStorage.getItem('access_token')}`,
 
 },
 
@@ -1250,7 +1252,7 @@ authorization: \`Token token=${localStorage.getItem('access_token')}\`,
 
 .then((result) => {
 
-setNominations(\[...result.data\]);
+setNominations([...result.data]);
 
 });
 
@@ -1262,7 +1264,7 @@ const deleteNomination = useCallback(() => {
 
 getNominations();
 
-}, \[\]);
+}, []);
 
 //for when a user wants to add a nomination
 
@@ -1302,11 +1304,11 @@ user,
 
 headers: {
 
-authorization: \`Token token=${localStorage.getItem(
+authorization: `Token token=${localStorage.getItem(
 
 'access_token'
 
-)}\`,
+)}`,
 
 },
 
@@ -1320,7 +1322,7 @@ getNominations();
 
 });
 
-}, \[\]);
+}, []);
 
 useEffect(() => {
 
@@ -1332,7 +1334,7 @@ setOpen(true);
 
 }
 
-}, \[numNominated, deleteNomination, addNomination\]);
+}, [numNominated, deleteNomination, addNomination]);
 ```
 
 I had to add the deleteNomination and addNomination as dependencies to the useEffect and as per rules of react wrap the functions inside of useCallback to stop them firing endlessly.
@@ -1366,7 +1368,7 @@ path="/"
 
 render={() => <LiveSearch user={state} />}
 
-\></Route>
+></Route>
 
 <Route path="/:slug" component={Slug} />
 
@@ -1391,9 +1393,9 @@ get :slug, to: "nominations#slug"
 
 def show
 
-\# takes in a slug from user e.g. http://localhost:3001/api/nominations/7c5dec-e47-4c4e-a3ce-280a3b38ce5b
+# takes in a slug from user e.g. http://localhost:3001/api/nominations/7c5dec-e47-4c4e-a3ce-280a3b38ce5b
 
-slug = params\[:id\]
+slug = params[:id]
 
 #joins from movies to nominations to user and gets all associated movies by slug
 
@@ -1434,7 +1436,7 @@ You can share your nominations by copying this link:
 
 <br></br>
 
-<a href={\`http://localhost:3000/${props.user.user.slug}\`}>
+<a href={`http://localhost:3000/${props.user.user.slug}`}>
 
 <span className={classes.link}>
 
@@ -1455,13 +1457,13 @@ useEffect(() => {
 
 getTotal();
 
-axios.get(\`api/nominations/${slug}\`).then((response) => {
+axios.get(`api/nominations/${slug}`).then((response) => {
 
-setNominations(\[...response.data\]);
+setNominations([...response.data]);
 
 });
 
-}, \[\]);
+}, []);
 ```
 
 The result was as follows:
@@ -1477,7 +1479,7 @@ I attempted to tackle another stretch requirement of adding a little animation t
 I stored the isSearching and setIsSearching in a useState with an initial value of false:
 
 ```javascript
-const \[isSearching, setIsSearching\] = useState(false);
+const [isSearching, setIsSearching] = useState(false);
 
 #UseEffect then triggers when the search term changes
 
@@ -1553,7 +1555,7 @@ The spinner lives as a static graphic in the public/images directory but is anim
 
 100% {
 
-\-webkit-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
 
 transform: rotate(360deg);
 
@@ -1659,9 +1661,9 @@ backgroundColor: 'rgb(0, 161, 82)',
 
 export default function Movie(props) {
 
-const movieInfoClass = classnames('movie\_\_info', {
+const movieInfoClass = classnames('movie__info', {
 
-'movie\_\_info--explicit': props.collectionExplicitness === 'explicit',
+'movie__info--explicit': props.collectionExplicitness === 'explicit',
 
 });
 
@@ -1673,7 +1675,7 @@ return (
 
 <img
 
-className="movie\_\_thumbnail"
+className="movie__thumbnail"
 
 src={props.Poster === 'N/A' ? filmThumbnail : props.Poster}
 
@@ -1683,9 +1685,9 @@ alt="Movie"
 
 <div className={movieInfoClass}>
 
-<div className="movie\_\_name">{props.Title}</div>
+<div className="movie__name">{props.Title}</div>
 
-<div className="movie\_\_year">{props.Year}</div>
+<div className="movie__year">{props.Year}</div>
 
 {props.numNominated !== 5 ? (
 
@@ -1693,7 +1695,7 @@ alt="Movie"
 
 {isNominated() ? (
 
-<p className="nominated\_label">Nominated</p>
+<p className="nominated_label">Nominated</p>
 
 ) : (
 
@@ -1705,7 +1707,7 @@ onClick={handleClick}
 
 startIcon={<AddCircleIcon />}
 
-\>
+>
 
 Nominate
 
@@ -1721,7 +1723,7 @@ Nominate
 
 {isNominated() ? (
 
-<p className="nominated\_label">Nominated</p>
+<p className="nominated_label">Nominated</p>
 
 ) : null}
 
@@ -1754,7 +1756,7 @@ Another small feature I wanted to do was to update the index.html create-react-a
 
 <meta charset="utf-8" />
 
-<link rel="icon" href="%PUBLIC\_URL%/favicon.ico" />
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -1764,7 +1766,7 @@ Another small feature I wanted to do was to update the index.html create-react-a
 
 content="Created for the Shopify Front-End Developer Intern (Remote) - Summer 2021 Challenge" />
 
-<link rel="apple-touch-icon" href="%PUBLIC\_URL%/logo192.png" />
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
 <title>The Shoppies Movie Awards</title>
 
@@ -1845,21 +1847,21 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors, debug: true, lo
 
 allow do
 
-origins '\*'
+origins '*'
 
 resource '/cors',
 
 :headers => :any,
 
-:methods => \[:post\],
+:methods => [:post],
 
 :max_age => 0
 
-resource '\*',
+resource '*',
 
 :headers => :any,
 
-:methods => \[:get, :post, :delete, :put, :patch, :options, :head\],
+:methods => [:get, :post, :delete, :put, :patch, :options, :head],
 
 :max_age => 0
 

@@ -168,14 +168,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
       },
       {
-        test: /\.html$/,
+        test: /.html$/,
         use: [
           {
             loader: 'html-loader',
@@ -183,12 +183,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
+        test: /.css$/,
         use: ['style-loader', 'css-loader'],
         include: /flexboxgrid/,
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
       },
     ],
@@ -341,7 +341,8 @@ The variables from the icons are imported at the top of this data file. This dat
 
 <b>The finished result:</b>
 
-![Portfolio Section](/images/blog-images/hugo-react/portfolio_section.png)
+| ![Portfolio Section](/images/blog-images/hugo-react/portfolio_section.png) |
+| :---------------------------------------------------------------------: |
 
 ## How to add more than one React Style Entry File
 
@@ -351,7 +352,8 @@ I needed to run two React scripts one for my projects and one for my skills to m
 
 I set up the two modules as follows:
 
-![Modules](/images/blog-images/hugo-react/modules.png)
+| ![Modules](/images/blog-images/hugo-react/modules.png) |
+| :---------------------------------------------------------------------: |
 
 And set up my webpack config to use the two entry points and generate two output files:
 
@@ -378,13 +380,14 @@ I also encountered some issues whilst using SVGs at first due to the custom setu
 
 This was what the file path was looking like. To remedy this i did a bit of research on StackOverflow:
 
-[Using Images with Webpack React Won't work](https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work)
+| [Using Images with Webpack React Won't work](https://stackoverflow.com/questions/50205296/using-images-with-webpack-react-wont-work) |
+| :---------------------------------------------------------------------: |
 
 This article pointed me to removing url loader and setting up svg-url-loader in the webpack config.js:
 
 ```javascript
       {
-        test: /\.svg$/,
+        test: /.svg$/,
         use: [
           {
             loader: 'svg-url-loader',
@@ -404,7 +407,7 @@ I took the answer from that article and increased the limit in the options param
 
 ```javascript
       {
-        test: /\.svg$/,
+        test: /.svg$/,
         use: [
           {
             loader: 'svg-url-loader',
@@ -418,7 +421,8 @@ I took the answer from that article and increased the limit in the options param
 
 And hey presto!
 
-![Icons](/images/blog-images/hugo-react/icons.png)
+| ![Icons](/images/blog-images/hugo-react/icons.png) |
+| :---------------------------------------------------------------------: |
 
 The takeaways I have gotten from renovating my website have been enormous. There are still specific things I would like to learn with Webpack, I'd love to get a bit more indepth with webpack set up andthe ins and outs to fully understand what the parameters mean and what settings to tweak.
 
