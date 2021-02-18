@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on ArlMedia</title>
+    <link>https://arlmedia.ca/tags/markdown/</link>
+    <description>Recent content in Markdown on ArlMedia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 15:00:25 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with Hugo — New Year, New Technology</title>
+      <link>https://arlmedia.ca/posts/working-with-hugo/</link>
+      <pubDate>Tue, 05 Jan 2021 15:00:25 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/working-with-hugo/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://arlmedia.ca/images/blog-images/working-with-hugo/1_edrHHUk9_xuhacDZEHLJaw.jpeg#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

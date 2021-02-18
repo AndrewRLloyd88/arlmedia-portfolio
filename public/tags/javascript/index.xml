@@ -6,7 +6,16 @@
     <description>Recent content in JavaScript on ArlMedia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 18:17:12 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 19:09:35 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Set Up A Continuous Integration Pipeline with Github and Next.JS</title>
+      <link>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Building a Beat Machine With React</title>
       <link>https://arlmedia.ca/posts/building-a-beat-machine-with-react/</link>

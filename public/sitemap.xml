@@ -48,12 +48,47 @@
   </url>
   
   <url>
+    <loc>https://arlmedia.ca/tags/development/</loc>
+    <lastmod>2021-01-05T15:00:25-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/markdown/</loc>
+    <lastmod>2021-01-05T15:00:25-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/static-site/</loc>
+    <lastmod>2021-01-05T15:00:25-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arlmedia.ca/posts/working-with-hugo/</loc>
     <lastmod>2021-01-05T15:00:25-08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://arlmedia.ca/tags/circleci/</loc>
+    <lastmod>2020-12-04T19:09:35-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/github/</loc>
+    <lastmod>2020-12-04T19:09:35-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</loc>
+    <lastmod>2020-12-04T19:09:35-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/javascript/</loc>
+    <lastmod>2020-12-04T19:09:35-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arlmedia.ca/tags/nextjs/</loc>
     <lastmod>2020-12-04T19:09:35-08:00</lastmod>
   </url>
   
@@ -63,17 +98,7 @@
   </url>
   
   <url>
-    <loc>https://arlmedia.ca/tags/development/</loc>
-    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://arlmedia.ca/tags/howlerjs/</loc>
-    <lastmod>2020-12-03T18:17:12-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arlmedia.ca/tags/javascript/</loc>
     <lastmod>2020-12-03T18:17:12-08:00</lastmod>
   </url>
   

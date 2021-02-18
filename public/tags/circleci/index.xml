@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CircleCI on ArlMedia</title>
+    <link>https://arlmedia.ca/tags/circleci/</link>
+    <description>Recent content in CircleCI on ArlMedia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Dec 2020 19:09:35 -0800</lastBuildDate><atom:link href="https://arlmedia.ca/tags/circleci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Set Up A Continuous Integration Pipeline with Github and Next.JS</title>
+      <link>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/posts/how-to-set-up-a-continuous-integration-pipeline/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*eZqFUVhMAt-G0iNEvcORIA.png#header&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

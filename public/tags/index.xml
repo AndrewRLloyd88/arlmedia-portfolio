@@ -28,9 +28,63 @@
     <item>
       <title>Development</title>
       <link>https://arlmedia.ca/tags/development/</link>
-      <pubDate>Thu, 03 Dec 2020 18:17:12 -0800</pubDate>
+      <pubDate>Tue, 05 Jan 2021 15:00:25 -0800</pubDate>
       
       <guid>https://arlmedia.ca/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://arlmedia.ca/tags/markdown/</link>
+      <pubDate>Tue, 05 Jan 2021 15:00:25 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Site</title>
+      <link>https://arlmedia.ca/tags/static-site/</link>
+      <pubDate>Tue, 05 Jan 2021 15:00:25 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/static-site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CircleCI</title>
+      <link>https://arlmedia.ca/tags/circleci/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/circleci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://arlmedia.ca/tags/github/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://arlmedia.ca/tags/javascript/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NextJS</title>
+      <link>https://arlmedia.ca/tags/nextjs/</link>
+      <pubDate>Fri, 04 Dec 2020 19:09:35 -0800</pubDate>
+      
+      <guid>https://arlmedia.ca/tags/nextjs/</guid>
       <description></description>
     </item>
     
@@ -40,15 +94,6 @@
       <pubDate>Thu, 03 Dec 2020 18:17:12 -0800</pubDate>
       
       <guid>https://arlmedia.ca/tags/howlerjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://arlmedia.ca/tags/javascript/</link>
-      <pubDate>Thu, 03 Dec 2020 18:17:12 -0800</pubDate>
-      
-      <guid>https://arlmedia.ca/tags/javascript/</guid>
       <description></description>
     </item>
     
