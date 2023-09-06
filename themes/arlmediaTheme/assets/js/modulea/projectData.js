@@ -32,7 +32,7 @@ export const projectData = [
   {
     name: 'We Are Wyllie',
     description:
-      'My business site for enquiries about web development/video and media production, running on keystone6 CMS.',
+      'My business site for enquiries about web development/video and media production, running on keystone6 CMS and GraphQL.',
     image: '/images/projects/wyllielogo.png',
     github: '',
     demo: 'https://wearewyllie.com/',
